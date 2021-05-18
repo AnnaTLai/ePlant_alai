@@ -84,3 +84,11 @@ $RECYCLE.BIN/
 # Visual Studio Code - https://code.visualstudio.com/
 .settings/
 .vscode/
+
+### Change in view
+.xml
+
+### Grunt
+.npm-debug.log
+package-lock.json
+tmp
