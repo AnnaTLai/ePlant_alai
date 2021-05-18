@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen
+  SYSTEM 'http://www.bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd'>
+<specimen name="Arabidopsis">
+	<view class="" db="atgenexp_pathogen" img="Biotic_Stress_II_image.png" name="all" table="sample_data">
+		<info>
+			<li><b>Biotic Stress - <i>Golovinomyces orontii</i></b>; data provided by the Wildermuth Lab (Chandran et al., 2010. PNAS 107(1).) </li>
+			<li>Plant material from uninfected and <i>G. orontii</i> infected 4 week old wild-type and <i>ics1-2</i> mutant (<i>eds16</i>) <i>Arabidopsis thaliana</i> plants of Columbia-0 ecotype were analyzed</li>
+			<li>Parallel experiments were also carried out using while leaves and leaf scrape for some of the samples</li>
+			<li>Plants grown in evenly spaced boxes were infected with <i>G. orontii</i> using a settling tower and mesh screen</li>
+			<li>Plants were grown under 12/12 hour light/dark conditions</li>
+			<li>Groups of epidermal and mesophyll cells surrounding the infected cells were collected using Leica AS LMD with 40XT objective</li>
+			<li>Two of the six biological replicates were processed - the average of which is shown</li>
+			<li>RNA was isolated and hybridized to the ATH1 GeneChip</li>
+			<li>The data were normalized by GCOS normalization, TGT 100</li>
+		</info>
+		<extra coords="682,534,881,533,882,567,681,569" link="http://www.pnas.org/content/107/1/460.abstract" name="Laser microdissection of Arabidopsis cells at the powdery mildew infection site reveals site-specific processes and regulators" parameters="No"/>
+		<group name="GSM392490;GSM392491">
+			<control sample="GSM392490"/>
+			<control sample="GSM392491"/>
+			<tissue colorKey="#00ff00" name="Col laser microdissected, 5 d UI," id="ColLaserMicrodissected-5dUninfected">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE15680"/>
+				<area coords="424,71,525,71,524,180,426,180"/>
+				<sample name="GSM392490"/>
+				<sample name="GSM392491"/>
+			</tissue>
+			<tissue colorKey="#05f105" name="Col laser microdissected, 5 dpi" id="ColLaserMicrodissected-5dPostInfected">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE15680"/>
+				<area coords="555,69,657,69,656,180,557,180"/>
+				<sample name="GSM392488"/>
+				<sample name="GSM392489"/>
+			</tissue>
+			<tissue colorKey="#05e705" name="eds16 laser microdissected, 5 dpi" id="eds16LaserMicrodissected-5dPostInfected">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE15680"/>
+				<area coords="569,204,657,205,656,303,570,303"/>
+				<sample name="GSM392492"/>
+				<sample name="GSM392493"/>
+			</tissue>
+		</group>
+		<group name="GSM392500;GSM392501">
+			<control sample="GSM392500"/>
+			<control sample="GSM392501"/>
+			<tissue colorKey="#33ee22" name="Col whole leaf amplified, 5 d UI" id="ColWholeLeafAmplified-5dUninfected">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE15680"/>
+				<area coords="468,314,505,359,474,422,441,361"/>
+				<sample name="GSM392500"/>
+				<sample name="GSM392501"/>
+			</tissue>
+			<tissue colorKey="#33ee33" name="Col whole leaf amplified, 5 dpi," id="ColWholeLeafAmplified-5dPostInfected">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE15680"/>
+				<area coords="610,308,644,365,617,422,580,366"/>
+				<sample name="GSM392498"/>
+				<sample name="GSM392499"/>
+			</tissue>
+			<tissue colorKey="#33ee44" name="Col leaf scrape, 5 dpi" id="ColLeafScrape-5dPostInfected">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE15680"/>
+				<area coords="532,463,676,463,677,544,538,543"/>
+				<sample name="GSM392502"/>
+				<sample name="GSM392503"/>
+			</tissue>
+		</group>
+	</view>
+</specimen>

@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/reset.css">
+        <!-- CSS reset -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Resource style -->
+        <script src="js/modernizr.js"></script>
+
+        <link href="css/backToTop.css" rel="stylesheet">
+        
+
+        <!-- Modernizr -->
+        <title>ePlant Help</title>
+    </head>
+    <body>
+    
+    <!-- anchor for Back to Top button -->
+    <span id="linktotop"></span>
+
+        <div class="header">
+            <h1 class="topLine">Need some help?</h1>
+        </div>
+        <section class="cd-faq">
+            <!-- Left Navigation Panel -->
+            <ul class="cd-faq-categories" style="-webkit-transform: translateY(0px); transform: translateY(0px);">
+                <li>
+                    <a class="menuItem" href="#basics">Basics</a>
+                </li>
+                <li>
+                    <a class="menuItem" href="#datavis">Visualization Tools</a>
+                </li>
+                <li>
+                    <a class="menuItem" href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="menuItem" href="#bugs">Report a Bug</a>
+                </li>
+
+            </ul>
+            <!-- Back to Top button -->
+             <a href="#0" class="cd-top">Top</a>
+
+
+            <!-- Right Column -->
+            <div class="cd-faq-items">
+
+                <!-- Search Input Box -->
+                <input id="helpInput" type="text" class="clearable" placeholder="What are you looking for?">
+
+
+
+                <!-- Basics -->
+                <ul id="basics" class="cd-faq-group">
+                    <li class="cd-faq-title">
+                        <h2>Basics</h2>
+                    </li>
+
+                    <!-- Load multiple genes -->
+                    <li>
+                        <a id="help-loadMultipleGenes" class="cd-faq-trigger" href="#0">How do I load multiple genes?</a>
+                        <div class="cd-faq-content">
+                            <p>You can load several genes at the same time if you separate them, with, commas, like this:</p>
+                            <p><img src="images/loadMultipleGenes.png" class="exampleImage"></p>
+                            <p>You can also paste a comma separated list into the box. Performance depends on how beefy a computer you're using. Contemporary laptops can handle about 25 genes without too much lag. Take five deep breaths while ePlant downloads the data.</p>
+                        </div>
+                    </li>
+
+                    <!-- Expression Angler -->
+                    <li>
+                        <a id="help-expressionAngler" class="cd-faq-trigger" href="#0">I don't know the name of the gene I'm looking for.</a>
+                        <div class="cd-faq-content">
+                            <p>The Expression Angler tool will automatically find genes that match any expression profile that you define.</p>
+                            <p><img src="images/expressionAnglerButton.png" class="exampleImage"></p>
+                            <p>There are three ways to use this tool:</p> 
+                            <p class="bullet">Option 1. Find genes with similar expression patterns to a gene you already know.</p>
+                            <p class="bullet">Option 2. Find genes with similar expression patterns to a gene you already know, but only focus the search to particular tissues.</p>
+                            <p class="bullet">Option 3. Define your own expression pattern and search for genes that match it.</p>
+                        </div>
+                    </li>
+
+                    <!-- Why only Arabidopsis? -->
+                    <li>
+                        <a id="help-whyArabidopsis" class="cd-faq-trigger" href="#0">Why can I only load <i>Arabidopsis</i> genes?</a>
+                        <div class="cd-faq-content">
+                            <p>ePlant was designed to be species agnostic. We are applying for funding to add more species. Let us know if there is a particular species we should target.</p>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <!-- Data Vis Tools -->
+                <ul id="datavis" class="cd-faq-group">
+                    <li class="cd-faq-title">
+                        <h2>Visualization Tools</h2>
+                    </li>
+
+                    <!-- Heat Map viewer -->
+                    <li>
+                        <a id="help-heatMapviewer" class="cd-faq-trigger" href="#0">
+                            <img src="images/heatMap.png" class="helpIcon"/>Heat Map viewer
+                        </a>
+                        <div class="cd-faq-content">
+                            <p>The Heat Map viewer displays the expression levels for 350+ samples for all genes that are loaded. This is an efficient way to get an overview of both expression levels and specificity of expression patterns.</p>
+                            <p><img src="images/heatmapScreengrab.png" class="exampleImage"></p>
+                            <p>The image above displays ten genes with similar expression patterns to SIN1 (you can do this with the Expression Angler). Each row contains the expression levels for 350+ experiments for a given gene. Each column represents a particular experiment or tissue. Hover over any of the heatmap cells to see what it represents. Click on a sample to zoom directly to the associated eFP viewer.</p>
+                        </div>
+                    </li>
+
+                    <!-- World eFP -->
+                    <li>
+                        <a id="help-worldviewer" class="cd-faq-trigger" href="#0">
+                            <img src="images/world.png" class="helpIcon"/>World eFP (aka Natural Variation viewer)
+                        </a>
+                        <div class="cd-faq-content">
+                            <p>The World eFP displays natural variation of gene expression from samples around the world. It draws tiny plant shoots that are colored according to their expression level for a given gene, and placed  according to the geographic coordinates of their source on a Google Maps image of the world. You can zoom in and out using the Google zoom controls for a closer view.</p>
+                            <p><img src="images/worldviewerScreengrab.png" class="exampleImage"></p>
+                            <p>This chart displays the natural variation of At1g10320, a Zinc finger C-x8-C-x5-C-x3-H type family protein. </p>
+                        </div>
+                    </li>
+
+                    <!-- Plant eFP -->
+                    <li>
+                        <a id="help-plantviewer" class="cd-faq-trigger" href="#0">
+                            <img src="images/plant.png" class="helpIcon"/>Plant eFP
+                        </a>
+                        <div class="cd-faq-content">
+                            <p>The Plant eFP viewer is an electronic flurorescent pictograph that displays gene expression patterns on the tissues of a cartoon plant. Stronger colors denote a higher level of expression.</p>
+                            <p><img src="images/plantEFPscreengrab.png" class="exampleImage"></p>
+                            <p>This chart displays the expression pattern for At1g01040, also known as ASU1, ATDCL1, CAF, DCL1, EMB60, EMB76, SIN1, and SUS1, a dicer-like 1 protein. Note that it is expressed everywhere but in the mature pollen.</p>
+                            <p>This is a new implementation of the <a href="//bar.utoronto.ca/efp/cgi-bin/efpWeb.cgi" target="_blank">Arabidopsis eFP Browser at bar.utoronto.ca</a> (Winter et al., 2007. PLOS One 2(8) e718). This version was written with Javascript and runs in your browser. No more waiting to download a new image every time you adjust a parameter. It also uses SVG images to generate anti-aliased lines that can scale up to any size. Unecessary outlines around the shapes have been removed to maximize the data/ink ratio.</p>
+                        </div>
+                    </li>
+
+                    <!-- Experiment viewer -->
+                    <li>
+                        <a id="help-experimentviewer" class="cd-faq-trigger" href="#0">
+                            <img src="images/experiment.png" class="helpIcon"/>Experimental and Tissue Specific eFP
+                        </a>
+                        <div class="cd-faq-content">
+                            <p>The Experimental and Tissue Specific eFP views provide a graphic display of gene expression levels after exposure to stress, hormone, or other treatments, and in tissues not included in other views. Experimental data currently available:</p>
+                            <p><h2>Guard and Mesyphyl Cell eFP</h2></p>
+                            <p><h2>Microgametogenesis eFP</h2></p>
+                            <p><h2>Root eFP</h2></p>
+                            <p><h2>Stigma and Ovaries eFP</h2></p>
+                            <p><h2>Chemical Experiment eFP</h2></p>
+                            <p><h2>Abiotic Stress Experiment eFP</h2></p>
+                            <p><h2>Xylem and Cork eFP</h2></p>
+                            <p><h2>Guard Cell Suspension Cell ABA Response with ROS</h2></p>
+                            <p><h2>Stem Epidermis eFP</h2></p>
+                            <p><h2>Guard Cell and Mutant Wild Type Guard Cell eFP</h2></p>
+                            <p><h2>Pollen Germination eFP</h2></p>
+                            <p><h2>Guard Cell Meristemoids eFP</h2></p>
+                            <p><h2>Shoot Apical Meristem eFP</h2></p>
+                            <p>We are hoping to add more views soon. Please reach out to us if  you have data that you'd like to share.</p>
+                        </div>
+                    </li>
+
+                    <!-- Cell eFP -->
+                    <li>
+                        <a id="help-cellviewer" class="cd-faq-trigger" href="#0">
+                            <img src="images/cell.png" class="helpIcon"/>Cell eFP
+                        </a>
+                        <div class="cd-faq-content">
+                            <p>The Subcellular eFP is an electronic flurorescent pictograph that displays the documented and predicted expression patterns of genes on a cartoon image of a cell.</p>
+                            <p><img src="images/cellEFPscreengrab.png" class="exampleImage"></p>
+                            <p>This chart shows the subcellular localization for At2g39340 (aka SAC3A), part of the SAC3/GANP/Nin1/mts3/eIF-3 p25 family. It was loaded with the Expression Angler because its expression pattern has a r-value of 0.789 with At1g01040.</p>
+                        </div>                        
+                    </li>
+
+                    <!-- Chromosome viewer -->
+                    <li>
+                        <a id="help-chromosomeviewer" class="cd-faq-trigger" href="#0">
+                            <img src="images/chromosome.png" class="helpIcon"/>Chromosome viewer
+                        </a>
+                        <div class="cd-faq-content">
+                            <p>This view provides a pictographic overview of the entire genome, displaying each of a plant's chromosomes as a series of vertical bars. It also indicates the positions of all the genes that have been downloaded.</p>
+                            <p><img src="images/chromosomeviewer.jpg" class="exampleImage"></p>
+                            <p>You can also load data by hovering over the chromosomes and selecting a gene from the popup that lists all the genes at that position, then clicking the 'Get Data' button in the popup once you select a gene.</p>
+                            <p><img src="images/chromosomeViewHeatmapIcon.png" class="exampleImage"></p>                            
+                            <p>The thermometer icon in the toolbar generates a heat map indicating the density of genes along the chromosome.</p>
+                        </div>                        
+                    </li>
+
+                    <!-- Protein Interactions -->
+                    <li>
+                        <a id="help-interactionsviewer" class="cd-faq-trigger" href="#0">
+                            <img src="images/interaction.png" class="helpIcon"/>Protein Interactions viewer
+                        </a>
+                        <div class="cd-faq-content">
+                            <p>The Protein-Protein Interactions viewer displays documented and predicted protein-protein interactions for the selected gene. This tool was written with <a href="http://cytoscape.github.io/cytoscape.js/" target="_blank">Cytoscape.js</a>, developed at the <a href="http://thedonnellycentre.utoronto.ca/" target="_blank">Donnolly Centre</a> at the University of Toronto.</p>
+                            <p><img src="images/interactionsScreengrab.png" class="exampleImage"></p>
+                            <p>This is a chart of documented and predicted interaction partners for At1g01040. You can click on any of the genes to open an information popup. Click the 'Get Data' button to add the selected gene to the gene panel.</p>
+                            <p><img src="images/getDataButton.png" class="exampleImage"></p>
+                        </div>                        
+                    </li>
+
+                    <!-- Molecular viewer -->
+                    <li>
+                        <a id="help-molecularviewer" class="cd-faq-trigger" href="#0">
+                            <img src="images/molecule.png" class="helpIcon"/>Molecular Structure viewer
+                        </a>
+                        <div class="cd-faq-content">
+                            <p>This view displays a 3D molecular structure of the selected gene's protein product from the Protein Data Bank, PDB, or predicted by Phyre. Pfam and CDD domains can be highlighted by selecting whichever domain you're interested in from a list. The amino acid sequence is displayed along the bottom of the screen. Hover over the sequence (or click on a base) to highlight that residue on the molecule.</p> 
+                            <p><img src="images/molecularviewerScreengrab.png" class="exampleImage"></p>
+                            <p>This chart shows a 3D structure for an unknown protein. A CDD Globin_like superfamily is highlighted in light green. Clicking on the residues in the sequence along the bottom will highlight their position on the molecule. The first ten residues of the sequence are highlighted in darker green and their positions can be seen on the molecule with 3D chains coming off them.</p>
+                        </div>                        
+                    </li>
+
+                    <!-- Sequence Browser -->
+                    <li>
+                        <a id="help-sequenceBrowser" class="cd-faq-trigger" href="#0">
+                            <img src="images/sequence.png" class="helpIcon"/>Sequence Browser
+                        </a>
+                        <div class="cd-faq-content">
+                            <p>The Sequence Browser is a full featured genome browser that allows you to explore genes of interest from the individual nucleotide all the way up to their place in the genome. This is an implementation of JBrowse with data fed from <a href="https://www.araport.org/">Araport.org</a>.</p>
+                            <p><img src="images/jbrowseScreengrab.png" class="exampleImage"></p>
+                            <p>Click the tab on the side of the navigation bar to slide it out of the way.</p>
+                            <p><img src="images/navigationPanelSliderButton.png" class="exampleImage"></p>
+                        </div>                        
+                    </li>
+
+                    <!-- External Tools -->
+                    <li>
+                        <a id="help-externalTools" class="cd-faq-trigger" href="#0">
+                            <img src="images/externalTools.png" class="helpIcon"/>Links to External Tools
+                        </a>
+                        <div class="cd-faq-content">
+                            <p>Want to explore your gene of interest with other tools? ePlant will link you to the following websites with your gene of interest already loaded:</p>
+                            <p><h2>TAIR</h2></p>
+                            <p><h2>GeneMANIA</h2></p>
+                            <p><h2>Expressolog viewer at the BAR</h2></p>
+                            <p><h2>Interactors viewer at the BAR</h2></p>
+                            <p><h2>Subcellular Localization viewer at the BAR</h2></p>
+                            <p><h2>SeedNet</h2></p>
+                            <p><h2>Expression Browser at the BAR<h2></p>
+                        </div>                        
+                    </li>
+                </ul>
+
+
+                <!-- Features -->
+                <ul id="features" class="cd-faq-group">
+                    <li class="cd-faq-title">
+                        <h2>Features</h2>
+                    </li>
+
+                    <!-- RSVP -->
+                    <li>
+                        <a id="help-whatIsRSVP" class="cd-faq-trigger" href="#0">What is RSVP?</a>
+                            <div class="cd-faq-content">
+                                <p>Identifying genes of interest can be a daunting and time-consuming task. To be successful, researchers must find subtle differences between nearly identical electronic fluorescent pictographs (eFP images). A display technique called Rapid Serial Visual Presentation (RSVP) could improve the experience by exploiting our ability to recognize differences between images when they are flashed on a screen in a rapid and serial manner.ePlant offers two RSVP display modes: "Hover" and "Slide Show".</p>
+                                <p><img src="images/RSVPoptions.png" class="exampleImage"></p>
+                                <p>When the "Hover" RSVP mode is selected and turned on, you can rapidly update the display window by hovering your mouse over the items in the gene panel.</p>
+                                <p>When one of the "Slide Show" RSVP modes (fast, medium, or slow) is selected and turned on, the display window automatically steps through each of the downloaded genes at a rapid pace.</p>
+                                <p>We have a forthcoming paper reporting an 80-person user study comparing four different methods of controlling an RSVP display for visual search tasks. We found the "Hover" RSVP method has significant performance benefits over a traditional "Point and Click" interface.</p>
+                            </div>
+                        </li>
+                       
+                        <!--How do I sort genes? -->
+                        <li>
+                            <a id="help-sortGenes" class="cd-faq-trigger" href="#0">How do I sort the genes I have downloaded?</a>
+                            <div class="cd-faq-content">
+                                <p>You can sort genes in the gene panel by clicking these buttons:</p>
+                                <p><img src="images/sortButtons.png" class="exampleImage"></p>
+                                <p>The sort function automatically orders genes according to their maximum expression level. The left button sorts high-to-low, the right button sorts low-to-high. You can also drag genes to re-order them manually.</p>
+                                <p><img src="images/dragGenes.jpg" class="exampleImage"></p>
+                                <p>This may be useful if you want to organize the genes you have downloaded.</p>
+                            </div>
+                        </li>
+
+                        <!-- What are the global options? -->
+                        <li>
+                            <a id="help-globalOptions" class="cd-faq-trigger" href="#0">How do I adjust the global options?</a>
+                            <div class="cd-faq-content">
+                                <p>You can adjust the global options with the menu in the upper right corner:</p>
+                                <p><img src="images/globalOptions.jpg" class="exampleImage"></p>
+                                <p>"Zoom transitions" enables or disables the zooming transition effects between screens.</p>
+                                <p>"Tooltips" enables or disables the green tooltips that appear when you mouse over the icons.</p>
+                                <p>"Generate URL" creates a URL link that will restore your current ePlant session.</p>
+                                <p>"View intrusions" enables or disables the information popups that appear the first time you open a data visualization view in a given session.</p>
+                            </div>
+                        </li>
+
+                        <!-- How do I make a screengrab? -->
+                        <li>
+                            <a id="help-screengrab" class="cd-faq-trigger" href="#0">How do I make a screengrab of a particular view?</a>
+                            <div class="cd-faq-content">
+                                <p>You can make charts suitable for publication by clicking on the camera icon in the toolbar. A popup will open with a PNG file of your current view, minus all the ePlant user interface bits and pieces. Right click on the image to save it, or simply drag it to your desktop.</p>
+                                <p><img src="images/screenGrabIcon.png" class="exampleImage"></p>
+                            </div>
+                        </li>
+                       
+                        <!-- How do I customize the color gradient? -->                       
+                        <li>
+                            <a id="help-colorPalette" class="cd-faq-trigger" href="#0">How do I customize the color gradient of eFP images?</a>
+                            <div class="cd-faq-content">
+                                <p>Don't like red/yellow? Click the painter's palette icon in the toolbar:</p>
+                                <p><img src="images/colorSelectorIcon.png" class="exampleImage"></p>
+                                <p>You can customize the color gradient for all the various eFP views. The other views (e.g., Interactions viewer, Molecule viewer, Sequence Browser) use their own color schemes.</p>
+                                <p><img src="images/colorSelectorPopup.png" class="exampleImage"></p>
+                                <p>The max color and zero color are used when viewing data in Absolute mode. All three colors (i.e., max, zero, min) are used when viewing data in Relative mode.
+                            </div>
+                        </li>
+                                          
+                        <!-- Where can I leave a comment? -->
+                        <li>
+                            <a id="help-comments" class="cd-faq-trigger" href="#0">Where can I leave a comment?</a>
+                            <div class="cd-faq-content">
+                                <p>The Comments button (in the bottom left corner) will open a feedback forum provided by Disqus. It's a public forum so please be nice.</p>
+                            </div>
+                        </li>
+                </ul>
+
+                <!-- Report a Bug -->
+                <ul id="bugs" class="cd-faq-group">
+                    <li class="cd-faq-title">
+                        <h2>Report a Bug</h2>
+                    </li>
+                    <li>
+                        <a id="help-bugReport" class="cd-faq-trigger" href="#0">Found something we should know about?</a>
+                        <div class="cd-faq-content">
+                            <p>Send an email to: <a href="mailto:jamie.waese@mail.utoronto.ca?Subject=ePlant user comment">jamie.waese@mail.utoronto.ca</a></p>
+                        </div>
+                        <!-- cd-faq-content -->
+                    </li>
+                    
+                </ul>
+
+                <!-- Space Filler for better scroll-to-bottom performance -->
+                <ul>
+                    <li class="content-visible" style="height:600px;">&nbsp;</li>
+                </ul>
+           </div>
+        </section>
+
+        <!-- Load jquery and Javascript Programs -->
+        <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>        
+        <script src="js/jquery.mobile.custom.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/backToTop.js"></script>
+        <script src="js/autocomplete.js"></script>
+        <script src="js/jquery.clearsearch.js"></script>
+        <script src="js/jquery.localScroll.js"></script>
+
+    </body>
+</html>

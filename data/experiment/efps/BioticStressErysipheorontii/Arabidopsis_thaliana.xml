@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+	<info>
+		<li>Plant material from the leaves of 28 day old wild-type <i>Arabidopsis thaliana</i> plants of Columbia-0 ecotype was analyzed.</li>
+		<li>Inoculation was done via settling tower, using 10 day old <i>Erysiphe orontii</i> cultures.</li>
+		<li>Leaves number 7 to 10 were selected for profiling.</li>
+		<li>Plants grown under 12/12 hour light/dark conditions with all measurements taken in the middle of the light period.</li>
+		<li>All measurements were taken in triplicates - the average of which is shown.</li>
+		<li>RNA was isolated an hybridized to the ATH1 GeneChip.</li>
+		<li>The data were normalized by GCOS normalization, TGT 100.</li>
+		<li>This study is part of the AtGenExpress project, funded by the NSF.</li>
+		<li>Results provided by the Ausubel Lab.</li>
+	</info>
+	<view name="all" class="" db="atgenexp_pathogen">
+		<group name="Erysiphe orontii at 6 Hours">
+			<control sample="JD AT+EO COL WT 06H UNINFECTED"/>
+			<control sample="JD AT+EO COL WT EXP2 06H UNINFECTED"/>
+			<control sample="JD AT+EO TIME EXP3 UNINF 6H"/>
+			<tissue colorKey="#11DD11" id="Control_Erysiphe_orontii_at_6_Hours" name="Control Erysiphe orontii at 6 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 06H UNINFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 06H UNINFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 UNINF 6H" /> 
+			</tissue>
+			<tissue colorKey="#22DD22" id="Treated_Erysiphe_orontii_at_6_Hours" name="Treated Erysiphe orontii at 6 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 06H INFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 06H INFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 EO INF 6H" /> 
+			</tissue>
+		</group>
+		
+		<group name="Erysiphe orontii at 12 Hours">
+			<control sample="JD AT+EO COL WT 12H UNINFECTED"/>
+			<control sample="JD AT+EO COL WT EXP2 12H UNINFECTED"/>
+			<control sample="JD AT+EO TIME EXP3 UNINF 12H"/>
+			<tissue colorKey="#11CC11" id="Control_Erysiphe_orontii_at_12_Hours" name="Control Erysiphe orontii at 12 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 12H UNINFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 12H UNINFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 UNINF 12H" /> 
+			</tissue>
+			<tissue colorKey="#22CC22" id="Treated_Erysiphe_orontii_at_12_Hours" name="Treated Erysiphe orontii at 12 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 12H INFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 12H INFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 EO INF 12H" /> 
+			</tissue>
+		</group>
+		
+		<group name="Erysiphe orontii at 18 Hours">
+			<control sample="JD AT+EO COL WT 18H UNINFECTED"/>
+			<control sample="JD AT+EO COL WT EXP2 18H UNINFECTED"/>
+			<control sample="JD AT+EO TIME EXP3 UNINF 18H"/>
+			<tissue colorKey="#11BB11" id="Control_Erysiphe_orontii_at_18_Hours" name="Control Erysiphe orontii at 18 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 18H UNINFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 18H UNINFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 UNINF 18H" /> 
+			</tissue>
+			<tissue colorKey="#22BB22" id="Treated_Erysiphe_orontii_at_18_Hours" name="Treated Erysiphe orontii at 18 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 18H INFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 18H INFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 EO INF 18H" /> 
+			</tissue>
+		</group>
+		
+		<group name="Erysiphe orontii at 24 Hours">
+			<control sample="JD AT+EO COL WT 24H UNINFECTED"/>
+			<control sample="JD AT+EO COL WT EXP2 24H UNINFECTED"/>
+			<control sample="JD AT+EO TIME EXP3 UNINF 24H"/>
+			<tissue colorKey="#11AA11" id="Control_Erysiphe_orontii_at_24_Hours" name="Control Erysiphe orontii at 24 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 24H UNINFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 24H UNINFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 UNINF 24H" /> 
+			</tissue>
+			<tissue colorKey="#22AA22" id="Treated_Erysiphe_orontii_at_24_Hours" name="Treated Erysiphe orontii at 24 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 24H INFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 24H INFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 EO INF 24H" /> 
+			</tissue>
+		</group>
+		
+		<group name="Erysiphe orontii at 48 Hours">
+			<control sample="JD AT+EO COL WT 02D UNINFECTED"/>
+			<control sample="JD AT+EO COL WT EXP2 02D UNINFECTED"/>
+			<control sample="JD AT+EO TIME EXP3 UNINF 2D"/>
+			<tissue colorKey="#119911" id="Control_Erysiphe_orontii_at_48_Hours" name="Control Erysiphe orontii at 48 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 02D UNINFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 02D UNINFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 UNINF 2D" /> 
+			</tissue>
+			<tissue colorKey="#229922" id="Treated_Erysiphe_orontii_at_48_Hours" name="Treated Erysiphe orontii at 48 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 02D INFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 02D INFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 EO INF 2D" /> 
+			</tissue>
+		</group>
+		
+		<group name="Erysiphe orontii at 72 Hours">
+			<control sample="JD AT+EO COL WT 03D UNINFECTED"/>
+			<control sample="JD AT+EO COL WT EXP2 03D UNINFECTED"/>
+			<control sample="JD AT+EO TIME EXP3 UNINF 3D"/>
+			<tissue colorKey="#118811" id="Control_Erysiphe_orontii_at_72_Hours" name="Control Erysiphe orontii at 72 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 03D UNINFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 03D UNINFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 UNINF 3D" /> 
+			</tissue>
+			<tissue colorKey="#228822" id="Treated_Erysiphe_orontii_at_72_Hours" name="Treated Erysiphe orontii at 72 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 03D INFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 03D INFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 EO INF 3D" /> 
+			</tissue>
+		</group>
+		
+		<group name="Erysiphe orontii at 96 Hours">
+			<control sample="JD AT+EO COL WT 04D UNINFECTED"/>
+			<control sample="JD AT+EO COL WT EXP2 04D UNINFECTED"/>
+			<control sample="JD AT+EO TIME EXP3 UNINF 4D"/>
+			<tissue colorKey="#117711" id="Control_Erysiphe_orontii_at_96_Hours" name="Control Erysiphe orontii at 96 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 04D UNINFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 04D UNINFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 UNINF 4D" /> 
+			</tissue>
+			<tissue colorKey="#227722" id="Treated_Erysiphe_orontii_at_96_Hours" name="Treated Erysiphe orontii at 96 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 04D INFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 04D INFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 EO INF 4D" /> 
+			</tissue>
+		</group>
+		
+		<group name="Erysiphe orontii at 120 Hours">
+			<control sample="JD AT+EO COL WT 05D UNINFECTED"/>
+			<control sample="JD AT+EO COL WT EXP2 05D UNINFECTED"/>
+			<control sample="JD AT+EO TIME EXP3 UNINF 5D"/>
+			<tissue colorKey="#116611" id="Control_Erysiphe_orontii_at_120_Hours" name="Control Erysiphe orontii at 120 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 05D UNINFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 05D UNINFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 UNINF 5D" /> 
+			</tissue>
+			<tissue colorKey="#226622" id="Treated_Erysiphe_orontii_at_120_Hours" name="Treated Erysiphe orontii at 120 Hours">
+				<link url="http://affymetrix.arabidopsis.info/narrays/experimentpage.pl?experimentid=169"/>
+				<sample name="JD AT+EO COL WT 05D INFECTED" /> 
+				<sample name="JD AT+EO COL WT EXP2 05D INFECTED" />  
+				<sample name="JD AT+EO TIME EXP3 EO INF 5D" /> 
+			</tissue>
+		</group>
+		
+		
+	</view>
+</specimen>

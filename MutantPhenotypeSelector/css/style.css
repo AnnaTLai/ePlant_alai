@@ -1,0 +1,179 @@
+/* Main Page Settings */
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.logo {
+	float: left;
+	width: 37px;
+	margin-right: 35px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.tab-content {
+    border: 1px solid #ddd;
+    border-width: 0 1px 1px;
+    padding: 1px;
+    position: relative;
+}
+
+.searchButton {
+  background-color: #99CC00;
+  border: none;
+}
+
+/* DataTables over ride */
+.dataTables_filter {
+	display:none;
+}
+
+table.dataTable.display tbody td {
+	font-size:12px;
+}
+
+.columnSearch {
+	font-weight:300;
+	font-size:12px;
+	width:80px;
+}
+#currentlyDisplaying {
+	font-size:12px;
+}
+tr {
+	vertical-align: top;
+}
+
+#allPhenotypesTable_length label{
+	font-weight: 300;
+	font-size:14px;
+	margin-left:30px;
+	margin-top:10px;
+}
+
+table.dataTable tbody>tr.selected, table.dataTable tbody>tr>.selected {
+	background-color:#EAFAAA !important;
+}
+
+table.dataTable.display tbody>tr.even.selected>.sorting_1, table.dataTable.order-column.stripe tbody>tr.even.selected>.sorting_1,
+table.dataTable.hover tbody tr:hover.selected, table.dataTable.display tbody tr:hover.selected {
+	background-color:#CCEE77 !important;
+}
+
+table.dataTable.display tbody>tr.odd.selected>.sorting_1,
+table.dataTable.order-column.stripe tbody>tr.odd.selected>.sorting_1
+{
+	background-color:#CCEE77 !important;
+}
+
+table.dataTable.display tbody tr.even>.sorting_1, table.dataTable.order-column.stripe tbody tr.even>.sorting_1
+{
+	background-color:#F1F1F1;
+}
+
+/* Bootstrap Over ride */
+a {
+	color:#99CC00;
+}
+
+a:hover {
+	color:#669900;
+}
+
+.caret {
+	margin-left:10px !important;
+}
+
+.nav-tabs {
+	font-weight: 600;
+}
+
+.nav-pills > li > a {
+	color:#000000;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+	background-color:#99CC00;
+}
+
+.phenotype-selectAllButton {
+  background-color: #FFFFFF;
+  border-color: #CCCCCC;
+  border-style: solid;
+  margin-bottom: 5px;
+  transition: background-color 0.25s ease;
+}
+
+.phenotype-selectAllButton:hover {
+    background-color: #99CC00;
+}
+
+/* Clear Search button */
+.clear_input {
+	color:#99cc00;
+	font-weight: 600;
+	text-decoration: none;
+	text-align: center;
+}
+
+
+/* TERMINAL DRAWINGS */
+#SearchByTerminalDrawings {
+	height:500px;
+	overflow-y:auto;
+	padding:10px;
+}
+
+#terminalDrawingsTabSelector {
+	margin-bottom:10px;
+}
+
+#terminalDrawingPane {
+	padding-left:20px;
+	padding-right:20px;
+	padding-bottom:10px;
+	border: none;
+}
+
+#terminalDrawingsTabContent {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;	
+}
+
+.terminalDrawing {
+	position: relative;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: solid;
+    border-width: 2px;
+    border-color: #DDDDDD;
+    padding-right: 10px;
+    transition: border .25s;
+	cursor:pointer;
+}
+
+.terminalDrawing:hover {
+    border-color: #99CC00;
+    border-width: 2px;
+}
+
+.terminalDrawing img {
+	height: 113px;
+}
+
+.terminalDrawingActive {
+	border-color: #000000;
+}
+.terminalDrawingActive:hover {
+	border-color: #333333;
+}
+
+
+.shadowed {
+    -webkit-filter: drop-shadow(0px 2px 2px rgba(130,130,130,1));
+    filter        : drop-shadow(0px 2px 2px rgba(130,130,130,1));
+    -ms-filter    : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+    filter        : "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
+}

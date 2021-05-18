@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<view name="all" class="" db="atgenexp_plus" img="TissueSpecific-EmbryoDevelopment-2015-01-12.svg">
+<webservice>//bar.utoronto.ca/eplant/cgi-bin/plantefp.cgi?datasource=atgenexp_plus&amp;</webservice>
+	<info>
+		<li>Plant material from embryos of wild type Col-0 Arabidopsis thaliana plants of was isolated by laser capture microdissection</li>
+		<li>Plants grown under 16/8 hour light/dark conditions</li>
+		<li>RNA was amplified and hybridized to the ATH1 GeneChip. Note: 3‿bias! </li>
+		<li>All measurements were taken in triplicates - the average is shown. Results can be highly variable. Standard deviation filtering advisable!</li>
+		<li>The data were normalized by GCOS normalization, TGT 100</li>
+	</info>
+	<group name="CTRL_7">
+		<control sample="ATGE_CTRL_7"/> 
+		<tissue id="Torpedo_Basal" name="Torpedo - Basal" colorKey="#FF9999">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=55"/> 			 
+			<sample name="Lindsey_1-19_torpedo-basal_Rep4_ATH1"/> 
+			<sample name="Lindsey_1-20_torpedo-basal_Rep5_ATH1"/> 
+			<sample name="Lindsey_1-21_torpedo-basal_Rep6_ATH1"/> 
+		</tissue>
+		<tissue id="Torpedo_Apical" name="Torpedo - Apical" colorKey="#FF6600">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=55"/> 			 
+			<sample name="Lindsey_1-22_torpedo-apical_Rep4_ATH1"/> 
+			<sample name="Lindsey_1-23_torpedo-apical_Rep5_ATH1"/> 
+			<sample name="Lindsey_1-24_torpedo-apical_Rep6_ATH1"/> 
+		</tissue>
+		<tissue id="Torpedo_Cotyledon" name="Torpedo - Cotyledon" colorKey="#FF7700">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=55"/> 			 
+			<sample name="Lindsey_1-13_torpedo-cotyledon_Rep1_ATH1"/> 
+			<sample name="Lindsey_1-15_torpedo-cotyledon_Rep2_ATH1"/> 
+			<sample name="Lindsey_1-17_torpedo-cotyledon_Rep3_ATH1"/> 
+		</tissue>
+		<tissue id="Torpedo_Root" name="Torpedo - Root" colorKey="#FFAA99">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=55"/> 			 
+			<sample name="Lindsey_1-14_torpedo-root_Rep1_ATH1"/> 
+			<sample name="Lindsey_1-16_torpedo-root_Rep2_ATH1"/> 
+			<sample name="Lindsey_1-18_torpedo-root_Rep3_ATH1"/> 
+		</tissue>
+		<tissue id="Torpedo_Meristem" name="Torpedo - Meristem" colorKey="#FFCC00">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=55"/> 			 
+			<sample name="Lindsey_1-25_torpedo-meristem_Rep1_ATH1"/> 
+			<sample name="Lindsey_1-26_torpedo-meristem_Rep2_ATH1"/> 
+			<sample name="Lindsey_1-27_torpedo-meristem_Rep3_ATH1"/> 
+		</tissue>
+		<tissue id="Heart_Cotyledon" name="Heart - Cotyledon" colorKey="#FF8800">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=55"/> 			 
+			<sample name="Lindsey_1-7_heart-stage-cotyledon_Rep1_ATH1"/> 
+			<sample name="Lindsey_1-8_heart-stage-cotyledon_Rep2_ATH1"/> 
+			<sample name="Lindsey_1-9_heart-stage-cotyledon_Rep3_ATH1"/> 
+		</tissue>
+		<tissue id="Heart_Root" name="Heart - Root" colorKey="#FFBB99">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=55"/> 			 
+			<sample name="Lindsey_1-10_heart-stage-root_Rep1_ATH1"/> 
+			<sample name="Lindsey_1-11_heart-stage-root_Rep2_ATH1"/> 
+			<sample name="Lindsey_1-12_heart-stage-root_Rep3_ATH1"/> 
+		</tissue>
+			<tissue id="Globular_Apical" name="Globular - Apical" colorKey="#FF9900">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=55"/> 			 
+			<sample name="Lindsey_1-1_globular-apical_Rep1_ATH1"/> 
+			<sample name="Lindsey_1-2_globular-apical_Rep2_ATH1"/> 
+			<sample name="Lindsey_1-3_globular-apical_Rep3_ATH1"/> 
+		</tissue>
+		<tissue id="Globular_Basal" name="Globular - Basal" colorKey="#FFCC99">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=55"/> 			 
+			<sample name="Lindsey_1-4_globular-basal_Rep1_ATH1"/> 
+			<sample name="Lindsey_1-5_globular-basal_Rep2_ATH1"/> 
+			<sample name="Lindsey_1-6_globular-basal_Rep3_ATH1"/> 
+		</tissue>
+	</group>
+</view>
+</specimen>

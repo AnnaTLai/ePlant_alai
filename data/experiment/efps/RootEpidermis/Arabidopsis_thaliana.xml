@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen
+  SYSTEM 'http://www.bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd'>
+<specimen name="Arabidopsis">
+	<view class="" db="atgenexp_plus" dbGroup="all" img="Developmental_Mutants_image.png" name="all" table="sample_data">
+		<info>
+			<li>Results provided by the Shiefelbein Lab (Bruex et al., 2012. PLoS GENETICS 8(1); Simon et al., 2013. The Plant Cell 25)</li>
+			<li>Plant material from root epidermis of wild type and mutant lines of <i>Arabidopsis thaliana</i>Col-0 ecotype was analyzed</li>
+			<li>Seeds were surface-sterilized, incubated for 2 days at 4°C, and sown on MS media (0.6% agarose) in sterile conditions</li>
+			<li>Plants were grown under continuous light, at a temperature of 22°C during the day and 18°C during night</li>
+			<li>Fluorescent-activated cell sorting (FACS) was conducted using protoplasted roots from lines containing the WER::GFP transgene</li>
+			<li>RNA was isolated and hybridized to the ATH1 GeneChip</li>
+			<li>The data were normalized by GCOS normalization, TGT100</li>
+		</info>
+		<group name="GSM757891;GSM757892;GSM757893">
+			<control sample="GSM757891"/>
+			<control sample="GSM757892"/>
+			<control sample="GSM757893"/>
+			<tissue colorKey="#00f679" name="WT Columbia" id="WT">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="130,896,154,896,154,979,130,979"/>
+				<sample name="GSM757891"/>
+				<sample name="GSM757892"/>
+				<sample name="GSM757893"/>
+			</tissue>
+			<tissue colorKey="#00f809" id="gl3" name="gl3 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE47632"/>
+				<area coords="502,896,519,896,519,979,502,979"/>
+				<sample name="GSM1153854"/>
+				<sample name="GSM1153855"/>
+				<sample name="GSM1153856"/>
+			</tissue>
+			<tissue colorKey="#00f909" id="wer" name="wer mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE47632"/>
+				<area coords="813,896,831,896,831,979,813,979"/>
+				<sample name="GSM1153866"/>
+				<sample name="GSM1153867"/>
+				<sample name="GSM1153868"/>
+			</tissue>
+			<tissue colorKey="#00f929" id="ttg2-cpc" name="ttg2 cpc mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE47632"/>
+				<area coords="877,896,895,896,895,979,877,979"/>
+				<sample name="GSM1153848"/>
+				<sample name="GSM1153849"/>
+				<sample name="GSM1153850"/>
+			</tissue>
+			<tissue colorKey="#00f729" id="cow1" name="cow1 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="267,896,282,896,282,979,267,979"/>
+				<sample name="GSM757834"/>
+				<sample name="GSM757835"/>
+				<sample name="GSM757836"/>
+			</tissue>
+			<tissue colorKey="#00f799" id="cobl19" name="cobl9 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="469,896,488,896,488,979,469,979"/>
+				<sample name="GSM757831"/>
+				<sample name="GSM757832"/>
+				<sample name="GSM757833"/>
+			</tissue>
+			<tissue colorKey="#00f919" id="tgg2" name="ttg2 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE47632"/>
+				<area coords="842,896,863,896,863,979,842,979"/>
+				<sample name="GSM1153863"/>
+				<sample name="GSM1153864"/>
+				<sample name="GSM1153865"/>
+			</tissue>
+			<tissue colorKey="#00f719" id="were-myb23" name="wer myb23 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="241,896,258,896,258,979,241,979"/>
+				<sample name="GSM757888"/>
+				<sample name="GSM757889"/>
+				<sample name="GSM757890"/>
+			</tissue>
+			<tissue colorKey="#00f839" id="g12" name="gl2 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="593,896,612,896,612,979,593,979"/>
+				<sample name="GSM757843"/>
+				<sample name="GSM757844"/>
+				<sample name="GSM757845"/>
+			</tissue>
+			<tissue colorKey="#00f859" id="rhd6" name="rhd6 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="655,896,675,896,675,979,655,979"/>
+				<sample name="GSM757879"/>
+				<sample name="GSM757880"/>
+				<sample name="GSM757881"/>
+			</tissue>
+			<tissue colorKey="#00f749" id="mrh2" name="mrh2 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="320,896,336,896,336,979,320,979"/>
+				<sample name="GSM757858"/>
+				<sample name="GSM757859"/>
+				<sample name="GSM757860"/>
+			</tissue>
+			<tissue colorKey="#00f869" id="cpc" name="cpc mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE47632"/>
+				<area coords="685,896,704,896,704,979,685,979"/>
+				<sample name="GSM1153845"/>
+				<sample name="GSM1153846"/>
+				<sample name="GSM1153847"/>
+			</tissue>
+			<tissue colorKey="#00f959" id="rhd6-ACC" name=" rhd6 mutant + ACC">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="969,896,986,896,986,979,969,979"/>
+				<sample name="GSM757870"/>
+				<sample name="GSM757871"/>
+				<sample name="GSM757872"/>
+			</tissue>
+			<tissue colorKey="#00f709" id="ttg" name="ttg mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="216,896,210,979,227,979,230,896"/>
+				<sample name="GSM757885"/>
+				<sample name="GSM757886"/>
+				<sample name="GSM757887"/>
+			</tissue>
+			<tissue colorKey="#00f789" id="myc1" name="myc1 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="440,896,458,896,458,979,440,979"/>
+				<sample name="GSM757864"/>
+				<sample name="GSM757865"/>
+				<sample name="GSM757866"/>
+			</tissue>
+			<tissue colorKey="#00f689" id="cpc-try" name="cpc try mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="161,896,178,896,178,979,161,979"/>
+				<sample name="GSM757837"/>
+				<sample name="GSM757838"/>
+				<sample name="GSM757839"/>
+			</tissue>
+			<tissue colorKey="#00f949" id="rhd6-IAA" name="rhd6 mutant + IAA">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="936,896,954,896,954,979,936,979"/>
+				<sample name="GSM757873"/>
+				<sample name="GSM757874"/>
+				<sample name="GSM757875"/>
+			</tissue>
+			<tissue colorKey="#00f829" id="csld3" name="csld3 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="563,896,580,896,580,979,563,979"/>
+				<sample name="GSM757840"/>
+				<sample name="GSM757841"/>
+				<sample name="GSM757842"/>
+			</tissue>
+			<tissue colorKey="#00f879" id="egl3" name="egl3 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE47632"/>
+				<area coords="720,896,741,896,741,979,720,979"/>
+				<sample name="GSM1153851"/>
+				<sample name="GSM1153852"/>
+				<sample name="GSM1153853"/>
+			</tissue>
+			<tissue colorKey="#00f899" id="try" name="try mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE47632"/>
+				<area coords="786,896,802,896,802,979,786,979"/>
+				<sample name="GSM1153860"/>
+				<sample name="GSM1153861"/>
+				<sample name="GSM1153862"/>
+			</tissue>
+			<tissue colorKey="#00f939" id="rhd6-MS" name="rhd6 mutant + MS (buffer)">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="906,896,923,896,923,979,906,979"/>
+				<sample name="GSM757876"/>
+				<sample name="GSM757877"/>
+				<sample name="GSM757878"/>
+			</tissue>
+			<tissue colorKey="#00f759" id="mrh3" name="mrh3 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="346,896,364,896,364,979,346,979"/>
+				<sample name="GSM757861"/>
+				<sample name="GSM757862"/>
+				<sample name="GSM757863"/>
+			</tissue>
+			<tissue colorKey="#00f739" id="mrh1" name="mrh1 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="293,896,289,979,305,979,308,896"/>
+				<sample name="GSM757855"/>
+				<sample name="GSM757856"/>
+				<sample name="GSM757857"/>
+			</tissue>
+			<tissue colorKey="#00f819" id="lrx1" name="lrx1 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="529,896,548,896,548,979,529,979"/>
+				<sample name="GSM757852"/>
+				<sample name="GSM757853"/>
+				<sample name="GSM757854"/>
+			</tissue>
+			<tissue colorKey="#00f849" id="rhd2" name="rhd2 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="629,896,645,896,645,979,629,979"/>
+				<sample name="GSM757867"/>
+				<sample name="GSM757868"/>
+				<sample name="GSM757869"/>
+			</tissue>
+			<tissue colorKey="#00f769" id="ire" name="ire mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="376,896,396,896,396,979,376,979"/>
+				<sample name="GSM757849"/>
+				<sample name="GSM757850"/>
+				<sample name="GSM757851"/>
+			</tissue>
+			<tissue colorKey="#00f889" id="myb23" name="myb23 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE47632"/>
+				<area coords="754,896,770,896,770,979,754,979"/>
+				<sample name="GSM1153857"/>
+				<sample name="GSM1153858"/>
+				<sample name="GSM1153859"/>
+			</tissue>
+			<tissue colorKey="#00f779" id="bhlh66" name="bhlh66 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="406,896,425,896,425,979,406,979"/>
+				<sample name="GSM757882"/>
+				<sample name="GSM757883"/>
+				<sample name="GSM757884"/>
+			</tissue>
+			<tissue colorKey="#00f699" id="gl3-egl3" name="gl3 egl3 mutant">
+				<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE30547"/>
+				<area coords="185,896,204,896,204,979,185,979"/>
+				<sample name="GSM757846"/>
+				<sample name="GSM757847"/>
+				<sample name="GSM757848"/>
+			</tissue>
+		</group>
+	</view>
+</specimen>

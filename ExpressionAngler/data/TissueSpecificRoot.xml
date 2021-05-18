@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<view name="all" class="" db="atgenexp_plus" img="TissueSpecific-Root.svg">
+	<info>
+		<li>Material from the roots of 6 day old wild-type Col-0 Arabidopsis thaliana plants was analyzed</li>
+		<li>Plants grown under 16/8 hour light/dark conditions on MS + 4.5% sucrose media</li>
+		<li>Root cell types were isolated by protoplasting and fluorescence-activated cell sorting. RNA was extracted from protoplasts and hybed to ATH1 GeneChips</li>
+		<li>The data were normalized by GCOS normalization,TGT 100. Triplicate measurements were made.</li>
+		<li>Results from Birnbaum et al. (2003) Science 302:1956 and Nawy et al. (2005) Plant Cell 17:1908.</li>
+	</info>
+	<group name="CTRL_7">
+		<tissue id="Root_Stage_III_Endodermis" name="Root Stage III Endodermis" colorKey="#BB3311">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 
+			<sample name="endo_stage3"/> 
+		</tissue>
+		<tissue id="Root_Stage_III_Cortex_Endodermis" name="Root Stage III Cortex + Endodermis" colorKey="#993311">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 
+			<sample name="cortex-endo_stage3"/> 
+		</tissue>
+		<tissue id="Root_Stage-III_Stele" name="Root Stage III Stele" colorKey="#DD3311">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 
+			<sample name="stele_stage3"/> 
+		</tissue>
+		<tissue id="Root_Stage_III_Epidermal_Artrichoblasts" name="Root Stage III Epidermal Artrichoblasts" colorKey="#773311">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 
+			<sample name="epidermis_stage3"/> 
+		</tissue>
+		<tissue id="Root_Stage_III_Lateral_Root_Cap" name="Root Stage III Lateral Root Cap" colorKey="#553311">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 
+			<sample name="lat_root_cap_stage3"/> 
+		</tissue>  
+		<tissue id="Root_Stage_II_Stele" name="Root Stage II Stele" colorKey="#EE4422">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 			 
+			<sample name="stele_stage2"/> 
+		</tissue>
+		<tissue id="Root_Stage_II_Endodermis" name="Root Stage II Endodermis" colorKey="#CC4422">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 
+			<sample name="endo_stage2"/> 
+		</tissue>
+		<tissue id="Root_Stage_II_Cortex_Endodermis" name="Root Stage II Cortex + Endodermis" colorKey="#AA4422">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 			 
+			<sample name="cortex-endo_stage2"/> 
+		</tissue>
+		<tissue id="Root_Stage_II_Epidermal_Artrichoblasts" name="Root Stage II Epidermal Artrichoblasts" colorKey="#884422">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 			 
+			<sample name="epidermis_stage2"/> 
+		</tissue>
+		<tissue id="Root_Stage_II_Lateral_Root_Cap" name="Root Stage II Lateral Root Cap" colorKey="#664422">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 			 
+			<sample name="lat_root_cap_stage2"/> 
+		</tissue>
+		<tissue id="Root_Stage_I_Stele" name="Root Stage I Stele" colorKey="#FF5533">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 			 
+			<sample name="stele_stage1"/> 
+		</tissue>
+		<tissue id="Root_Stage_I_Endodermis" name="Root Stage I Endodermis" colorKey="#DD5533">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 			 
+			<sample name="endo_stage1"/> 
+		</tissue>
+		<tissue id="Root_Stage_I_Cortex_Endodermis" name="Root Stage I Cortex + Endodermis" colorKey="#BB5533">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 			 
+			<sample name="cortex-endo_stage1"/> 
+		</tissue>
+		<tissue id="Root_Stage_I_Epidermal_Artrichoblasts" name="Root Stage I Epidermal Artrichoblasts" colorKey="#995533">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 			 
+			<sample name="epidermis_stage1"/> 
+		</tissue>
+		<tissue id="Root_Stage_I_Lateral_Root_Cap" name="Root Stage I Lateral Root Cap" colorKey="#775533">
+			<link url="http://www.sciencemag.org/cgi/content/full/302/5652/1956"/> 			 
+			<sample name="lat_root_cap_stage1"/> 
+		</tissue>
+		<tissue id="Root_Quiescent_Center" name="Root Quiescent Center" colorKey="#FF5522">
+			<link url="http://www.plantcell.org/cgi/content/abstract/17/7/1908"/> 			 
+			<sample name="ARTH1_AGL42-01"/> 
+			<sample name="ARTH1_AGL42-02"/> 
+		</tissue>
+		</group>
+</view>
+</specimen>

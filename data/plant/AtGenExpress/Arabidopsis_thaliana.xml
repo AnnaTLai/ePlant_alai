@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+	<info>
+		<li>Data from Gene Expression Map of Arabidopsis Development: Schmid et al., 2005, Nat. Gen. 37:501, and the Nambara lab for the imbibed and dry seed stages.</li>
+		<li>Data are normalized by the GCOS method, TGT value of 100. Most tissues were sampled in triplicate. </li>
+		<li>Based on the original eFP Browser by B. Vinegar, drawn by J. Alls and N. Provart</li>
+		<li>Vectorized image redrawn and programmed by J. Waese</li>
+	</info>
+	<view name="all" class="" db="atgenexp_plus" img="ArabidopsisMap-2015-01-12.svg">
+		<group name="CTRL_7">
+			<control sample="ATGE_CTRL_7"/>
+			<tissue id="Dry_seed" name="Dry seed" colorKey="#FF7700">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=183"/>
+				<sample name="RIKEN-NAKABAYASHI1A"/>
+				<sample name="RIKEN-NAKABAYASHI1B"/>
+			</tissue>
+			<tissue id="Imbibed_seed_24_h" name="Imbibed seed, 24 h" colorKey="#EE7700">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=183"/>
+				<sample name="RIKEN-NAKABAYASHI2A"/>
+				<sample name="RIKEN-NAKABAYASHI2B"/>
+			</tissue>
+			<tissue id="1st_Node" name="1st Node" colorKey="#00CCFF">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_28"/>
+				<sample name="ATGE_28_A2"/>
+				<sample name="ATGE_28_B2"/>
+				<sample name="ATGE_28_C2"/>
+			</tissue>
+			<tissue id="Flower_Stage_12_Stamens" name="Flower Stage 12, Stamens" colorKey="#CCFF64">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_36"/>
+				<sample name="ATGE_36_A"/>
+				<sample name="ATGE_36_B"/>
+				<sample name="ATGE_36_C"/>
+			</tissue>
+			<tissue id="Cauline_Leaf" name="Cauline Leaf" colorKey="#99CC65">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_26"/>
+				<sample name="ATGE_26_A"/>
+				<sample name="ATGE_26_B"/>
+				<sample name="ATGE_26_C"/>
+			</tissue>
+			<tissue id="Cotyledon" name="Cotyledon" colorKey="#18FF01">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_1_"/>
+				<sample name="ATGE_1_A"/>
+				<sample name="ATGE_1_B"/>
+				<sample name="ATGE_1_C"/>
+			</tissue>
+			<tissue id="Root" name="Root" colorKey="#CCCC99">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_9_"/>
+				<sample name="ATGE_9_A"/>
+				<sample name="ATGE_9_B"/>
+				<sample name="ATGE_9_C"/>
+			</tissue>
+			<tissue id="Entire_Rosette_After_Transition_to_Flowering" name="Entire Rosette After Transition to Flowering" colorKey="#99CC66">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_23"/>
+				<sample name="ATGE_23_A"/>
+				<sample name="ATGE_23_B"/>
+				<sample name="ATGE_23_C"/>
+			</tissue>
+			<tissue id="Flower_Stage_9" name="Flower Stage 9" colorKey="#FFFFCC">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_31"/>
+				<sample name="ATGE_31_A2"/>
+				<sample name="ATGE_31_B2"/>
+				<sample name="ATGE_31_C2"/>
+			</tissue>
+			<tissue id="Flower_Stage_10_11" name="Flower Stage 10/11" colorKey="#FFFF99">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_32"/>
+				<sample name="ATGE_32_A2"/>
+				<sample name="ATGE_32_B2"/>
+				<sample name="ATGE_32_C2"/>
+			</tissue>
+			<tissue id="Flower_Stage_12" name="Flower Stage 12" colorKey="#FFFF66">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_33"/>
+				<sample name="ATGE_33_A"/>
+				<sample name="ATGE_33_B"/>
+				<sample name="ATGE_33_C"/>
+			</tissue>
+			<tissue id="Flower_Stage_15" name="Flower Stage 15" colorKey="#FFFF00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_39"/>
+				<sample name="ATGE_39_A"/>
+				<sample name="ATGE_39_B"/>
+				<sample name="ATGE_39_C"/>
+			</tissue>
+			<tissue id="Flower_Stage_12_Carpels" name="Flower Stage 12, Carpels" colorKey="#CCFF63">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_37"/>
+				<sample name="ATGE_37_A"/>
+				<sample name="ATGE_37_B"/>
+				<sample name="ATGE_37_C"/>
+			</tissue>
+			<tissue id="Flower_Stage_12_Petals" name="Flower Stage 12, Petals" colorKey="#CCFF65">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_35"/>
+				<sample name="ATGE_35_A"/>
+				<sample name="ATGE_35_B"/>
+				<sample name="ATGE_35_C"/>
+			</tissue>
+			<tissue id="Flower_Stage_12_Sepals" name="Flower Stage 12, Sepals" colorKey="#CCFF66">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_34"/>
+				<sample name="ATGE_34_A"/>
+				<sample name="ATGE_34_B"/>
+				<sample name="ATGE_34_C"/>
+			</tissue>
+			<tissue id="Flower_Stage_15_Carpels" name="Flower Stage 15, Carpels" colorKey="#C8FF01">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_45"/>
+				<sample name="ATGE_45_A"/>
+				<sample name="ATGE_45_B"/>
+				<sample name="ATGE_45_C"/>
+			</tissue>
+			<tissue id="Flower_Stage_15_Petals" name="Flower Stage 15, Petals" colorKey="#CAFF00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_42"/>
+				<sample name="ATGE_42_B"/>
+				<sample name="ATGE_42_C"/>
+				<sample name="ATGE_42_D"/>
+			</tissue>
+			<tissue id="Flower_Stage_15_Sepals" name="Flower Stage 15, Sepals" colorKey="#CBFF00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_41"/>
+				<sample name="ATGE_41_A"/>
+				<sample name="ATGE_41_B"/>
+				<sample name="ATGE_41_C"/>
+			</tissue>
+			<tissue id="Flower_Stage_15_Stamen" name="Flower Stage 15, Stamen" colorKey="#C9FF00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_43"/>
+				<sample name="ATGE_43_A"/>
+				<sample name="ATGE_43_B"/>
+				<sample name="ATGE_43_C"/>
+			</tissue>
+			<tissue id="Flowers_Stage_15_Pedicels" name="Flowers Stage 15, Pedicels" colorKey="#CCFF00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_40"/>
+				<sample name="ATGE_40_A"/>
+				<sample name="ATGE_40_B"/>
+				<sample name="ATGE_40_C"/>
+			</tissue>
+			<tissue id="Leaf_1_2" name="Leaf 1 + 2" colorKey="#60F31F">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_5_"/>
+				<sample name="ATGE_5_A"/>
+				<sample name="ATGE_5_B"/>
+				<sample name="ATGE_5_C"/>
+			</tissue>
+			<tissue id="Leaf_7_Petiole" name="Leaf 7, Petiole" colorKey="#00CBFF">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_19"/>
+				<sample name="ATGE_19_A"/>
+				<sample name="ATGE_19_B"/>
+				<sample name="ATGE_19_C"/>
+			</tissue>
+			<tissue id="Leaf_7_Distal_Half" name="Leaf 7, Distal Half" colorKey="#64CC66">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_21"/>
+				<sample name="ATGE_21_A"/>
+				<sample name="ATGE_21_B"/>
+				<sample name="ATGE_21_C"/>
+			</tissue>
+			<tissue id="Leaf_7_Proximal_Half" name="Leaf 7, Proximal Half" colorKey="#00CC66">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_20"/>
+				<sample name="ATGE_20_A"/>
+				<sample name="ATGE_20_B"/>
+				<sample name="ATGE_20_C"/>
+			</tissue>
+			<tissue id="Hypocotyl" name="Hypocotyl" colorKey="#CCCC98">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_2_"/>
+				<sample name="ATGE_2_A"/>
+				<sample name="ATGE_2_B"/>
+				<sample name="ATGE_2_C"/>
+			</tissue>
+			<tissue id="YoungRoot" name="Young Root" colorKey="#CCCC99">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_3_"/>
+				<sample name="ATGE_3_A"/>
+				<sample name="ATGE_3_B"/>
+				<sample name="ATGE_3_C"/>
+			</tissue>
+			<tissue id="Rosette_Leaf_2" name="Rosette Leaf 2" colorKey="#99FF66">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_12"/>
+				<sample name="ATGE_12_A"/>
+				<sample name="ATGE_12_B"/>
+				<sample name="ATGE_12_C"/>
+			</tissue>
+			<tissue id="Rosette_Leaf_4" name="Rosette Leaf 4" colorKey="#98FF66">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_13"/>
+				<sample name="ATGE_13_A"/>
+				<sample name="ATGE_13_B"/>
+				<sample name="ATGE_13_C"/>
+			</tissue>
+			<tissue id="Rosette_Leaf_6" name="Rosette Leaf 6" colorKey="#66CC66">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_14"/>
+				<sample name="ATGE_14_A"/>
+				<sample name="ATGE_14_B"/>
+				<sample name="ATGE_14_C"/>
+			</tissue>
+			<tissue id="Rosette_Leaf_8" name="Rosette Leaf 8" colorKey="#65CC66">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_15"/>
+				<sample name="ATGE_15_A"/>
+				<sample name="ATGE_15_B"/>
+				<sample name="ATGE_15_C"/>
+			</tissue>
+			<tissue id="Rosette_Leaf_10" name="Rosette Leaf 10" colorKey="#669966">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_16"/>
+				<sample name="ATGE_16_A"/>
+				<sample name="ATGE_16_B"/>
+				<sample name="ATGE_16_C"/>
+			</tissue>
+			<tissue id="Rosette_Leaf_12" name="Rosette Leaf 12" colorKey="#659966">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_17"/>
+				<sample name="ATGE_17_A"/>
+				<sample name="ATGE_17_B"/>
+				<sample name="ATGE_17_C"/>
+			</tissue>
+			<tissue id="Senescing_Leaf" name="Senescing Leaf" colorKey="#999900">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_25"/>
+				<sample name="ATGE_25_A"/>
+				<sample name="ATGE_25_B"/>
+				<sample name="ATGE_25_C"/>
+			</tissue>
+			<tissue id="Shoot_Apex_Inflorescence" name="Shoot Apex, Inflorescence" colorKey="#989791">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_29"/>
+				<sample name="ATGE_29_A2"/>
+				<sample name="ATGE_29_B2"/>
+				<sample name="ATGE_29_C2"/>
+			</tissue>
+			<tissue id="Shoot_Apex_Transition" name="Shoot Apex, Transition" colorKey="#989999">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_8_"/>
+				<sample name="ATGE_8_A"/>
+				<sample name="ATGE_8_B"/>
+				<sample name="ATGE_8_C"/>
+			</tissue>
+			<tissue id="Shoot_Apex_Vegetative" name="Shoot Apex, Vegetative" colorKey="#989790">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_6_"/>
+				<sample name="ATGE_6_A"/>
+				<sample name="ATGE_6_B"/>
+				<sample name="ATGE_6_C"/>
+			</tissue>
+			<tissue id="Stem_2nd_Internode" name="Stem, 2nd Internode" colorKey="#99CCFF">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_27"/>
+				<sample name="ATGE_27_A"/>
+				<sample name="ATGE_27_B"/>
+				<sample name="ATGE_27_C"/>
+			</tissue>
+			<tissue id="Mature_Pollen" name="Mature Pollen" colorKey="#FF0000">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_73"/>
+				<sample name="ATGE_73_A"/>
+				<sample name="ATGE_73_B"/>
+				<sample name="ATGE_73_C"/>
+			</tissue>
+			<tissue id="Seeds_Stage_3_w_Siliques" name="Seeds Stage 3 w/ Siliques" colorKey="#FFCC99">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_76"/>
+				<sample name="ATGE_76_A"/>
+				<sample name="ATGE_76_B"/>
+				<sample name="ATGE_76_C"/>
+			</tissue>
+			<tissue id="Seeds_Stage_4_w_Siliques" name="Seeds Stage 4 w/ Siliques" colorKey="#FFCC98">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_77"/>
+				<sample name="ATGE_77_D"/>
+				<sample name="ATGE_77_E"/>
+				<sample name="ATGE_77_F"/>
+			</tissue>
+			<tissue id="Seeds_Stage_5_w_Siliques" name="Seeds Stage 5 w/ Siliques" colorKey="#FFCC97">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_78"/>
+				<sample name="ATGE_78_D"/>
+				<sample name="ATGE_78_E"/>
+				<sample name="ATGE_78_F"/>
+			</tissue>
+			<tissue id="Seeds_Stage_6_wo_Siliques" name="Seeds Stage 6 w/o Siliques" colorKey="#FFCC00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_79"/>
+				<sample name="ATGE_79_A"/>
+				<sample name="ATGE_79_B"/>
+				<sample name="ATGE_79_C"/>
+			</tissue>
+			<tissue id="Seeds_Stage_7_wo_Siliques" name="Seeds Stage 7 w/o Siliques" colorKey="#FECC00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_81"/>
+				<sample name="ATGE_81_A"/>
+				<sample name="ATGE_81_B"/>
+				<sample name="ATGE_81_C"/>
+			</tissue>
+			<tissue id="Seeds_Stage_8_wo_Siliques" name="Seeds Stage 8 w/o Siliques" colorKey="#FDCC00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_82"/>
+				<sample name="ATGE_82_A"/>
+				<sample name="ATGE_82_B"/>
+				<sample name="ATGE_82_C"/>
+			</tissue>
+			<tissue id="Seeds_Stage_9_wo_Siliques" name="Seeds Stage 9 w/o Siliques" colorKey="#FF9900">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_83"/>
+				<sample name="ATGE_83_A"/>
+				<sample name="ATGE_83_B"/>
+				<sample name="ATGE_83_C"/>
+			</tissue>
+			<tissue id="Seeds_Stage_10_wo_Siliques" name="Seeds Stage 10 w/o Siliques" colorKey="#FE9900">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_84"/>
+				<sample name="ATGE_84_A"/>
+				<sample name="ATGE_84_B"/>
+				<sample name="ATGE_84_D"/>
+			</tissue>
+			<tissue id="Vegetative_Rosette" name="Vegetative Rosette" colorKey="#99CC64">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=ATGE_89"/>
+				<sample name="ATGE_89_A"/>
+				<sample name="ATGE_89_B"/>
+				<sample name="ATGE_89_C"/>
+			</tissue>
+		</group>
+	</view>
+</specimen>

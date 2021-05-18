@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<view name="all" class="" db="germination" img="Arabidopsis_thaliana.svg">
+<webservice>//bar.utoronto.ca/eplant/cgi-bin/plantefp.cgi?datasource=germination&amp;</webservice>
+	<info>
+		<li> Narsai R. et al. 2011 Plant Physiology. 157(3)</li>
+		<li> Freshly harvested ecotype Columbia seeds directly upon removal from the silique (H)</li>
+		<li> Seeds desiccated for 15 d in darkness (0 h)</li>
+		<li> Seeds stratified at 4Â°C in the dark for 1 h (1 h S), 12 h (12 h S), and 48h (48 h s)</li>
+		<li> Stratified seeds were then transferred into continuous light and further collected at 1, 6, 12, 24, 48 h into the light (1 h SL, 6 h SL, 12 h SL, 24 h SL and 48 h SL, respectively) </li> 
+	</info>
+		<group name="Seed Zero Hours">
+			<control sample="Med_CTRL"/>
+			<tissue id="germinationZeroHourFillS" name="Zero Hours" colorKey="#66CC67">
+				<link url=""/>
+				<sample name="0h_1"/>
+				<sample name="0h_2"/>
+				<sample name="0h_3"/>
+			</tissue>
+		</group>
+		<group name="Seed One Hour SL">
+			<control sample="Med_CTRL"/>
+			<tissue id="germinationOneHourFillSL" name="One Hour SL" colorKey="#66CC66">
+				<link url=""/>
+				<sample name="1hSL_1"/>
+				<sample name="1hSL_2"/>
+				<sample name="1hSL_3"/>
+			</tissue>
+		</group>
+		<group name="Seed One Hour S">
+			<control sample="Med_CTRL"/>
+			<tissue id="germinationOneHourSFill" name="One Hour S" colorKey="#FF9999">
+				<link url=""/>
+				<sample name="1hS_1"/>
+				<sample name="1hS_2"/>
+				<sample name="1hS_3"/>
+			</tissue>
+		</group>
+		<group name="Seed Twelve Hours S">
+			<control sample="Med_CTRL"/>
+			<tissue id="germinationTwelveHourFillS" name="Twelve Hours S" colorKey="#FF6600">
+				<link url=""/>
+				<sample name="12hS_1"/>
+				<sample name="12hS_2"/>
+				<sample name="12hS_3"/>
+			</tissue>
+		</group>
+		<group name="Seed Twelve Hours SL">
+			<control sample="Med_CTRL"/>
+			<tissue id="germinationTwelveHourSL" name="Twelve Hours SL" colorKey="#FF7700">
+				<link url=""/>
+				<sample name="12hSL_1"/>
+				<sample name="12hSL_2"/>
+				<sample name="12hSL_3"/>
+			</tissue>
+		</group>
+		<group name="Seed Fourty Eight Hours S">
+			<control sample="Med_CTRL"/>
+			<tissue id="germinationFourtyEightHoursFillS" name="Fourty Eight Hours S" colorKey="#FFCC00">
+				<link url=""/>
+				<sample name="48hS_1"/>
+				<sample name="48hS_2"/>
+				<sample name="48hS_3"/>
+			</tissue>
+		</group>
+		<group name="Seed Fourty Eight Hours SL">
+			<control sample="Med_CTRL"/>
+			<tissue id="germinationFourtyEightHoursFillTopSL" name="Fourty Eight Hours SL" colorKey="#FFCC00">
+				<link url=""/>
+				<sample name="48hSL_1"/>
+				<sample name="48hSL_2"/>
+				<sample name="48hSL_3"/>
+			</tissue>
+			<tissue id="germinationFourtyEightHoursFillSL" name="Fourty Eight Hours SL" colorKey="#FFCC00">
+				<link url=""/>
+				<sample name="48hSL_1"/>
+				<sample name="48hSL_2"/>
+				<sample name="48hSL_3"/>
+			</tissue>
+
+			<tissue id="germinationFourtyEightHoursFillTopSmallBitsSL" name="Fourty Eight Hours SL" colorKey="#FFCC00">
+				<link url=""/>
+				<sample name="48hSL_1"/>
+				<sample name="48hSL_2"/>
+				<sample name="48hSL_3"/>
+			</tissue>
+		</group>
+		<group name="Harvest">
+			<control sample="Med_CTRL"/>
+			<tissue id="germinationHFill" name="Harvest" colorKey="#FF8800">
+				<link url=""/>
+				<sample name="harvest_1"/>
+				<sample name="harvest_2"/>
+				<sample name="harvest_3"/>
+			</tissue>
+		</group>
+		<group name="Seed Six Hours">
+			<control sample="Med_CTRL"/>
+			<tissue id="germinationSixHourSLFill" name="Six Hours SL" colorKey="#FFBB99">
+				<link url=""/>
+				<sample name="6hSL_1"/>
+				<sample name="6hSL_2"/>
+				<sample name="6hSL_3"/>
+			</tissue>
+		</group>
+		<group name="Seed Twenty Four Hours">
+			<control sample="Med_CTRL"/>
+			<tissue id="germinationTwentyFourHourFillSL" name="Twenty Four SL" colorKey="#FF9900">
+				<link url=""/>
+				<sample name="24hSL_1"/>
+				<sample name="24hSL_2"/>
+				<sample name="24hSL_3"/>
+			</tissue>
+		</group>
+	</view>
+</specimen>

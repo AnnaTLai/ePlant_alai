@@ -1,0 +1,33 @@
+[
+	{
+	"minColor": "#00cbcb",
+	"midColor": "#ffff00",
+	"maxColor": "#ff0000"
+	},
+	{
+	"minColor": "#3f02cc",
+	"midColor": "#00ffb7",
+	"maxColor": "#fff200"
+	},
+	{
+	"minColor": "#ff0000",
+	"midColor": "#0014cc",
+	"maxColor": "#00ff44"
+	},
+	{
+	"minColor": "#ff5800",
+	"midColor": "#9500ff",
+	"maxColor": "#0fbff"
+	},
+	{
+	"minColor": "#000000",
+	"midColor": "#ffffff",
+	"maxColor": "#ff0000"
+	},	
+	{
+	"minColor": "#0000ff",
+	"midColor": "#000000",
+	"maxColor": "#ff0000"
+	}
+
+]

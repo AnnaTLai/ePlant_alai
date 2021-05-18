@@ -1,0 +1,84 @@
+	<div id="divMainJsmol">
+			<div id="divJmolcontent" class="jmolcontent">
+				<!-- jsmol will load here -->
+			</div>
+			
+			<div id="divMain" class="noselect main" style="position: relative;pointer-events: auto;top:30px;  left: 25px;">
+				<div id="divMenu" style="float: left;display:inline-block;white-space: nowrap;width: 330px;max-height: 420px;overflow: auto;">
+					
+					<div style="overflow: auto;"> 
+						<button id="btnReset" class='greenbutton'>
+							Reset Model 
+						</button>
+					</div>
+					<div style="float: left;width: 100%;">
+						<h4 class="features">Options</h4>
+						<div id="viewOptions" style="">
+							<span id='hydrPolCharg' class='radioMenu'>
+								<input type='radio' id='rd1' name='feature' value='hydro'><label for='rd1'>Show hydrophobic/polar & charged residues</label>
+							</span>	
+							<span id='tempFactor' class='radioMenu'>
+								<input type='radio' id='rd2' name='feature' value='temp'><label for='rd2'>Show temperature factor</label>
+							</span>	
+							<span id='isosurface' class='radioMenu'>
+								<input type='radio' id='rd3' name='feature' value='iso'><label for='rd3'>Show translucent isosurface</label>
+							</span>	
+						</div>
+					</div>
+					<div style="float: left;width: 100%;">
+						<h4 class="features">Pfam Domains</h4>
+						<div style="">
+							<div id="PfamDomains" style=""></div>
+						</div>
+					</div>
+					<div style="float: left;width: 100%;">
+						<h4 class="features">CDD Feature Hits</h4>
+						<div style=""> 			    	
+							<div id="CDDdomains" style=""></div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="noselect" style="overflow: auto;position: absolute; bottom: 0px;pointer-events: auto;width: 100%;padding-top: 30px; margin: 30px 0 5px 0;">
+				<div style="float: left;">
+					<!-- Slider  -->
+					<script type="text/javascript">
+						/* TODO remove
+							<h4 class="features">Adjust view</h4>
+							<div id="divSeqSlider" class="" style="margin-top: 5px;pointer-events: auto;width: 300px;height: 50px;">
+							<!-- sequence slider will be loaded here -->
+							<span id="draggableBar" class="" style=" z-index: 3;height: 50px;display: inline-block;width: 20px;cursor: ew-resize;opacity: 0.60;border: 1px solid grey;background: #cccccc ;"></span>
+						</div> */
+					</script>
+					<h4 id="divSeqTitle" class="features" style="float: left;"><!-- Sequence Title here --></h4>
+				</div>	
+				<div id='divSeqContainner' class="" style="overflow: auto;pointer-events: auto;width: 100%;">		   	 	
+					<div id="protSeq" style="display:inline-block;white-space: nowrap;margin-bottom: 20px;">
+					</div>
+				</div>
+			</div>
+			<!-- <div class="devOpts">
+				<button onclick="$('#divDevOpts').toggle(1000, oMolviewer.scrollLoggerToBottom()).toggleClass('devOptsBorder');" class="buttondevOpts" style="right: 5px;top: 5px;position: absolute;width: 34px;"></button>
+				<div id="divDevOpts"  style="display: none;padding: 5px;">
+				Dev tools<br>
+				<br>
+				2zkr, 1MBN, 3ULX, 4X13, 3BMV, 4AGM, 4IQR, 2HHB, 4PFP, 4PJ1, 4QCD, 4R8I, 2L7B<br>		
+				<input type="text" id="txtSeq" />
+				<input type ="button" id="btnLoadPDB" value="Load PDB" onclick="oMolviewer.xhrPool.abortAll();oMolviewer.fakeFunctions.removeAlignment();Jmol.script(myJmol, 'load ='+ $('#txtSeq').val().trim()) "/>
+				<div style="display: table-cell;">
+				<div id="logger" style="max-height: 400px;overflow: auto;height: 400px;width: 500px;border: 1px solid;
+				padding: 5px;resize:horizontal;margin: 5px;background-color: white;">
+				</div>
+				</div>
+				<button id="btnClear" class='greenbutton' style="width: 40px;"  onclick="$('#logger').text('');">Clear</button><br>
+				</div>
+			</div> -->
+			
+			<!-- left fade effect over sequence div -->
+			<div class="fadeOnCornersSequence fadeOnCornersSequenceLeft" id="fadeLeft">
+			</div>
+			<!-- right fade effect over sequence div -->
+			<div class="fadeOnCornersSequence fadeOnCornersSequenceRight" id="fadeRight">
+			</div>
+		</div>

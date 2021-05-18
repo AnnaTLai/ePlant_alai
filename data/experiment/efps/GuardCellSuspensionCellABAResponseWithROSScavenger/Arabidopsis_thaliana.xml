@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<webservice>//bar.utoronto.ca/eplant/cgi-bin/plantefp.cgi?datasource=guard_cell&amp;</webservice>
+<view name="all" db="guard_cell" img="GuardCell-SuspensionCellABAResponseWithROSScavenger-2015-01-13.svg">
+	<info>
+		<li>Material from 5 dy old <i>Arabidopsis thaliana</i> T87 suspension cells of the Columbia-0 ecotype was analyzed.</li>
+		<li>Cells were grown in the Gamborg B5 medium with 3% sucrose and 0.5 μm NAA in a growth chamber under 16/8 light/dark conditions at 120 rpm and 20 degrees Celcius.</li>
+		<li>Cells were subcultured every 7 days. </li>
+		<li>Cells were treated with 50 μm ABA, 5 mM DMTU and 0.5% ethanol as the control for 20 hours.</li>
+		<li>Measurements were taken in triplicates - the average of which is shown.</li>
+		<li>RNA was isolated and hybridized to the ATH1 GeneChip. The data were normalized by GCOS normalization, TGT 100.</li>
+		<li>Results from Bohmer and Schroeder (2001), The Plant Journal. DOI: 10.1111/j.1365-313X.2001.04579.x.</li>
+	</info>
+	<group name="Schroeder_suspension_cell_DMTU_ABA_experiments">
+		<control sample="GSM571891" /> 
+		<control sample="GSM571893" /> 
+		<control sample="GSM571895" /> 
+		<tissue id="Suspension_cell_culture_control" name="Suspension cell culture, control" colorKey="#9CFF82">
+			<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE23301" /> 
+			<sample name="GSM571891" /> 
+			<sample name="GSM571893" /> 
+			<sample name="GSM571895" /> 
+		</tissue>
+		<tissue id="Suspension_cell_culture_plus_50_uM_ABA" name="Suspension cell culture, plus 50 uM ABA" colorKey="#9CFFA2">
+			<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE23301" /> 
+			<sample name="GSM571892" /> 
+			<sample name="GSM571894" /> 
+			<sample name="GSM571896" /> 
+		</tissue>
+		<tissue id="Suspension_cell_culture_plus_5_mM_DMTU" name="Suspension cell culture, plus 5 mM DMTU" colorKey="#9CFFC2">
+			<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE23301" /> 
+			<sample name="GSM604752" /> 
+			<sample name="GSM604753" /> 
+			<sample name="GSM604754" /> 
+		</tissue>
+		<tissue id="Suspension_cell_culture_plus_50_uM_ABA_and_5_mM_DMTU" name="Suspension cell culture, plus 50 uM ABA and 5 mM DMTU" colorKey="#9CFFE2">
+			<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE23301" /> 
+			<sample name="GSM604755" /> 
+			<sample name="GSM604751" /> 
+			<sample name="GSM604750" /> 
+		</tissue>
+	</group>
+</view>
+</specimen>

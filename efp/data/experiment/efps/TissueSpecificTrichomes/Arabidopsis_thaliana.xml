@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<view name="all" class="" db="atgenexp_plus" img="TissueSpecific-Trichomes.svg">
+	<info>
+		<li>WT Col-0 and mutant plants were grown for 28 days in continuous light (at the University of Minnesota) or a 16/8 h light/dark cycle at the Noble Foundation (Oklahoma), under perforated metal sheets such that leaves could be rapidly harvested with a razor blade</li>
+		<li>Trichomes were dislodged by vortexing with small glass beads 60-80 mm in diameter in 1x PBS   in the presence of 50 mM EGTA, and were retrieved with a 100 mm cell strainer</li>
+		<li>RNA was isolated from approximately 100 mg of trichomes (wet weight) stored in RNAlater, and hybridized to the ATH1 chip in duplicate-quintuplicate: the average signal is shown</li>
+		<li>Data normalized by GCOS/MAS5, TGT 100</li>
+		<li>Marks et al. (2009) Mol. Plant 2: 803-22; Gilding & Marks (2010) Plant J. 64:304-17.</li>
+	</info>
+	<group name="CTRL_7">
+		<control sample="ATGE_CTRL_7" /> 
+		<tissue id="WT_Col-0_leaves_after_trichome_removal" name="WT Col-0 leaves after trichome removal">
+			<link url="http://www.ebi.ac.uk/arrayexpress/experiments/E-MEXP-2014" /> 			 
+			<sample name="ColprocessleafArd13" /> 
+			<sample name="ColprocessleafMN3" /> 
+			<sample name="ColprocessleafMN4" /> 
+			<sample name="ColprocessleafMN5" /> 
+		</tissue>
+		<tissue id="WT_Col-0_trichomes" name="WT Col-0 trichomes">
+			<link url="http://www.ebi.ac.uk/gxa/experiment/E-MEXP-2008" /> 			 
+			<sample name="ColtrichomeArd1" />
+			<sample name="ColtrichomeArd2" />
+			<sample name="ColtrichomeMN12" /> 
+			<sample name="ColtrichomeMN13" /> 
+			<sample name="ColtrichomeMN2" /> 
+		</tissue>
+		<tissue id="gl3-sst_mutant_trichomes" name="gl3-sst mutant trichomes">
+			<link url="http://www.ebi.ac.uk/arrayexpress/experiments/E-MEXP-2009" /> 
+			<sample name="DM9_sst1" /> 
+			<sample name="m1DM8sstard" /> 
+			<sample name="m1ssttr5_ATH1" /> 
+		</tissue>
+		<tissue id="gl3-sst_sim_double_mutant_trichomes" name="gl3-sst sim double mutant trichomes">
+			<link url="http://www.ebi.ac.uk/arrayexpress/experiments/E-MEXP-2013" /> 
+			<sample name="gl3_sstsimtrichomeMN1" /> 
+			<sample name="gl3_sstsimtrichomeMN2" /> 
+		</tissue>
+		<tissue id="gl3-sst_nok-1_double_mutant_trichomes" name="gl3-sst nok-1 double mutant trichomes">
+			<link url="http://www.ebi.ac.uk/arrayexpress/experiments/E-MEXP-2021" /> 
+			<sample name="EG_mosst1" /> 
+			<sample name="EG_mosst2" /> 
+			<sample name="EG_mosst3" /> 
+		</tissue>		
+	</group>
+</view>
+</specimen>

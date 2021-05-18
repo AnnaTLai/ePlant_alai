@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE specimen SYSTEM "http://www.bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+	<info>
+		<li>Data collected by Tian et al., 2014. Mol Syst Biol 10:755.</li>
+		<li>Plant material from 7 day old <i>Arabidopsis thaliana</i> plants grown under full light conditions was analyzed</li>
+		<li>A fusion of the large subunit ribosomal protein L18 with N-terminal His and FLAG epitope tags (HF-RPL18) driven by different promoters was introduced to label zones as follows:
+			<ul>AS2: leaf adaxil</ul>
+			<ul>CLV3: central zone</ul>
+			<ul>FIL: leaf abaxial</ul>
+			<ul>WUS: rib meristem</ul>
+			<ul>ATML1: epidermal L1 layer</ul>
+			<ul>UFO: enlarged peripheral zone</ul>
+			<ul>PTL: leaf margin</ul>
+			<ul>LAS: organ boundary</ul>
+		</li>
+		<li>RNAs were isolated by translating RNA affinity purification (TRAP) and sequenced by RNA-seq</li>
+		<li>Each cell type measured in triplicates</li>
+		<li>Reads were mapped to the TAIR10 reference genome built with TopHat2 (version 2.0.9) and BOWTIE (version 2.1.0) allowing up to two mismatches after filtering the low quality reads (PHRED quality score &lt; 20)</li>
+		<li>The gene locus expression levels were calculated based on mapping outputs after removing reads mapped to rRNAs and tRNAs using Cuffdiff2 (version 2.1.1)</li>
+		<li>The expression levels were normalized with edgeR</li>
+		<li>The average of triplicates is shown</li>
+	</info>
+	<view name="all" class="" dbGroup="RNASeq" db="shoot_apex" img="Shoot_Apex_Image.tga">
+		<coords graphX="560" graphY="40" graphWidth="50" graphHeight="86" legendX="550" legendY="40"/>
+		<group name="ShootApexGroup">
+			<control sample="AVG"/>
+			<tissue colorKey="#662d91" name="ATML1" id="ATML1">
+				<sample name="ATML1" /> 
+			</tissue>
+			<tissue colorKey="#83af9b" name="FIL" id="FIL">
+				<sample name="FIL" /> 
+			</tissue>
+			<tissue colorKey="#123555" name="PTL"  id="PTL">
+				<sample  name="PTL"/>
+			</tissue>
+			<tissue colorKey="#f9cdad" name="AS2" id="AS2">
+				<sample  name="AS2"/>
+			</tissue>
+			<tissue colorKey="#c8c8a9" name="WUS" id="WUS">
+				<sample  name="WUS"/>
+			</tissue>
+			<tissue colorKey="#fc9d9a" name="CLV3" id="CLV3">
+				<sample  name="CLV3"/>
+			</tissue>
+			<tissue colorKey="#fe4365" name="UFO" id="UFO">
+				<sample  name="UFO"/>
+			</tissue>
+			<tissue colorKey="#e69b03" name="LAS" id="LAS">
+				<sample  name="LAS"/>
+			</tissue>
+		</group>
+	</view>
+</specimen>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<view name="all" class="" db="atgenexp_plus" img="TissueSpecific-ShootApicalMeristem.svg">
+<webservice>//bar.utoronto.ca/eplant/cgi-bin/plantefp.cgi?datasource=atgenexp_plus&amp;</webservice>
+	<info>
+		<li>Fluorescent reporters were introduced into an ap1-1;cal1-1 background (this double produces several hundred SAMs due to conversion of floral meristems into shoot meristems) to label zones as follows:</li>
+		<li>CZ CENTRAL ZONE pCLV3::mGFP5-ER Note: CLV3 expression extends into the 4th layer</li>
+		<li>RM RIB MERISTEM pWUS::mGFP5-ER</li>
+      	<li>PZ  PERIPHERAL ZONE pFIL::dsRED-N7 Note: FIL labels a subset of the floral organ primordia cells</li>
+		<li>200 SAMs from 24 day old ap1-1;cal1-1 plants were collected within 15 minutes and protoplasted. Fluorescence-activated cell sorting was used to collect ~150,000 marked cells for each zone</li>
+		<li>RNA was isolated and hybridized to the ATH1 chip in duplicate, the average signal of which is shown</li>
+		<li>Data normalized by GCOS/MAS5, TGT 100</li>
+		<li>Yadav et al. (2009) Proc. Natl. Acad. Sci. U.S.A. 106: 4941-4946.</li>
+	</info>
+	<group name="CTRL_7">
+		<control sample="ATGE_CTRL_7"/> 
+		<tissue id="Central_Zone" name="Central Zone" colorKey="#5D4D4D">
+			<link url="http://www.pnas.org/content/106/12/4941.full"/> 			 
+			<sample name="GSM342138"/> 
+			<sample name="GSM342139"/> 
+			<sample name="GSM342140"/> 
+		</tissue>
+		<tissue id="Rib_Meristem" name="Rib Meristem" colorKey="#5D4C4C">
+			<link url="http://www.pnas.org/content/106/12/4941.full"/> 			 
+			<sample name="GSM342148"/> 
+			<sample name="GSM342149"/> 
+		</tissue>
+		<tissue id="Peripheral_Zone" name="Peripheral Zone" colorKey="#5D4B4B">
+			<link url="http://www.pnas.org/content/106/12/4941.full"/> 			 
+			<sample name="GSM342141"/> 
+			<sample name="GSM342142"/> 
+			<sample name="GSM342143"/> 
+		</tissue>
+	</group>
+</view>
+</specimen>

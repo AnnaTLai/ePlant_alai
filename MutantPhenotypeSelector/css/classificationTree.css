@@ -1,0 +1,32 @@
+
+
+/* TREE SETTINGS */
+.node {
+  cursor: pointer;
+}
+
+.node circle {
+  fill: #99CC00;
+  stroke: #99CC00;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font-size: 14px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+}
+
+.link {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 1.5px;
+}
+
+
+.hide{
+  display:none;
+}
+
+.show{
+  display:inherit;
+}

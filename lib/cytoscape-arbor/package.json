@@ -1,0 +1,83 @@
+{
+  "_args": [
+    [
+      "cytoscape-arbor",
+      "C:\\Users\\Ruian\\Desktop\\eplant"
+    ]
+  ],
+  "_from": "cytoscape-arbor@latest",
+  "_id": "cytoscape-arbor@1.2.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/cytoscape-arbor",
+  "_nodeVersion": "4.2.1",
+  "_npmUser": {
+    "email": "maxkfranz@gmail.com",
+    "name": "maxkfranz"
+  },
+  "_npmVersion": "2.14.7",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "cytoscape-arbor",
+    "raw": "cytoscape-arbor",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/cytoscape-arbor/-/cytoscape-arbor-1.2.0.tgz",
+  "_shasum": "9f3a0c03952010dcd7ad3301054b4ae33835a936",
+  "_shrinkwrap": null,
+  "_spec": "cytoscape-arbor",
+  "_where": "C:\\Users\\Ruian\\Desktop\\eplant",
+  "bugs": {
+    "url": "https://github.com/cytoscape/cytoscape.js-arbor/issues"
+  },
+  "dependencies": {},
+  "description": "The Arbor physics simulation layout for Cytoscape.js",
+  "devDependencies": {
+    "gulp": "^3.8.8",
+    "gulp-jshint": "^1.8.5",
+    "gulp-prompt": "^0.1.1",
+    "gulp-replace": "^0.4.0",
+    "gulp-shell": "^0.2.9",
+    "jshint-stylish": "^1.0.0",
+    "run-sequence": "^1.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "9f3a0c03952010dcd7ad3301054b4ae33835a936",
+    "tarball": "http://registry.npmjs.org/cytoscape-arbor/-/cytoscape-arbor-1.2.0.tgz"
+  },
+  "gitHead": "bde6862ae4e357cfe717739326af88a62fedadff",
+  "homepage": "https://github.com/cytoscape/cytoscape.js-arbor",
+  "keywords": [
+    "cyext",
+    "cytoscape"
+  ],
+  "license": "MIT",
+  "main": "cytoscape-arbor.js",
+  "maintainers": [
+    {
+      "name": "maxkfranz",
+      "email": "maxkfranz@gmail.com"
+    }
+  ],
+  "name": "cytoscape-arbor",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cytoscape/cytoscape.js-arbor.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "spm": {
+    "main": "cytoscape-arbor.js"
+  },
+  "version": "1.2.0"
+}

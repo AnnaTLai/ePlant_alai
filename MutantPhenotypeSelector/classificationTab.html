@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="css/classificationTree.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+
+<body>
+
+<!-- Tree Visualization goes here -->
+<div id="classificationView"></div>
+
+<!-- Popup Gene List Panel goes here -->
+<div id="classificationView-geneList-container" class="animated hide">
+  <div id="classificationView-geneList-panel">
+    <div id="classificationView-geneList-header"></div>
+    <div id="classificationView-geneList-body" onmouseout="$('#classificationView-geneInfoPopup').addClass('fadeOut')"></div>
+  </div>
+  <button type="button" id="classificationView-geneList-searchButton" onclick="classificationView_loadGenes()">Download Selected Genes</button>
+</div>
+
+<!-- Gene Information popups when hovering over (i) icon goes here -->
+<div id="classificationView-geneInfoPopup" class="cv-arrow_box shadowed hide animated">
+</div>
+
+<!-- Load JS elements -->
+<script src="js/jquery.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/d3.layout.min.js"></script>
+<script src="js/jquery.csv-0.71.min.js"></script>
+<script src="js/classificationTree.js"></script>
+

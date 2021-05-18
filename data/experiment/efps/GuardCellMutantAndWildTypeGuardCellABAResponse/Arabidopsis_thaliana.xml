@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+	<webservice>//bar.utoronto.ca/eplant/cgi-bin/plantefp.cgi?datasource=guard_cell&amp;</webservice>
+	<view name="all" db="guard_cell" img="GuardCell-MutantAndWildTypeGuardCellABAResponse-2015-01-13.svg">
+		<info>
+			<li>Plant material from the leaves of 5 week old <span style="font-style:italic">Arabidopsis thaliana </span> plants of the indicated genotypes. <span style="font-style:italic">gpa1 </span> plants are insertionally mutated in the sole canonical heterotrimeric G protein α subunit gene, <span style="font-style:italic">GPA1 </span>, while <span style="font-style:italic">agb1 </span>plants are insertionally mutated in the sole canonical heterotrimeric G protein β subunit gene, <span style="font-style:italic">AGB1</span>.</li>
+			<li>Whole leaf RNA and RNA from epidermal peels in which guard cells were the only living cell type remaining after cellulase treatment used for analyses.</li>
+			<li>50 µm ABA or ethanol control applied for 3 hours.</li>
+			<li>Leaves were sampled when lights came on.</li>
+			<li>Plants grown in growth room under 8/16 hour light/dark conditions at 20°C/18°C</li>
+			<li>Measurements were taken in triplicates - the average of which is shown.</li>
+			<li>RNA was isolated and hybridized to the ATH1 GeneChip. The data were normalized by GCOS normalization, TGT 100.</li>
+			<li>Results from Pandey et al., 2010, Molecular Systems Biology 6:372</li>
+		</info>
+		<group name="Assmann_GC_Mutants_ABA_WT">
+			<control sample="GSM486892"/> 
+			<control sample="GSM486893"/>
+			<control sample="GSM486894"/>
+			<tissue id="WT_Col-0_guard_cells_no_ABA" name="WT Col-0 guard cells, no ABA" colorKey="#16E41B">
+				<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+				<sample name="GSM486892"/> 
+				<sample name="GSM486893"/>
+				<sample name="GSM486894"/>
+			</tissue>
+			<tissue id="WT_Col-0_guard_cells_plus_50_uM_ABA" name="WT Col-0 guard cells, plus 50 uM ABA" colorKey="#96E41B">
+				<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+				<sample name="GSM486904"/> 
+				<sample name="GSM486905"/>
+				<sample name="GSM486906"/>
+			</tissue>
+		</group>	
+		<group name="Assmann_GC_Mutants_ABA_agb1">
+			<control sample="GSM486895"/> 
+			<control sample="GSM486896"/>
+			<control sample="GSM486897"/>
+			<tissue id="agb1_guard_cells_no_ABA" name="agb1 guard cells, no ABA" colorKey="#16E44B">
+				<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+				<sample name="GSM486895"/> 
+				<sample name="GSM486896"/>
+			<sample name="GSM486897"/>
+			</tissue>
+			<tissue id="agb1_guard_cells_plus_50_uM_ABA" name="agb1 guard cells, plus 50 uM ABA" colorKey="#96E44B">
+			<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+			<sample name="GSM486907"/> 
+			<sample name="GSM486908"/>
+			<sample name="GSM486909"/>
+			</tissue>
+			</group>
+			<group name="Assmann_GC_Mutants_ABA_gpa1">
+			<control sample="GSM486898"/> 
+			<control sample="GSM486899"/>
+			<control sample="GSM486900"/>
+			<tissue id="gpa1_guard_cells_no_ABA" name="gpa1 guard cells, no ABA" colorKey="#16E47B">
+			<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+			<sample name="GSM486898"/> 
+			<sample name="GSM486899"/>
+			<sample name="GSM486900"/>
+			</tissue>
+			<tissue id="gpa1_guard_cells_plus_50_uM_ABA" name="gpa1 guard cells, plus 50 uM ABA" colorKey="#96E47B">
+			<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+			<sample name="GSM486910"/> 
+			<sample name="GSM486911"/>
+			<sample name="GSM486912"/>
+			</tissue>
+			</group>
+			<group name="Assmann_GC_Mutants_ABA_agb1-gpa1">
+			<control sample="GSM486901"/> 
+			<control sample="GSM486902"/>
+			<control sample="GSM486903"/>
+			<tissue id="agb1_gpa1_guard_cells_no_ABA" name="agb1 gpa1 guard cells, no ABA" colorKey="#16E4AB">
+			<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+			<sample name="GSM486901"/> 
+			<sample name="GSM486902"/>
+			<sample name="GSM486903"/>
+			</tissue>
+			<tissue id="agb1_gpa1_guard_cells_plus_50_uM_ABA" name="agb1 gpa1 guard cells, plus 50 uM ABA" colorKey="#96E4AB">
+			<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+			<sample name="GSM486913"/> 
+			<sample name="GSM486914"/>
+			<sample name="GSM486915"/>
+			</tissue>
+			</group>
+			<group name="Assmann_Leaf_Mutants_ABA_WT">
+			<control sample="GSM486916"/> 
+			<control sample="GSM486917"/>
+			<control sample="GSM486918"/>
+			<tissue id="WT_Col-0_leaf_no_ABA" name="WT Col-0 leaf, no ABA" colorKey="#66CC66">
+			<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+			<sample name="GSM486916"/> 
+			<sample name="GSM486917"/>
+			<sample name="GSM486918"/>
+			</tissue>
+			<tissue id="WT_Col-0_leaf_plus_50_uM_ABA" name="WT Col-0 leaf, plus 50 uM ABA" colorKey="#A6CC66">
+			<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+			<sample name="GSM486928"/> 
+			<sample name="GSM486929"/>
+			<sample name="GSM486930"/>
+			</tissue>
+			</group>
+			<group name="Assmann_Leaf_Mutants_ABA_agb1">
+			<control sample="GSM486919"/> 
+			<control sample="GSM486920"/>
+			<control sample="GSM486921"/>
+			<tissue id="agb1_leaf_no_ABA" name="agb1 leaf, no ABA" colorKey="#66CC86">
+			<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+			<sample name="GSM486919"/> 
+			<sample name="GSM486920"/>
+			<sample name="GSM486921"/>
+			</tissue>
+			<tissue id="agb1_leaf_plus_50_uM_ABA" name="agb1 leaf, plus 50 uM ABA" colorKey="#A6CC86">
+			<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+			<sample name="GSM486931"/> 
+			<sample name="GSM486932"/>
+			<sample name="GSM486933"/>
+			</tissue>
+			</group>
+			<group name="Assmann_Leaf_Mutants_ABA_gpa1">
+			<control sample="GSM486922"/> 
+			<control sample="GSM486923"/>
+			<control sample="GSM486924"/>
+			<tissue id="gpa1_leaf_no_ABA" name="gpa1 leaf, no ABA" colorKey="#66CCA6">
+			<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+			<sample name="GSM486922"/> 
+			<sample name="GSM486923"/>
+			<sample name="GSM486924"/>
+			</tissue>
+			<tissue id="gpa1_leaf_plus_50_uM_ABA" name="gpa1 leaf, plus 50 uM ABA" colorKey="#A6CCA6">
+			<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+			<sample name="GSM486934"/> 
+			<sample name="GSM486935"/>
+			<sample name="GSM486936"/>
+			</tissue>
+			</group>
+			<group name="Assmann_Leaf_Mutants_ABA_agb1-gpa1">
+			<control sample="GSM486925"/> 
+			<control sample="GSM486926"/>
+			<control sample="GSM486927"/>
+			<tissue id="agb1_gpa1_leaf_no_ABA" name="agb1 gpa1 leaf, no ABA" colorKey="#66CCC6">
+			<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+			<sample name="GSM486925"/> 
+			<sample name="GSM486926"/>
+			<sample name="GSM486927"/>
+			</tissue>
+			<tissue id="agb1_gpa1_leaf_plus_50_uM_ABA" name="agb1 gpa1 leaf, plus 50 uM ABA" colorKey="#A6CCC6">
+			<link url="http://dx.doi.org/10.1038/msb.2010.28"/> 
+			<sample name="GSM486937"/> 
+			<sample name="GSM486938"/>
+			<sample name="GSM486939"/>
+			</tissue>
+			</group>
+			</view>
+			</specimen>
+						

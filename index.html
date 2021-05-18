@@ -1,0 +1,927 @@
+<!--
+  Welcome to ePlant, a unique data visualization tool for integrating and exploring multiple levels of biological data.
+
+  This project was produced in Nicholas Provart's lab in the department of Cell & Systems Biology, University of Toronto.
+
+  This is the outer frame / tabs holder of the application.
+
+  Design & UI by Jamie Waese
+  Code by Jim Fan
+
+-->
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8; no-cache" />
+    <link rel="shortcut icon" type="image/png" href="img/BAR.png">
+    <title>ePlant</title>
+    <meta name="keywords" content="" />
+    <!-- reset CSS -->
+
+
+
+
+    <link rel="stylesheet" href="style/reset.css">
+    </link>
+
+    <!--[if lt IE 9]>
+      <script type="text/javascript">alert("Sorry but your browser does not support the canvas tag. Try using a recent version of Firefox, Chrome or Safari.");</script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" media="all" href="style/jquery-ui-1.11.4.custom/jquery-ui.css" />
+
+    <link rel="stylesheet" href="lib/spectrum/spectrum.css">
+    </link>
+    <link rel="stylesheet" href="js/jquery.qtip.min.css">
+
+    <link href="style/backToTop.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/datatablesStyleSheet.css">
+    <link rel="stylesheet" href="style/jquery.svg.css">
+
+    <!-- Tooltip Pop-Up Stylesheet. (From: https://github.com/chinchang/hint.css) -->
+    <link rel="stylesheet" href="lib/hint/hint.css">
+    </link>
+
+    <link rel="stylesheet" type="text/css" href="style/hint.css" />
+    <link rel="stylesheet" media="screen" href="js/sequencejs-theme.modern-slide-in.css" />
+
+    <!-- Frame related css and resize related jquery -->
+    <link type="text/css" rel="stylesheet" href="style/animate.min.css">
+    </link>
+
+    <link type="text/css" rel="stylesheet" href="js/jquery.dropdown.css">
+    </link>
+
+    <link type="text/css" rel="stylesheet" href="style/seq.css">
+    </link>
+
+    <link rel="stylesheet" href="js/jquery.mCustomScrollbar.css">
+    </link>
+
+
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+    <script type="text/javascript" src="js/artDialog.source.js?skin=idialog"></script>
+    <script type="text/javascript" src="js/iframeTools.js"></script>
+    <link rel="stylesheet" href="style/eplant.css">
+</head>
+
+<body>
+    <div id='dynamic-url-loading' style="display:none;">
+        <div id='dynamic-url-loading-contents'>
+            <img src="js/skins/icons/loading.gif">
+            <div>
+                Loading...
+            </div>
+        </div>
+    </div>
+    <div id="testoverlay" style="position:fixed;width:100%;height:100%;pointer-events:none;z-index:10"></div>
+    <div id="fb-root"></div>
+    
+    <!-- JW: Facebook like button depricated
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=202969319841821&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    -->
+
+    <div id="contact" style="-moz-user-select: auto ; -webkit-user-select: auto ; -ms-user-select:none; user-select:auto ;
+    "></div>
+    <div id="help" style="-moz-user-select: auto ; -webkit-user-select: auto ; -ms-user-select:none; user-select:auto ;
+    "></div>
+    <div id="about" style="-moz-user-select: auto ; -webkit-user-select: auto ; -ms-user-select:none; user-select:auto ;
+    "></div>
+    <div id="content">
+        <div id="tabs">
+            <div id="tabs-1" class="hide"></div>
+            <!-- Title strip -->
+            <table width="100%">
+                <tr>
+                    <td id="topLeft">
+                        <div class="titleBanner">
+                            <div style="display: inline-block;" class="hint--right  hint--success  hint--rounded" title="See more bio visualization tools at the BAR." data-enabled="true">
+                                <a href='//bar.utoronto.ca'><img id="logo" src='img/BAR.png' alt='To the Bio-Analytic Resource Homepage' align="absmiddle" style="position:relative;"></a>
+                            </div>
+
+                            <p id="logoText" style="display: inline-block;">ePlant</p>
+                            <p id="speciesName" style="display: inline-block;">Arabidopsis thaliana</p>
+
+                        </div>
+                        <div id="leftToggle" class="panel leftToggle" onclick="" style=" position: absolute; top: 10px; left: 270px; overflow: visible;">
+                            <div class="navPoint" id="switchPoint" title="close/open sidebar"><img class="toggleArrow" src="img/arrow-left-clear-bg.png" name="img1" height="25" id="img1"></div>
+                        </div>
+                    </td>
+                    <!-- tabs holder and global menu -->
+                    <td class="pLeft" id="tabsHolder">
+                        <div id="tabsHolder" style="overflow: hidden; width:100%;position:relative;height:42px;">
+                            <ul id="tabUl">
+                                <li>
+                                    <a class="fullTab" href="#tabs-1" id="tab_title">Welcome Screen</a><span class="ui-icon ui-icon-close" role="presentation" style="display:none">Remove Tab</span>
+                                </li>
+                                <li id="addTab">
+                                    <a id="add_tab">+</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </td>
+                    <td width="30px" style="text-align:center;position:absolute;z-index:5;right:10px;top:10px;">
+                        <div class="hint--left hint--success hint--rounded" data-hint="Global settings" data-enabled="true">
+                            <a href="#" data-dropdown="#dropdown-global"><img id="global_settings" src='img/list.png'></img>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div id="dropdownContainer">
+                <div id="dropdown-global" class="dropdown dropdown-tip dropdown-anchor-right">
+                    <ul class="dropdown-menu">
+                        <!-- JW: zooms depricated <li>
+                            <div id="viewChangeAnimationIcon" class="iconSmall hint--left hint--success hint--rounded" data-hint="Toggle zooming animation" data-enabled="true" style="width:95%;">
+                                <img src="img/on/zoom.png" style="margin-right: 10px;"></img><span>Zoom transitions on</span>
+                            </div>
+                        </li>-->
+                        <li>
+                            <div id="tooltipIcon" class="iconSmall hint--left hint--success hint--rounded" data-hint="Toggle tooltip" data-enabled="true" style="width:95%;">
+                                <img src="img/on/tooltip.png" style="margin-right: 10px;"></img><span>Tooltips on</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="showUrl" class="iconSmall hint--left hint--success hint--rounded" data-hint="Create custom URL to automatically reload this session" data-enabled="true" style="width:95%;">
+                                <img src="img/on/url.png" style="margin-right: 10px;"></img><span>Generate URL</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div id="viewIntructionIcon" class="iconSmall hint--left hint--success hint--rounded" data-hint="Disable View Intrustions" data-enabled="true" style="width:95%;">
+                                <img src="img/on/fyi.png" style="margin-right: 10px;"></img><span>New user popups on</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="dropdown-color-mode" class="dropdown dropdown-tip" style=''>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="iconTiny hint--right hint--success hint--rounded" data-hint="Use the same color gradient for all genes" data-enabled="true" style="width:95%;">
+                                <input type="radio" name="" value="globalAbsolute" checked><span>Global</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="iconTiny hint--right hint--success hint--rounded" data-hint="Each gene is drawn with its own color gradient" data-enabled="true" style="width:95%;">
+                                <input type="radio" name="" value="absolute"><span>Local</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="iconTiny hint--right hint--success hint--rounded" data-hint="Use a global color gradient, with the max determined by a number you define" data-enabled="true" style="width:95%;">
+                                <input type="radio" name="" value="customAbsolute"><span>Custom</span><input value="1000" class="customAbsoluteValue" type="text" style="float: right;width: 50px;">
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- tab content-->
+            <table width="100%">
+                <tr>
+
+                    <td style="vertical-align: bottom;">
+                        <div id="settings_container" class="hiddenInSpeciesView">
+                            <table style="width:100%;text-align: center;white-space: nowrap;">
+                                <tr>
+
+                                    <td id="crossViewUI">
+                                        <div id="historyBackIcon" class="iconSmall hint--bottom hint--success hint--rounded" data-hint="Go back to the previous view" data-enabled="true" style="padding-right:0;width:20px;height:25px;">
+                                            <img src="img/available/history-back.png" style="width:20px;height:20px;"></img>
+                                        </div>
+                                        <!--<div id="historyIcon" class="iconSmall hint--bottom hint--success hint--rounded" data-hint="History panel" data-enabled="true" style="padding-left:0;padding-right:0;">
+                        <img src="img/history.png"></img>
+                      </div>-->
+                                        <div id="historyForwardIcon" class="iconSmall hint--bottom hint--success hint--rounded" data-hint="Go forward to the next view" data-enabled="true" style="padding-left:0;width:20px;height:25px;">
+                                            <img src="img/available/history-forward.png" style="width:20px;height:20px;"></img>
+                                        </div>
+
+                                        <div id="getImageIcon" class="iconSmall hint--bottom hint--success hint--rounded" data-hint="Save current screen as high resolution image" data-enabled="true">
+                                            <img src="img/getimage.png"></img>
+                                        </div>
+
+                                        <!--<div id="palleteIcon" class="iconSmall hint--bottom hint--success hint--rounded" data-hint="Set eFP colors" data-enabled="true">
+                        <img src="img/palette.png"></img>
+                        </div>
+
+                        <div id="colorModeIcon" class="iconSmall hint--bottom hint--success hint--rounded" data-hint="Change the Color Gradient Settings" data-enabled="true"  data-dropdown="#dropdown-color-mode">
+                        <img src="img/setting.png"></img>
+                      </div>-->
+                                    </td>
+                                    <td id="zoomUI" style="">
+                                        <div id="zoomIn" class="iconSmall hint--bottom hint--success hint--rounded" data-hint="Click and hold to zoom in" data-enabled="true">
+                                            <img src="img/zoom-in.png"></img>
+                                        </div>
+                                        <div id="zoomOut" class="iconSmall hint--bottom hint--success hint--rounded" data-hint="Click and hold to zoom out" data-enabled="true">
+                                            <img src="img/zoom-out.png"></img>
+                                        </div>
+                                    </td>
+                                    <td id="viewSpecificUI">
+
+                                    </td>
+                                    <td id="textUI" style="width: 40%;">
+                                        <div id="citationIcon" class="hint--bottom hint--success hint--rounded" data-hint="Get data sources and citation information" data-enabled="true">
+                                            Citation and Experiment Information
+                                        </div>
+                                        <div id="downloadIcon" class="hint--bottom hint--success hint--rounded" data-hint="Download raw data of this view" data-enabled="true" style="
+                      display:none">
+                                            Download Raw Data
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="container">
+                <div id="left" class="panel left hideleft">
+                    <div id="leftSearch">
+                        <div id="enter_geneID_box" class="hiddenInSpeciesView">
+                            <!--<select id="selectIdentifier">
+                  <option value="1">Arabidopsis thaliana</option>
+                  </select>
+                <h4 class="geneSearchPanelBoldText">Load genes by name:</h4>-->
+                            <!-- text box -->
+                            <div id='input-bar' style="display: flex;">
+                                <input id='enterIdentifier' type='text' name='GeneID' placeholder='Enter a gene name'/>
+                                <div id='queryIdentifier' class='greenbutton hint--right hint--success hint--rounded'>
+                                    <img src="http://bar.utoronto.ca/~bwaeseperlman/ben_modified/live-test/integrated/eplant/img/search.png" id='searchIcon'>
+                                </div>
+                            </div>
+                            <div style="display: flex;margin-top: 6">
+                                <p style="padding: 0 12px;">Example: <a id="loadABI3" class="loadExampleGene">ABI3</a> or <a id="loadAT5G60200" class="loadExampleGene">AT5G60200</a></p>
+                            </div>
+                            <!-- Expression Angler button -->
+                            <div style="display: flex;margin-top: 7;" class="hint--right hint--success hint--rounded" data-hint="Load genes by expression pattern" data-enabled="true">
+                                <input type="button" id="expressionAnglerButton" class="greyButton" value="Expression Angler" style="width:100%;height:30px;"></input>
+                            </div>
+                            <!-- Load genes by phenotype:</h4>-->
+                            <div style="display: flex;" class="hint--right hint--success hint--rounded" data-hint="Load genes by phenotype" data-enabled="true">
+                                <input type="button" id="phenotypeButton" class="greyButton" value="Mutant Phenotype Selector" style="width:100%;height:30px;"></input>
+                            </div>
+                        </div>
+                        <div style="width:100%;margin:0 2%;">
+                            <div id="highlowIcon" class="iconTiny hint--top hint--success hint--rounded" data-hint="Sort genes by maximum expression level from high to low" data-enabled="true">
+                                <img src="img/sort-highlow.png"></img>
+                            </div>
+                            <div id="lowhighIcon" class="iconTiny hint--top hint--success hint--rounded" data-hint="Sort genes by maximum expression level from low to high" data-enabled="true">
+                                <img src="img/sort-lowhigh.png"></img>
+                            </div>
+                            <div id="heatmapModeIcon" class="iconTiny hint--top hint--success hint--rounded" data-hint="Toggle mini heatmaps" data-enabled="true">
+                                <img src="img/off/heatMapMode.png"></img>
+                            </div>
+                            <div id="wordCloudIcon" class="iconTiny hint--top hint--success hint--rounded" data-hint="Word Cloud. A minimum of 5 genes must be loaded to use this tool." data-enabled="true">
+                                <img src="img/off/wordCloud.png"></img>
+                            </div>
+                            <div id="smallMultipleIcon" class="iconTiny hint--top hint--success hint--rounded" data-hint="Small Multiples view" data-enabled="true">
+                                <img src="img/off/smallMultiples.png"></img>
+                            </div>
+                        </div>
+                        <!-- gene panel -->
+
+                        <div id="genePanel_container" class="hiddenInSpeciesView">
+                            <div id="genePanel_holder" style="">
+                                <div id="genePanel_content" style="">
+                                    <div>
+                                        <span id="genePanel_loading_label"></span>
+                                        <span id="genePanel_label">No genes are loaded</span>
+                                    </div>
+                                    <div id="genePanel_list" style="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="top_fade">
+                            </div>
+                            <div id="bottom_fade">
+                            </div>
+                        </div>
+
+                        <!-- footer -->
+                        <div id="infoBar" class="">
+                            <div class="">
+                                <a id="getAbout">About</a>
+                            </div>
+                            <div class="">
+                                <a id="getHelp">Help</a>
+                            </div>
+                            <div class="">
+                                <a id="getComments">Comments</a>
+                            </div>
+
+                            <div class="fb-like" data-href="//bar.utoronto.ca/eplant/" data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>
+                        </div>
+                    </div>
+                    <div id="leftIcon">
+                        <div id="iconTopArrow" class="hint--right hint--success hint--rounded" data-hint="Scroll for more tools" data-enabled="true"></div>
+                        <div id="iconBottomArrow" class="hint--right hint--success hint--rounded" data-hint="Scroll for more tools" data-enabled="true"></div>
+                        <!-- Icon Dock -->
+                        <div id="navigationContainer" class="hiddenInSpeciesView list">
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar toggle
+              <div id="leftToggle" class="panel leftToggle hideleft" onclick="">
+              <div class="navPoint" id="switchPoint" title="close/open sidebar"><img class="toggleArrow" src="img/arrow-left.png" name="img1" width="25" height="80" id="img1" /></div>
+            </div>-->
+                <div class='tab' id="cacheContainer">
+                    <div id="GeneInfo_cache" style="width:100%;height:100%;position:absolute;left:0;top:0;">
+                    </div>
+                    <div id="JSmol_cache" style="width:100%;height:100%;position:absolute;left:0;top:0;">
+                    </div>
+                    <div id="Cytoscape_cache" style="width:100%;height:100%;position:absolute;left:0;top:0;">
+                    </div>
+                </div>
+
+                <div class='tab' id="viewPort">
+                    <div id="SmallMultipleContainer" style="width:100%;height:100%;position:absolute;left:0;top:0;overflow:hidden;z-index:100;background:#ffffff;display:none;">
+
+                        <div id="SmallMultipleHolder" style="width:100%;height:calc( 100% - 65px );margin-top:65px;position:absolute;left:0;top:0;overflow:auto;z-index:100;background:#ffffff; ">
+                        </div>
+                        <div class="selectable viewTitleLabel"><span>Small Multiple View</span></div>
+                    </div>
+                    <div id="Sequence_cache" style="width:100%;height:100%;position:absolute;left:3px;top:0;overflow:hidden;">
+                    </div>
+                    <div id="Molecule_cache" style="width:100%;height:100%;position:absolute;left:0;top:0;visibility:hidden">
+                    </div>
+                    <div id="efp_holder" style="width:100%;height:100%;position:absolute;">
+                        <div id="efp_plant_list" style="float: left;width: 0px;height: 100%;position:relative;background:rgb(230 230 230);"></div>
+                        <div id="efp_experiment_list" style="float: left;width: 0px;height: 100%;position:relative; background:rgb(230 230 230);"></div>
+                        <div id="efp_container" style="height:100%;margin-left: 0px;margin:0 auto;background:#fff;overflow:hidden;position: relative;"> </div>
+                    </div>
+                    <div id="heatmap_container" style="width:100%;
+              height:100%;
+              margin:0 auto;
+              position:absolute;
+            
+              background:#fff;
+              overflow:auto;">
+                    </div>
+                    <div id="home_container" style="width:100%;
+              height:100%;
+              margin:0 auto;
+              position:absolute;
+              background:#fff;
+              overflow:hidden;">
+                        <div id="sequence-theme">
+                            <div id="sequence">
+                                <div id="previousButton" class="sequence-prev hint--top hint--success hint--rounded animated bounceInDown" data-hint="Previous" data-enabled="true">
+                                    <img src="img/sequence/bt-prev.png" alt="Previous Frame" />
+                                </div>
+                                <div id="nextButton" class="sequence-next hint--top hint--success hint--rounded animated bounceInDown" data-hint="Next" data-enabled="true">
+                                    <img src="img/sequence/bt-next.png" alt="Next Frame" />
+                                </div>
+                                <!-- add Sequence.js pagination dots here so users can skip pages of the tutorial -->
+                                <div class="status"></div>
+
+
+                                <ul class="sequence-canvas">
+
+                                    <li id="tutorial-intro" style="height: 70%;
+                      width: 70%;
+                      left: 15%;
+                      top: 15%;">
+                                        <h2 class="tabletitle animate" style="top: -15%;width: 130%;left: -15%;">Data visualization tools for multiple levels of plant data.</h2>
+
+                                        <div id="BioInteractiveHolder" style="width:100%; height:100%;">
+                                            <object data="data/BiologicalLevelsInteractive.svg" type="image/svg+xml" class="mainSvg animate" style="width:100%;height:100%">
+                        </object>
+                                        </div>
+                                        <!--<div class="centertitle welcomeName animated rubberBand animate">ePlant</div>
+                        <h3 class="centersubtitle animate" style="margin-top:50px;">Data visualization tools for multiple levels of plant data.</h3>-->
+                                        <!--<h3 class="centersubtitle animated bounceInUp" style="margin-top:50px;">Data visualization tools for multiple levels of plant data.</h3>-->
+                                        <!--h4 class="centernote">Jamie Waese, Jim Fan, Hans Yu, Asher Pasha and Nicholas Provart <br> University of Toronto 2015</h4-->
+                                        <!--img class="centerlogo animate pulse animated" style="-webkit-animation-delay: 1s;animation-delay: 1s;" src="img/eplantLogo.png" alt="bar"-->
+
+                                    </li>
+
+                                    <!-- li>
+                        <h3 class="subtitle animate">Select a gene.</h3>
+                        <h4 class="note animate">You can load several genes at once if they are, separated, by, commas. </h4>
+                        <img class="pic animate" src="img/screenshot/enter-gene2.gif" alt="" style="top:70%;"/>
+                      </li -->
+
+                                   
+
+                                    <li>
+                                        <h2 class="tabletitle animate">Does <span style="font-style:italic">EIF2</span> have a broad or narrow expression pattern?</h2>
+                                        <img class="centericon animate" src="img/welcomePageImages/heatMap.png" alt="Heatmap image" />
+                                        <h3 class="centersubtitle3 animate">Use the Heat Map viewer for an overview of the expression patterns and subcellular localization information of all loaded genes / gene products.</h3>
+                                    </li>
+
+
+                                    <li>
+                                        <h2 class="tabletitle animate">Does <span style="font-style:italic">SIN1</span> exhibit natural variation in expression?</h2>
+                                        <img class="centericon animate" src="img/welcomePageImages/world.png" alt="World eFP image" />
+                                        <h3 class="centersubtitle3 animate">Use the World eFP viewer to see natural variation of gene expression patterns in ecotypes collected from around the world.</h3>
+                                    </li>
+
+
+
+                                    <li>
+                                        <h2 class="tabletitle animate">Where is <span style="font-style:italic">ABI3</span> expressed?</h2>
+
+
+
+                                        <img class="centericon animate" src="img/welcomePageImages/plant.png" alt="Plant eFP image" />
+                                        <h3 class="centersubtitle3 animate">Use the Plant eFP viewer to see gene expression levels in various tissues of a plant.</h3>
+                                    </li>
+
+
+
+                                    <li>
+                                        <h2 class="tabletitle animate">What is the effect of drought on <span style="font-style:italic">UBQ4</span> expression after 6 hours?</h2>
+                                        <img class="centericon animate" src="img/welcomePageImages/experiment.png" alt="Experiment viewer image" />
+                                        <h3 class="centersubtitle3 animate">Use the Abiotic Stress eFP View in the Tissue &amp; Experiment viewer to see the results of many gene expression profiling experiments.</h3>
+                                    </li>
+
+
+                                    <li>
+                                        <h2 class="tabletitle animate">Is the CESA10 protein localized to the cell wall?</h2>
+                                        <img class="centericon animate" src="img/welcomePageImages/cell.png" alt="Cell eFP image" />
+                                        <h3 class="centersubtitle3 animate">Use the Cell eFP viewer to see where proteins are localized at the subcellular level.</h3>
+                                    </li>
+
+
+                                    <li>
+                                        <h2 class="tabletitle animate">Which chromosome is <span style="font-style:italic">UBI6</span> on?</h2>
+                                        <img class="centericon animate" src="img/welcomePageImages/chromosome.png" alt="Chromosome viewer image" />
+                                        <h3 class="centersubtitle3 animate">The Chromosome viewer shows where genes are situated on chromosomes.</h3>
+                                    </li>
+
+                                    <li>
+                                        <h2 class="tabletitle animate">Which proteins are known to interact with AT4G17410?</h2>
+                                        <img class="centericon animate" src="img/welcomePageImages/interaction.png" alt="Chromosome viewer image" />
+                                        <h3 class="centersubtitle3 animate">The Interactions viewer displays protein interactors for the currently selected gene product from our database of ~80k predicted and ~100k confirmed protein interactions, and 2.8M protein-DNA interactions.</h3>
+                                    </li>
+
+                                    <li>
+                                        <h2 class="tabletitle animate">Where are the binding sites on GOS12?</h2>
+                                        <img class="centericon animate" src="img/welcomePageImages/molecule.png" alt="Molecule viewer image" />
+                                        <h3 class="centersubtitle3 animate">The Molecule viewer maps functionally important amino acid residues onto 3D models of proteins and highlights non-synonymous changes from the 1001 Genomes Project.</h3>
+                                    </li>
+
+                                    <li>
+                                        <h2 class="tabletitle animate">Don't know which genes to load?</h2>
+                                        <img class="centericon animate" src="img/welcomePageImages/expressionAngler.png" alt="Expression angler image" />                                        
+                                        <h3 class="centersubtitle3 animate">Use the Expression Angler to describe an expression pattern and search for genes with matching gene expression profiles.</h3>
+                                    </li>
+                                    <li style="height: 70%;
+                      width: 70%;
+                      left: 15%;
+                      top: 15%;">
+                                        <h2 class="tabletitle animate" style="top: -15%;">Data Sources</h2>
+                                        <div class="sourceContainer animate">
+                                            <a href="//bar.utoronto.ca"><img src="img/logos/BAR.png" class="partnerLogo"></a>
+                                            <a href="http://araport.org"><img src="img/logos/Araport.png" class="partnerLogo"></a>
+                                            <a href="https://www.arabidopsis.org/"><img src="img/logos/TAIR.png" class="partnerLogo"></a>
+                                            <a href="http://suba.plantenergy.uwa.edu.au/"><img src="img/logos/SUBA3.png" class="partnerLogo"></a>
+                                            <a href="http://gator.masc-proteomics.org/"><img src="img/logos/MASCP.png" class="partnerLogo"></a>
+
+                                            <a href="http://www.biomart.org/"><img src="img/logos/BioMart.png" class="partnerLogo"></a>
+
+                                        </div>
+                                    </li>
+                                    <li style="height: 70%;
+                      width: 70%;
+                      left: 15%;
+                      top: 15%;">
+                                        <h2 class="tabletitle animate" style="top: -15%;">Funding Partners</h2>
+                                        <div class="sourceContainer animate">
+                                            <a href="http://www.genomecanada.ca/"><img src="img/logos/GenomeCanada.png" class="partnerLogo"></a>
+                                            <a href="http://www.nsf.gov/"><img src="img/logos/NSF.png" class="partnerLogo"></a>
+                                            <a href="https://www.moore.org/"><img src="img/logos/MooreFoundation.png" class="partnerLogo"></a>
+                                            <a href="http://www.cagef.utoronto.ca/"><img src="img/logos/CAGEF.png" class="partnerLogo"></a>
+
+                                        </div>
+                                    </li>
+
+                                    <!--  -->
+
+                                    <!--li>
+                        <h2 class="centertitle2 animate">Additional information</h2>
+                        <h3 class="centersubtitle2 animate"> Click on the information icon to display annotation data for any gene. </h3>
+                        <h4 class="centernote2 animate"> </h4>
+                        <img class="centerpic2 animate" src="img/screenshot/gene-info.gif" alt="Model 3" />
+
+
+                      </li -->
+
+                                    <!-- li>
+                        <h2 class="centertitle2 animate">Get Simialiar Genes</h2>
+                        <h3 class="centersubtitle2 animate"> Click on "get similiar genes" in the dropdown menu to get 10 similiar genes for any gene. </h3>
+                        <h4 class="centernote2 animate"> </h4>
+                        <img class="centerpic2 animate" src="img/screenshot/similiar-gene-loading.gif" alt="Model 3" />
+
+                      </li -->
+                                    <!--<li>
+                        <h2 class="title animate">Switch Views</h2>
+                        <h3 class="subtitle animate"> Select one of the tool icons to adjust the view. </h3>
+                        <img class="pic animate byheight" src="img/screenshot/icon-dock.png" alt="Model 3" />
+                      </li>-->
+                                </ul>
+
+                                <ul class="sequence-pagination">
+
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+
+
+                                </ul>
+                                <!--<div class="sequence-pause"></div>-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="ZUI_container" style="width:100%;
+              height:100%;
+              position:absolute;">
+
+                        <div id="JSmol_container" style="width:100%;height:100%;position:absolute;left:0;top:0;opacity:0.99;">
+                        </div>
+                        <div id="dalliance_container" style="width:100%;height:100%;position:absolute;left:0;top:0;opacity:0.99;visibility:hidden;">
+                        </div>
+                        <canvas id="ZUI_canvas" width="900px" height="600px" style="position:absolute;left:0;top:0;outline:none;">
+                  Canvas is not supported by your browser, please upgrade.
+                </canvas>
+
+
+                    </div>
+                    <div id="GeneInfo_container" style="overflow:hidden;width:100%;height:100%;position:absolute;left:0;top:0;opacity:0.99;">
+                    </div>
+                    <div id="GeneSlider_container" style="overflow:hidden;width:100%;height:100%;position:absolute;left:0;top:0;opacity:0.99;">
+                    </div>
+                    <div id="Navigator_container" style="width:100%;height:100%;position:absolute;left:0;top:0;opacity:0.99;">
+                    </div>
+                    <div id="Cytoscape_container" style="width:100%;height:100%;position:absolute;left:0;top:0;opacity:0.99;">
+                    </div>
+                    <div id="World_container" style="width:100%;height:100%;position:absolute;left:0;top:0;">
+                    </div>
+                    <div id="Pathway_container" style="width:100%;height:100%;position:absolute;left:0;top:0;">
+                        
+                        <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/themes/light.css"/>
+                        
+                        <style>
+                            .tippy-content{
+                                height: 280px!important;
+                            }
+                        </style>
+                        <div id="pathwayViz" class="ex1" style="display:none;">
+                            <div id="pathwayCytoscape" style="display:inherit;position: absolute; top: 0px; left: 0; width: 100%; height: calc(100% - 100px);"></div>
+                            <div id="pathwayLoadingScreen" style="display:none;position: absolute; top: 0px; left: 20px; width: 100%; height: calc(100% - 100px);background:#fff;">Loading...</div>
+                            <div id="noPathwaysFoundMessage" style="display:none;position: absolute; top: 0px; left: 20px; width: 100%; height: calc(100% - 100px);background:#fff;">No pathways found.</div>
+                            <div id="container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Application contents -->
+
+            <!-- Import cytoscape3 and related extensions -->
+            <!-- <script type="text/javascript" src="lib/cytoscape3/cytoscape.min.js"></script> -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.18.1/cytoscape.umd.js"></script>
+            <!-- Import cytoscape-node-html-label -->
+            <script type="text/javascript" src="lib/cytoscape3/cytoscape-node-html-label.js"></script>
+            <!-- Import cose-bilkent and dependencies -->
+            <script type="text/javascript" src="lib/cytoscape3/cose-bilkent-dependencies/layout-base.js"></script>
+            <script type="text/javascript" src="lib/cytoscape3/cose-bilkent-dependencies/cose-base.js"></script>
+            <script type="text/javascript" src="lib/cytoscape3/cytoscape-cose-bilkent.js"></script>
+            
+            <!-- Import cytoscape-no-overlap -->
+            <script type="text/javascript" src="lib/cytoscape3/cytoscape-no-overlap.js"></script>
+            <!-- Import cytoscape.js-popper -->
+            <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+            <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+            <!-- cytoscape 3 versions of old import statmenets -->
+            <script type="text/javascript" src="lib/cytoscape3/cytoscape-automove.js"></script>
+            <script type="text/javascript" src="lib/cytoscape3/cytoscape-arbor-dependencies/arbor.js"></script>
+            <script type="text/javascript" src="lib/cytoscape3/cytoscape-arbor.js"></script>
+
+            <!-- non cytoscape lib imports -->
+            <script type="text/javascript" src="lib/spectrum/spectrum.js"></script>
+            <script src="js/FileSaver.min.js"></script>
+
+            <script src="js/jquery.qtip.min.js"></script>
+
+            <script type="text/javascript" src="lib/JSmol/JSmol.min.nojq.js"></script>
+            <script type="text/javascript" src="lib/JSmol/JSmol.GLmol.min.js"></script>
+
+            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT2IJLsslEC94ECmcXlAvz9ukPRH0fbh0&sensor=false"></script>
+
+            <script type="text/javascript" src="lib/d3/d3.min.js"></script>
+            <script type="text/javascript" src="lib/newick/newick.js"></script>
+            <script type="text/javascript" src="lib/d3-tip/d3.tip.v0.6.3.js"></script>
+
+            <script type="text/javascript" src="lib/GMaps/infobox_packed.js"></script>
+            <script type="text/javascript" src="lib/OverlappingMarkerSpiderfier/oms.min.js"></script>
+            <script type="text/javascript" src="lib/dalliance/dalliance-compiled.js"></script>
+            <!--<script type="text/javascript" src="lib/html2canvas/html2canvas.js"></script>-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js" integrity="sha512-s/XK4vYVXTGeUSv4bRPOuxSDmDlTedEpMEcAQk0t/FMd9V6ft8iXdwSBxV0eD60c6w/tjotSlKu9J2AAW1ckTA==" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="js/canvas2svg.js"></script>
+            <script type="text/javascript" src="js/jspdf.js"></script>
+            <script type="text/javascript" src="js/jspdf/addimage.js"></script>
+            <script type="text/javascript" src="js/jspdf/png_support/zlib.js"></script>
+            <script type="text/javascript" src="js/jspdf/png_support/png.js"></script>
+            <script type="text/javascript" src="js/jspdf/png_support.js"></script>
+
+            <script type="text/javascript" src="js/jquery.dropdown.js"></script>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js" charset="utf-8"></script>
+            <script type="text/javascript" src="js/molviewer41.js"></script>
+            <script type="text/javascript" src="js/resize.js"></script>
+            <script type="text/javascript" src="js/TabManager.js"></script>
+            <script type="text/javascript" src="js/DialogManager.js"></script>
+
+            <script type="text/javascript" src="js/canvg.js"></script>
+            <script type="text/javascript" src="js/jquery.sequence-min.js"></script>
+            <!--<script type="text/javascript" src="js/sequence.min.js"></script>-->
+            <script type="text/javascript" src="js/ZeroClipboard.js"></script>
+
+            <script type="text/javascript" src="js/spectrum.js"></script>
+            <script src="js/sequencejs-options.modern-slide-in.js"></script>
+            <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+            <script src="js/backToTop.js"></script>
+            <script src="js/datatables.min.js"></script>
+            <script src="js/jquery.svg.min.js"></script>
+            <script src="js/processing.js"></script>
+            <!-- Google Analytics -->
+            <!-- <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-44555001-1']);
+            _gaq.push(['_trackPageview']);
+            (function () {
+              var ga = document.createElement('script');
+              ga.type = 'text/javascript';
+              ga.async = true;
+              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(ga, s);
+            })();
+          </script> -->
+            <script>
+                (function(i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function() {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+                ga('create', 'UA-83592376-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+            <!-- Facebook Like Button -->
+            <!-- CSS -->
+
+            <script type="text/javascript" src="src/ZUI/ZUI.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.HashMap.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.camera.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.View.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.ViewObject.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.Animation.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.Geometry.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.Statistics.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.Math.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.Parser.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.Util.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.ContextMenu.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.ContextMenuOption.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.Util.KeySpline.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.Event.js"></script>
+            <script type="text/javascript" src="src/ZUI/ZUI.EventListener.js"></script>
+            <script type="text/javascript" src="src/Eplant.js"></script>
+
+            <script type="text/javascript" src="src/Eplant.ExpressionAngler.js"></script>
+            <script type="text/javascript" src="src/Eplant.ExperimentSelectList.js"></script>
+            <script type="text/javascript" src="src/Eplant.ExperimentSelectList.Choice.js"></script>
+            <script type="text/javascript" src="src/Eplant.PlantSelectList.js"></script>
+            <script type="text/javascript" src="src/Eplant.PlantSelectList.Choice.js"></script>
+            <script type="text/javascript" src="src/Eplant.ViewModes.js"></script>
+            <script type="text/javascript" src="src/Eplant.Screenshot.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views.js"></script>
+            <script type="text/javascript" src="src/Eplant.ViewInstructions.js"></script>
+            <script type="text/javascript" src="src/Eplant.Color.js"></script>
+            <script type="text/javascript" src="src/Eplant.View.js"></script>
+            <script type="text/javascript" src="src/Eplant.Queue.js"></script>
+            <script type="text/javascript" src="src/Eplant.BaseViews.js"></script>
+            <script type="text/javascript" src="src/Eplant.Species.js"></script>
+            <script type="text/javascript" src="src/Eplant.Chromosome.js"></script>
+            <script type="text/javascript" src="src/Eplant.GeneticElement.js"></script>
+            <script type="text/javascript" src="src/Eplant.GeneticElement.AnnotationTag.js"></script>
+            <script type="text/javascript" src="src/Eplant.WordCloudDialog.js"></script>
+            <script type="text/javascript" src="src/Eplant.GeneticElementDialog.js"></script>
+            <script type="text/javascript" src="src/Eplant.GeneticElementListDialog.js"></script>
+            <!--<script type="text/javascript" src="src/Epalnt.GenericElementInfoDialog.js"></script>  Epalnt -->
+            <script type="text/javascript" src="src/Eplant.GeneticElementDialog.AnnotationTag.js"></script>
+            <script type="text/javascript" src="src/Eplant.ViewSpecificUIButton.js"></script>
+            <script type="text/javascript" src="src/Eplant.PaletteDialog.js"></script>
+            <script type="text/javascript" src="src/Eplant.GlobalColorModeDialog.js"></script>
+
+            <script type="text/javascript" src="src/Eplant.Tooltip.js"></script>
+            <script type="text/javascript" src="src/Eplant.History.js"></script>
+            <script type="text/javascript" src="src/Eplant.History.Item.js"></script>
+            <script type="text/javascript" src="src/Eplant.HistoryDialog.js"></script>
+            <script type="text/javascript" src="src/Eplant.BaseViews/EFPViewJson/Eplant.BaseViews.EFPViewJson.js"></script>
+            <script type="text/javascript" src="src/Eplant.BaseViews/EFPViewJson/Eplant.BaseViews.EFPViewJson.Legend.js"></script>
+            <script type="text/javascript" src="src/Eplant.BaseViews/EFPViewJson/Eplant.BaseViews.EFPViewJson.CompareDialog.js"></script>
+            <script type="text/javascript" src="src/Eplant.BaseViews/EFPViewJson/Eplant.BaseViews.EFPViewJson.MaskDialog.js"></script>
+            <script type="text/javascript" src="src/Eplant.BaseViews/EFPViewJson/Eplant.BaseViews.EFPViewJson.PaletteDialog.js"></script>
+            <script type="text/javascript" src="src/Eplant.BaseViews/EFPView/Eplant.BaseViews.EFPView.js"></script>
+            <script type="text/javascript" src="src/Eplant.BaseViews/EFPView/Eplant.BaseViews.EFPView.Legend.js"></script>
+            <script type="text/javascript" src="src/Eplant.BaseViews/EFPView/Eplant.BaseViews.EFPView.CompareDialog.js"></script>
+            <script type="text/javascript" src="src/Eplant.BaseViews/EFPView/Eplant.BaseViews.EFPView.MaskDialog.js"></script>
+            <script type="text/javascript" src="src/Eplant.BaseViews/EFPView/Eplant.BaseViews.EFPView.PaletteDialog.js"></script>
+            <script type="text/javascript" src="src/Eplant.BaseViews/EFPView/Eplant.BaseViews.EFPView.GeneDistributionChart.js"></script>
+            <!--
+            <script type="text/javascript" src="src/Eplant.Views/SpeciesView/Eplant.Views.SpeciesView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/SpeciesView/Eplant.Views.SpeciesView.SelectList.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/SpeciesView/Eplant.Views.SpeciesView.SelectList.Choice.js"></script>
+          -->
+
+
+            <script type="text/javascript" src="src/Eplant.Views/HomeView/Eplant.Views.HomeView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/GeneInfoView/Eplant.Views.GeneInfoView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/PublicationView/Eplant.Views.PublicationView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/NavigatorView/d3.phylogram.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/NavigatorView/d3.tip.v0.6.3.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/NavigatorView/Eplant.Views.NavigatorView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/HeatMapView/Eplant.Views.HeatMapView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/HeatMapView/Eplant.Views.HeatMapView.Legend.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/CellView/Eplant.Views.CellView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/ChemicalView/Eplant.Views.ChemicalView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/AbioticStressView/Eplant.Views.AbioticStressView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/AbioticStressIIView/Eplant.Views.AbioticStressIIView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/GuardCellDroughtView/Eplant.Views.GuardCellDroughtView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/GuardCellMeristemoidsView/Eplant.Views.GuardCellMeristemoidsView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/GuardCellMutantAndWildTypeGuardCellABAResponseView/Eplant.Views.GuardCellMutantAndWildTypeGuardCellABAResponseView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/GuardCellSuspensionCellABAResponseWithROSScavengerView/Eplant.Views.GuardCellSuspensionCellABAResponseWithROSScavengerView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/TissueSpecificGuardAndMesophyllCellsView/Eplant.Views.TissueSpecificGuardAndMesophyllCellsView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/TissueSpecificEmbryoDevelopmentView/Eplant.Views.TissueSpecificEmbryoDevelopmentView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/TissueSpecificMicrogametogenesisView/Eplant.Views.TissueSpecificMicrogametogenesisView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/TissueSpecificPollenGerminationView/Eplant.Views.TissueSpecificPollenGerminationView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/TissueSpecificRootView/Eplant.Views.TissueSpecificRootView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/TissueSpecificShootApicalMeristemView/Eplant.Views.TissueSpecificShootApicalMeristemView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/TissueSpecificStemEpidermisView/Eplant.Views.TissueSpecificStemEpidermisView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/TissueSpecificStigmaAndOvariesView/Eplant.Views.TissueSpecificStigmaAndOvariesView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/TissueSpecificTrichomesView/Eplant.Views.TissueSpecificTrichomesView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/TissueSpecificXylemAndCorkView/Eplant.Views.TissueSpecificXylemAndCorkView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/BioticStressBotrytiscinereaView/Eplant.Views.BioticStressBotrytiscinereaView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/BioticStressElicitorsView/Eplant.Views.BioticStressElicitorsView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/BioticStressErysipheorontiiView/Eplant.Views.BioticStressErysipheorontiiView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/BioticStressHyaloperonosporaarabidopsisView/Eplant.Views.BioticStressHyaloperonosporaarabidopsisView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/BioticStressMyzuspersicaereView/Eplant.Views.BioticStressMyzuspersicaereView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/BioticStressPhytophthorainfestansView/Eplant.Views.BioticStressPhytophthorainfestansView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/BioticStressPseudomonassyringaeView/Eplant.Views.BioticStressPseudomonassyringaeView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/BioticStressGolovinomycesorontiiView/Eplant.Views.BioticStressGolovinomycesorontiiView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/RootImmunityElicitationView/Eplant.Views.RootImmunityElicitationView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/KlepikovaView/Eplant.Views.KlepikovaView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/AtGenExpressView/Eplant.Views.AtGenExpressView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/GerminationView/Eplant.Views.GerminationView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/ShootApexView/Eplant.Views.ShootApexView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/SingleCellView/Eplant.Views.SingleCellView.js"></script>
+
+            <!--load other views-->
+            <script type="text/javascript" src="src/Eplant.Views/WorldView/Eplant.Views.WorldView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/ExperimentView/Eplant.Views.ExperimentView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/ExperimentView/Eplant.Views.ExperimentView.SelectList.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/ExperimentView/Eplant.Views.ExperimentView.SelectList.Choice.js"></script>
+
+            <script type="text/javascript" src="src/Eplant.Views/PlantView/Eplant.Views.PlantView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/PlantView/Eplant.Views.PlantView.SelectList.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/PlantView/Eplant.Views.PlantView.SelectList.Choice.js"></script>
+
+            <script type="text/javascript" src="src/Eplant.Views/ChromosomeView/Eplant.Views.ChromosomeView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/ChromosomeView/Eplant.Views.ChromosomeView.Chromosome.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/ChromosomeView/Eplant.Views.ChromosomeView.GeneticElementList.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/ChromosomeView/Eplant.Views.ChromosomeView.GeneticElementList.Choice.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/ChromosomeView/Eplant.Views.ChromosomeView.Annotation.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/ChromosomeView/Eplant.Views.ChromosomeView.AnnotateDialog.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/ChromosomeView/Eplant.Views.ChromosomeView.AnnotateDialog.AnnotationTag.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/ChromosomeView/Eplant.Views.ChromosomeView.GeneticElementDialog.js"></script>
+
+
+            <script type="text/javascript" src="src/Eplant.Views/InteractionView/Eplant.Views.InteractionView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/InteractionView/Eplant.Views.InteractionView.Annotation.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/InteractionView/Eplant.Views.InteractionView.Layout.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/InteractionView/Eplant.Views.InteractionView.LoadInteraction.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/InteractionView/Eplant.Views.InteractionView.LoadSublocalization.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/InteractionView/Eplant.Views.InteractionView.Legend.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/InteractionView/Eplant.Views.InteractionView.FilterDialog.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/InteractionView/Eplant.Views.InteractionView.ChromosomeDialog.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/InteractionView/Eplant.Views.InteractionView.EdgeInfoTooltip.js"></script>
+
+            <script type="text/javascript" src="src/Eplant.Views/PathwayView/xml2json.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/PathwayView/cellStructure.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/PathwayView/Eplant.Views.PathwayView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/PathwayView/Eplant.Views.PathwayView.Legend.js"></script>
+
+            <script type="text/javascript" src="src/Eplant.Views/MoleculeView/Eplant.Views.MoleculeView.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/MoleculeView/Eplant.Views.MoleculeView.Base.js"></script>
+            <script type="text/javascript" src="src/Eplant.Views/SequenceView/Eplant.Views.SequenceView.js"></script>
+
+            <script type="text/javascript" src="src/Eplant.Views/LinkoutView/Eplant.Views.LinkoutView.js"></script>
+            <!--<script type="text/javascript" src="src/Eplant.Views/GeneSliderView/Eplant.Views.GeneSliderView.js"></script>-->
+
+
+            <script type="text/javascript">
+                var cursorX;
+                var cursorY;
+
+                $(document).mousemove(function(e) {
+                    cursorX = e.clientX;
+                    cursorY = e.clientY - 15;
+                });
+                var test = function(event) {
+                    if (this.config.title) {
+                        this.DOM.header.css({
+                            height: "30px"
+                        });
+                        this.DOM.title.css({
+                            height: "32px"
+                        });
+                    } else {
+
+                        this.DOM.header.css({
+                            height: "0px"
+                        });
+                        this.DOM.title.css({
+                            height: "0px"
+                        });
+                    }
+                    this.DOM.content.css({
+                        'max-height': document.body.clientHeight * 0.8 - 20
+                    });
+                    //this.DOM.content.css({'max-width':window.width*0.8});
+                    this._reset();
+                };
+                (function(config) {
+                    config['okVal'] = 'Ok';
+                    config['cancelVal'] = 'Cancel';
+                    config['title'] = '';
+                    config['defaultinit'] = test;
+                    // [more..]
+                })(art.dialog.defaults);
+                Eplant.initialize();
+            </script>
+
+
+
+
+            <!-- load chromosomeView after loading complete -->
+        </div>
+        <!-- Preload Text in selection box -->
+        <script type="text/javascript">
+            function inputFocus(i) {
+                if (i.value == i.defaultValue) {
+                    i.value = "";
+                    i.style.color = "#000";
+                }
+            }
+
+            function inputBlur(i) {
+                if (i.value == "") {
+                    i.value = i.defaultValue;
+                    i.style.color = "#666";
+                }
+            }
+        </script>
+
+        <script type="text/javascript">
+            // DEFINE VARIABLES
+        </script>
+
+
+
+    </div>
+
+    </div>
+
+    </div>
+    <div id='molHolder' style="position:relative;width:100%;height:100%"></div>
+</body>
+
+</html>

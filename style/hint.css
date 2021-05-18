@@ -1,0 +1,310 @@
+/*! hintWhite.css - v1.3.2 - 2014-05-18
+* http://kushagragour.in/lab/hintWhite/
+* Copyright (c) 2014 Kushagra Gour; Licensed MIT */
+
+/*-------------------------------------*\
+	hintWhite.css - A CSS tooltip library
+\*-------------------------------------*/
+/**
+ * hintWhite.css is a tooltip library made in pure CSS.
+ *
+ * Source: https://github.com/chinchang/hintWhite.css
+ * Demo: http://kushagragour.in/lab/hintWhite/
+ *
+ * Release under The MIT License
+ *
+ */
+/**
+ * source: hintWhite-core.scss
+ *
+ * Defines the basic styling for the tooltip.
+ * Each tooltip is made of 2 parts:
+ * 	1) body (:after)
+ * 	2) arrow (:before)
+ *
+ * Classes added:
+ * 	1) hintWhite
+ */
+.hintWhite, [data-hintWhite] {
+  position: relative;
+  display: inline-block;
+  /**
+   * tooltip arrow
+   */
+  /**
+   * tooltip body
+   */ }
+  .hintWhite:before, .hintWhite:after, [data-hintWhite]:before, [data-hintWhite]:after {
+    position: absolute;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000000;
+    pointer-events: none;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease;
+    -webkit-transition-delay: 0ms;
+    -moz-transition-delay: 0ms;
+    transition-delay: 0ms; }
+  .hintWhite:hover:before, .hintWhite:hover:after, .hintWhite:focus:before, .hintWhite:focus:after, [data-hintWhite]:hover:before, [data-hintWhite]:hover:after, [data-hintWhite]:focus:before, [data-hintWhite]:focus:after {
+    visibility: visible;
+    opacity: 1; }
+  .hintWhite:hover:before, .hintWhite:hover:after, [data-hintWhite]:hover:before, [data-hintWhite]:hover:after {
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    transition-delay: 100ms; }
+  .hintWhite:before, [data-hintWhite]:before {
+    content: '';
+    position: absolute;
+	    top:-1px;
+    background: transparent;
+    border: 6px solid transparent;
+    z-index: 1000001; }
+  .hintWhite:after, [data-hintWhite]:after {
+    content: attr(data-hintWhite);
+    background: #383838;
+    color: #000;
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+	-webkit-box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.6);
+	-moz-box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.6);
+	box-shadow: 2px 2px 8px -1px rgba(0,0,0,0.6);
+	font-style:normal;
+	border-radius:3px;
+	border:1px solid #E3E3E3;
+	}
+
+/**
+ * source: hintWhite-position.scss
+ *
+ * Defines the positoning logic for the tooltips.
+ *
+ * Classes added:
+ * 	1) hintWhite--top
+ * 	2) hintWhite--bottom
+ * 	3) hintWhite--left
+ * 	4) hintWhite--right
+ */
+/**
+ * set default color for tooltip arrows
+ */
+.hintWhite--top:before {
+  border-top-color: #383838; }
+
+.hintWhite--bottom:before {
+  border-bottom-color: #383838; }
+
+.hintWhite--left:before {
+  border-left-color: #383838; }
+
+.hintWhite--right:before {
+  border-right-color: #383838; }
+
+/**
+ * top tooltip
+ */
+.hintWhite--top:before {
+  margin-bottom: -12px; }
+.hintWhite--top:after {
+  margin-left: -18px; }
+.hintWhite--top:before, .hintWhite--top:after {
+  bottom: 100%;
+  left: 50%; }
+.hintWhite--top:hover:after, .hintWhite--top:hover:before, .hintWhite--top:focus:after, .hintWhite--top:focus:before {
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  transform: translateY(-8px); }
+
+/**
+ * bottom tooltip
+ */
+.hintWhite--bottom:before {
+  margin-top: -12px; }
+.hintWhite--bottom:after {
+  margin-left: -18px; }
+.hintWhite--bottom:before, .hintWhite--bottom:after {
+  top: 100%;
+  left: 50%; }
+.hintWhite--bottom:hover:after, .hintWhite--bottom:hover:before, .hintWhite--bottom:focus:after, .hintWhite--bottom:focus:before {
+  -webkit-transform: translateY(8px);
+  -moz-transform: translateY(8px);
+  transform: translateY(8px); }
+
+/**
+ * right tooltip
+ */
+.hintWhite--right:before {
+  margin-left: -12px;
+  margin-bottom: -6px; }
+.hintWhite--right:after {
+  margin-bottom: -14px; }
+.hintWhite--right:before, .hintWhite--right:after {
+  left: 100%;
+  bottom: 50%; }
+.hintWhite--right:hover:after, .hintWhite--right:hover:before, .hintWhite--right:focus:after, .hintWhite--right:focus:before {
+  -webkit-transform: translateX(8px);
+  -moz-transform: translateX(8px);
+  transform: translateX(8px); }
+
+/**
+ * left tooltip
+ */
+.hintWhite--left:before {
+  margin-right: -12px;
+  margin-bottom: -6px; }
+.hintWhite--left:after {
+  margin-bottom: -14px; }
+.hintWhite--left:before, .hintWhite--left:after {
+  right: 100%;
+  bottom: 50%; }
+.hintWhite--left:hover:after, .hintWhite--left:hover:before, .hintWhite--left:focus:after, .hintWhite--left:focus:before {
+  -webkit-transform: translateX(-8px);
+  -moz-transform: translateX(-8px);
+  transform: translateX(-8px); }
+
+/**
+ * source: hintWhite-color-types.scss
+ *
+ * Contains tooltips of various types based on color differences.
+ *
+ * Classes added:
+ * 	1) hintWhite--error
+ * 	2) hintWhite--warning
+ * 	3) hintWhite--info
+ * 	4) hintWhite--success
+ *
+ */
+/**
+ * Error
+ */
+.hintWhite--error:after {
+  background-color: #b34e4d; }
+.hintWhite--error.hintWhite--top:before {
+  border-top-color: #b34e4d; }
+.hintWhite--error.hintWhite--bottom:before {
+  border-bottom-color: #b34e4d; }
+.hintWhite--error.hintWhite--left:before {
+  border-left-color: #b34e4d; }
+.hintWhite--error.hintWhite--right:before {
+  border-right-color: #b34e4d; }
+
+/**
+ * Warning
+ */
+.hintWhite--warning:after {
+  background-color: #c09854;}
+.hintWhite--warning.hintWhite--top:before {
+  border-top-color: #c09854; }
+.hintWhite--warning.hintWhite--bottom:before {
+  border-bottom-color: #c09854; }
+.hintWhite--warning.hintWhite--left:before {
+  border-left-color: #c09854; }
+.hintWhite--warning.hintWhite--right:before {
+  border-right-color: #c09854; }
+
+/**
+ * Info
+ */
+.hintWhite--info:after {
+  background-color: #3986ac;}
+.hintWhite--info.hintWhite--top:before {
+  border-top-color: #3986ac; }
+.hintWhite--info.hintWhite--bottom:before {
+  border-bottom-color: #3986ac; }
+.hintWhite--info.hintWhite--left:before {
+  border-left-color: #3986ac; }
+.hintWhite--info.hintWhite--right:before {
+  border-right-color: #3986ac; }
+
+/**
+ * Success
+ */
+/* .hintWhite--success:after {
+  background-color: #458746;
+  text-shadow: 0 -1px 0px #1a321a; }
+.hintWhite--success.hintWhite--top:before {
+  border-top-color: #458746; }
+.hintWhite--success.hintWhite--bottom:before {
+  border-bottom-color: #458746; }
+.hintWhite--success.hintWhite--left:before {
+  border-left-color: #458746; }
+.hintWhite--success.hintWhite--right:before {
+  border-right-color: #458746; } */
+  
+ /* Edited for eplant as asked by Jamie, changed the color to #ffffff*/
+.hintWhite--success:after {
+  background-color: #ffffff; }
+.hintWhite--success.hintWhite--top:before {
+  border-top-color: #ffffff; }
+.hintWhite--success.hintWhite--bottom:before {
+  border-bottom-color: #ffffff; }
+.hintWhite--success.hintWhite--left:before {
+  border-left-color: #ffffff; }
+.hintWhite--success.hintWhite--right:before {
+  border-right-color: #ffffff; }
+
+/**
+ * source: hintWhite-always.scss
+ *
+ * Defines a persisted tooltip which shows always.
+ *
+ * Classes added:
+ * 	1) hintWhite--always
+ *
+ */
+.hintWhite--always:after, .hintWhite--always:before {
+  opacity: 1;
+  visibility: visible; }
+.hintWhite--always.hintWhite--top:after, .hintWhite--always.hintWhite--top:before {
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  transform: translateY(-8px); }
+.hintWhite--always.hintWhite--bottom:after, .hintWhite--always.hintWhite--bottom:before {
+  -webkit-transform: translateY(8px);
+  -moz-transform: translateY(8px);
+  transform: translateY(8px); }
+.hintWhite--always.hintWhite--left:after, .hintWhite--always.hintWhite--left:before {
+  -webkit-transform: translateX(-8px);
+  -moz-transform: translateX(-8px);
+  transform: translateX(-8px); }
+.hintWhite--always.hintWhite--right:after, .hintWhite--always.hintWhite--right:before {
+  -webkit-transform: translateX(8px);
+  -moz-transform: translateX(8px);
+  transform: translateX(8px); }
+
+/**
+ * source: hintWhite-rounded.scss
+ *
+ * Defines rounded corner tooltips.
+ *
+ * Classes added:
+ * 	1) hintWhite--rounded
+ *
+ */
+.hintWhite--rounded:after {
+  border-radius: 4px; }
+
+/**
+ * source: hintWhite-effects.scss
+ *
+ * Defines various transition effects for the tooltips.
+ *
+ * Classes added:
+ * 	1) hintWhite--no-animate
+ * 	2) hintWhite--bounce
+ *
+ */
+.hintWhite--no-animate:before, .hintWhite--no-animate:after {
+  -webkit-transition-duration: 0ms;
+  -moz-transition-duration: 0ms;
+  transition-duration: 0ms; }
+
+.hintWhite--bounce:before, .hintWhite--bounce:after {
+  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  -moz-transition: opacity 0.3s ease, visibility 0.3s ease, -moz-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24); }

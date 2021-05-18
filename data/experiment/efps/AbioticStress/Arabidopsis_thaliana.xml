@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+	<webservice>//bar.utoronto.ca/eplant/cgi-bin/plantefp.cgi?datasource=atgenexp_stress&amp;</webservice>
+	<info>
+		<li>Plant material from 18 day old wild-type Arabidopsis thaliana plants of Columbia-0 ecotype was analyzed</li>
+		<li>The seeds were sown on rafts in Magenta boxes containing MS-Agar-media. After 2 days in the cold room (4°C, dark), the boxes were transferred to a long day chamber.  At day 11, the rafts were transferred in Magenta boxes containing MS-liquid-media.</li>
+		<li>The plants were grown under long day conditions with 16/8 hrs light/dark, 24°C, 50% humidity and 150 µEinstein/cm2 sec light intensity</li>
+		<li>All measurements were taken in duplicates - the average of which is shown </li>
+		<li>RNA was isolated and hybridized to the ATH1 GeneChip</li>
+		<li>The data were normalized by GCOS normalization, TGT 100</li>
+		<li>This study is part of the AtGenExpress project, funded by the DFG</li>
+		<li>Data from Kilian et al. (2007, Plant Journal 50:347-63)</li>
+		<li>------------------------------------------------------------------------</li>
+		<li>Cold : (continuous 4ºC on crushed ice in cold chamber)</li>
+		<li>Osmotic : (300 mM Mannitol) </li>
+		<li>Salt : (150mM NaCl)</li>
+		<li>Drought : (rafts were exposed to the air stream for 15 min with loss of app.10% fresh weight) </li>
+		<li>Genotoxic : (bleomycin 1.5 ug/ml plus mitomycin C 22 ug/ml final concentration dissolved in water)</li>
+		<li>Oxidative : (10 uM Methyl viologen) </li>
+		<li>UV-B : (15 minutes UV-B light field consisting of six fluorescent tubes filtered through transmission cutoff filters) </li>
+		<li>Wounding : (punctuation of the leaves by 3 consecutive applications of a custom made pin-tool consisting of 16 needles) </li>
+		<li>Heat : (3 hours at 38ºC followed by recovery at 25ºC)</li>
+	</info>
+	<view name="all" class="" db="atgenexp_stress" img="Abiotic_Stress_image.tga">
+		<group name="Shoot 0 Hour">
+			<control sample="AtGen_6_0011"/>
+			<control sample="AtGen_6_0012"/>
+			<tissue id="Control_Shoot_0_Hour" name="Control Shoot 0 Hour" colorKey="#00FF00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-001"/>
+				<sample name="AtGen_6_0011"/>
+				<sample name="AtGen_6_0012"/>
+			</tissue>
+			<tissue id="Cold_Shoot_0_Hour" name="Cold Shoot 0 Hour" colorKey="#00FF01">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-001"/>
+				<sample name="AtGen_6_0011"/>
+				<sample name="AtGen_6_0012"/>
+			</tissue>
+			<tissue id="Osmotic_Shoot_0_Hour" name="Osmotic Shoot 0 Hour" colorKey="#00FF02">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-001"/>
+				<sample name="AtGen_6_0011"/>
+				<sample name="AtGen_6_0012"/>
+			</tissue>
+			<tissue id="Salt_Shoot_0_Hour" name="Salt Shoot 0 Hour" colorKey="#00FF03">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-001"/>
+				<sample name="AtGen_6_0011"/>
+				<sample name="AtGen_6_0012"/>
+			</tissue>
+			<tissue id="Drought_Shoot_0_Hour" name="Drought Shoot 0 Hour" colorKey="#00FF04">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-001"/>
+				<sample name="AtGen_6_0011"/>
+				<sample name="AtGen_6_0012"/>
+			</tissue>
+			<tissue id="Genotoxic_Shoot_0_Hour" name="Genotoxic Shoot 0 Hour" colorKey="#00FF05">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-001"/>
+				<sample name="AtGen_6_0011"/>
+				<sample name="AtGen_6_0012"/>
+			</tissue>
+			<tissue id="Oxidative_Shoot_0_Hour" name="Oxidative Shoot 0 Hour" colorKey="#00FF06">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-001"/>
+				<sample name="AtGen_6_0011"/>
+				<sample name="AtGen_6_0012"/>
+			</tissue>
+			<tissue id="UV-B_Shoot_0_Hour" name="UV-B Shoot 0 Hour" colorKey="#00FF07">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-001"/>
+				<sample name="AtGen_6_0011"/>
+				<sample name="AtGen_6_0012"/>
+			</tissue>
+			<tissue id="Wounding_Shoot_0_Hour" name="Wounding Shoot 0 Hour" colorKey="#00FF08">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-001"/>
+				<sample name="AtGen_6_0011"/>
+				<sample name="AtGen_6_0012"/>
+			</tissue>
+			<tissue id="Heat_Shoot_0_Hour" name="Heat Shoot 0 Hour" colorKey="#00FF09">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-001"/>
+				<sample name="AtGen_6_0011"/>
+				<sample name="AtGen_6_0012"/>
+			</tissue>
+		</group>
+		<group name="Root 0 Hour">
+			<control sample="AtGen_6_0021"/>
+			<control sample="AtGen_6_0022"/>
+			<tissue id="Control_Root_0_Hour" name="Control Root 0 Hour" colorKey="#FF7700">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-002"/>
+				<sample name="AtGen_6_0021"/>
+				<sample name="AtGen_6_0022"/>
+			</tissue>
+			<tissue id="Cold_Root_0_Hour" name="Cold Root 0 Hour" colorKey="#FF7701">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-002"/>
+				<sample name="AtGen_6_0021"/>
+				<sample name="AtGen_6_0022"/>
+			</tissue>
+			<tissue id="Osmotic_Root_0_Hour" name="Osmotic Root 0 Hour" colorKey="#FF7702">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-002"/>
+				<sample name="AtGen_6_0021"/>
+				<sample name="AtGen_6_0022"/>
+			</tissue>
+			<tissue id="Salt_Root_0_Hour" name="Salt Root 0 Hour" colorKey="#FF7703">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-002"/>
+				<sample name="AtGen_6_0021"/>
+				<sample name="AtGen_6_0022"/>
+			</tissue>
+			<tissue id="Drought_Root_0_Hour" name="Drought Root 0 Hour" colorKey="#FF7704">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-002"/>
+				<sample name="AtGen_6_0021"/>
+				<sample name="AtGen_6_0022"/>
+			</tissue>
+			<tissue id="Genotoxic_Root_0_Hour" name="Genotoxic Root 0 Hour" colorKey="#FF7705">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-002"/>
+				<sample name="AtGen_6_0021"/>
+				<sample name="AtGen_6_0022"/>
+			</tissue>
+			<tissue id="Oxidative_Root_0_Hour" name="Oxidative Root 0 Hour" colorKey="#FF7706">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-002"/>
+				<sample name="AtGen_6_0021"/>
+				<sample name="AtGen_6_0022"/>
+			</tissue>
+			<tissue id="UV-B_Root_0_Hour" name="UV-B Root 0 Hour" colorKey="#FF7707">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-002"/>
+				<sample name="AtGen_6_0021"/>
+				<sample name="AtGen_6_0022"/>
+			</tissue>
+			<tissue id="Wounding_Root_0_Hour" name="Wounding Root 0 Hour" colorKey="#FF7708">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-002"/>
+				<sample name="AtGen_6_0021"/>
+				<sample name="AtGen_6_0022"/>
+			</tissue>
+			<tissue id="Heat_Root_0_Hour" name="Heat Root 0 Hour" colorKey="#FF7709">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-002"/>
+				<sample name="AtGen_6_0021"/>
+				<sample name="AtGen_6_0022"/>
+			</tissue>
+		</group>
+		<group name="Shoot After 15 Minutes">
+			<control sample="AtGen_6_0711"/>
+			<control sample="AtGen_6_0712"/>
+			<tissue id="Control_Shoot_After_15_Minutes" name="Control Shoot After 15 Minutes" colorKey="#00EE00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-071"/>
+				<sample name="AtGen_6_0711"/>
+				<sample name="AtGen_6_0712"/>
+			</tissue>
+			<tissue id="Drought_Shoot_After_15_Minutes" name="Drought Shoot After 15 Minutes" colorKey="#00EE04">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-471"/>
+				<sample name="AtGen_6_4711"/>
+				<sample name="AtGen_6_4712"/>
+			</tissue>
+			<tissue id="UV-B_Shoot_After_15_Minutes" name="UV-B Shoot After 15 Minutes" colorKey="#00EE07">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-771"/>
+				<sample name="AtGen_6_7711"/>
+				<sample name="AtGen_6_7712"/>
+			</tissue>
+			<tissue id="Wounding_Shoot_After_15_Minutes" name="Wounding Shoot After 15 Minutes" colorKey="#00EE08">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-871"/>
+				<sample name="AtGen_6_8715"/>
+				<sample name="AtGen_6_8712"/>
+			</tissue>
+			<tissue id="Heat_Shoot_After_15_Minutes" name="Heat Shoot After 15 Minutes" colorKey="#00EE09">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-971"/>
+				<sample name="AtGen_6_9711"/>
+				<sample name="AtGen_6_9712"/>
+			</tissue>
+		</group>
+		<group name="Root After 15 Minutes">
+			<control sample="AtGen_6_0721"/>
+			<control sample="AtGen_6_0722"/>
+			<tissue id="Control_Root_After_15_Minutes" name="Control Root After 15 Minutes" colorKey="#EE7700">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-072"/>
+				<sample name="AtGen_6_0721"/>
+				<sample name="AtGen_6_0722"/>
+			</tissue>
+			<tissue id="Drought_Root_After_15_Minutes" name="Drought Root After 15 Minutes" colorKey="#EE7704">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-472"/>
+				<sample name="AtGen_6_4721"/>
+				<sample name="AtGen_6_4722"/>
+			</tissue>
+			<tissue id="UV-B_Root_After_15_Minutes" name="UV-B Root After 15 Minutes" colorKey="#EE7707">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-772"/>
+				<sample name="AtGen_6_7721"/>
+				<sample name="AtGen_6_7722"/>
+			</tissue>
+			<tissue id="Wounding_Root_After_15_Minutes" name="Wounding Root After 15 Minutes" colorKey="#EE7708">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-872"/>
+				<sample name="AtGen_6_8723"/>
+				<sample name="AtGen_6_8724"/>
+			</tissue>
+			<tissue id="Heat_Root_After_15_Minutes" name="Heat Root After 15 Minutes" colorKey="#EE7709">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-972"/>
+				<sample name="AtGen_6_9721"/>
+				<sample name="AtGen_6_9722"/>
+			</tissue>
+		</group>
+		<group name="Shoot After 30 Minutes">
+			<control sample="AtGen_6_0111"/>
+			<control sample="AtGen_6_0112"/>
+			<tissue id="Control_Shoot_After_30_Minutes" name="Control Shoot After 30 Minutes" colorKey="#00DD00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-011"/>
+				<sample name="AtGen_6_0111"/>
+				<sample name="AtGen_6_0112"/>
+			</tissue>
+			<tissue id="Cold_Shoot_After_30_Minutes" name="Cold Shoot After 30 Minutes" colorKey="#00DD01">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-111"/>
+				<sample name="AtGen_6_1111"/>
+				<sample name="AtGen_6_1112"/>
+			</tissue>
+			<tissue id="Osmotic_Shoot_After_30_Minutes" name="Osmotic Shoot After 30 Minutes" colorKey="#00DD02">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-211"/>
+				<sample name="AtGen_6_2111"/>
+				<sample name="AtGen_6_2112"/>
+			</tissue>
+			<tissue id="Salt_Shoot_After_30_Minutes" name="Salt Shoot After 30 Minutes" colorKey="#00DD03">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-311"/>
+				<sample name="AtGen_6_3111"/>
+				<sample name="AtGen_6_3112"/>
+			</tissue>
+			<tissue id="Drought_Shoot_After_30_Minutes" name="Drought Shoot After 30 Minutes" colorKey="#00DD04">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-411"/>
+				<sample name="AtGen_6_4111"/>
+				<sample name="AtGen_6_4112"/>
+			</tissue>
+			<tissue id="Genotoxic_Shoot_After_30_Minutes" name="Genotoxic Shoot After 30 Minutes" colorKey="#00DD05">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-511"/>
+				<sample name="AtGen_6_5111"/>
+				<sample name="AtGen_6_5112"/>
+			</tissue>
+			<tissue id="Oxidative_Shoot_After_30_Minutes" name="Oxidative Shoot After 30 Minutes" colorKey="#00DD06">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-611"/>
+				<sample name="AtGen_6_6111"/>
+				<sample name="AtGen_6_6112"/>
+			</tissue>
+			<tissue id="UV-B_Shoot_After_30_Minutes" name="UV-B Shoot After 30 Minutes" colorKey="#00DD07">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-711"/>
+				<sample name="AtGen_6_7111"/>
+				<sample name="AtGen_6_7112"/>
+			</tissue>
+			<tissue id="Wounding_Shoot_After_30_Minutes" name="Wounding Shoot After 30 Minutes" colorKey="#00DD08">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-811"/>
+				<sample name="AtGen_6_8111"/>
+				<sample name="AtGen_6_8112"/>
+			</tissue>
+			<tissue id="Heat_Shoot_After_30_Minutes" name="Heat Shoot After 30 Minutes" colorKey="#00DD09">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-911"/>
+				<sample name="AtGen_6_9111"/>
+				<sample name="AtGen_6_9112"/>
+			</tissue>
+		</group>
+		<group name="Root After 30 Minutes">
+			<control sample="AtGen_6_0121"/>
+			<control sample="AtGen_6_0122"/>
+			<tissue id="Control_Root_After_30_Minutes" name="Control Root After 30 Minutes" colorKey="#DD7700">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-012"/>
+				<sample name="AtGen_6_0121"/>
+				<sample name="AtGen_6_0122"/>
+			</tissue>
+			<tissue id="Cold_Root_After_30_Minutes" name="Cold Root After 30 Minutes" colorKey="#DD7701">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-112"/>
+				<sample name="AtGen_6_1121"/>
+				<sample name="AtGen_6_1122"/>
+			</tissue>
+			<tissue id="Osmotic_Root_After_30_Minutes" name="Osmotic Root After 30 Minutes" colorKey="#DD7702">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-212"/>
+				<sample name="AtGen_6_2121"/>
+				<sample name="AtGen_6_2122"/>
+			</tissue>
+			<tissue id="Salt_Root_After_30_Minutes" name="Salt Root After 30 Minutes" colorKey="#DD7703">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-312"/>
+				<sample name="AtGen_6_3121"/>
+				<sample name="AtGen_6_3122"/>
+			</tissue>
+			<tissue id="Drought_Root_After_30_Minutes" name="Drought Root After 30 Minutes" colorKey="#DD7704">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-412"/>
+				<sample name="AtGen_6_4121"/>
+				<sample name="AtGen_6_4122"/>
+			</tissue>
+			<tissue id="Genotoxic_Root_After_30_Minutes" name="Genotoxic Root After 30 Minutes" colorKey="#DD7705">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-512"/>
+				<sample name="AtGen_6_5121"/>
+				<sample name="AtGen_6_5122"/>
+			</tissue>
+			<tissue id="Oxidative_Root_After_30_Minutes" name="Oxidative Root After 30 Minutes" colorKey="#DD7706">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-612"/>
+				<sample name="AtGen_6_6122"/>
+				<sample name="AtGen_6_6124"/>
+			</tissue>
+			<tissue id="UV-B_Root_After_30_Minutes" name="UV-B Root After 30 Minutes" colorKey="#DD7707">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-712"/>
+				<sample name="AtGen_6_7121"/>
+				<sample name="AtGen_6_7122"/>
+			</tissue>
+			<tissue id="Wounding_Root_After_30_Minutes" name="Wounding Root After 30 Minutes" colorKey="#DD7708">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-812"/>
+				<sample name="AtGen_6_8124"/>
+				<sample name="AtGen_6_8126"/>
+			</tissue>
+			<tissue id="Heat_Root_After_30_Minutes" name="Heat Root After 30 Minutes" colorKey="#DD7709">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-912"/>
+				<sample name="AtGen_6_9121"/>
+				<sample name="AtGen_6_9122"/>
+			</tissue>
+		</group>
+		<group name="Shoot After 1 Hour">
+			<control sample="AtGen_6_0211"/>
+			<control sample="AtGen_6_0212"/>
+			<tissue id="Control_Shoot_After_1_Hour" name="Control Shoot After 1 Hour" colorKey="#00CC00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-021"/>
+				<sample name="AtGen_6_0211"/>
+				<sample name="AtGen_6_0212"/>
+			</tissue>
+			<tissue id="Cold_Shoot_After_1_Hour" name="Cold Shoot After 1 Hour" colorKey="#00CC01">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-121"/>
+				<sample name="AtGen_6_1211"/>
+				<sample name="AtGen_6_1212"/>
+			</tissue>
+			<tissue id="Osmotic_Shoot_After_1_Hour" name="Osmotic Shoot After 1 Hour" colorKey="#00CC02">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-221"/>
+				<sample name="AtGen_6_2211"/>
+				<sample name="AtGen_6_2212"/>
+			</tissue>
+			<tissue id="Salt_Shoot_After_1_Hour" name="Salt Shoot After 1 Hour" colorKey="#00CC03">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-321"/>
+				<sample name="AtGen_6_3211"/>
+				<sample name="AtGen_6_3212"/>
+			</tissue>
+			<tissue id="Drought_Shoot_After_1_Hour" name="Drought Shoot After 1 Hour" colorKey="#00CC04">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-421"/>
+				<sample name="AtGen_6_4211"/>
+				<sample name="AtGen_6_4212"/>
+			</tissue>
+			<tissue id="Genotoxic_Shoot_After_1_Hour" name="Genotoxic Shoot After 1 Hour" colorKey="#00CC05">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-521"/>
+				<sample name="AtGen_6_5211"/>
+				<sample name="AtGen_6_5212"/>
+			</tissue>
+			<tissue id="Oxidative_Shoot_After_1_Hour" name="Oxidative Shoot After 1 Hour" colorKey="#00CC06">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-621"/>
+				<sample name="AtGen_6_6211"/>
+				<sample name="AtGen_6_6212"/>
+			</tissue>
+			<tissue id="UV-B_Shoot_After_1_Hour" name="UV-B Shoot After 1 Hour" colorKey="#00CC07">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-721"/>
+				<sample name="AtGen_6_7211"/>
+				<sample name="AtGen_6_7212"/>
+			</tissue>
+			<tissue id="Wounding_Shoot_After_1_Hour" name="Wounding Shoot After 1 Hour" colorKey="#00CC08">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-821"/>
+				<sample name="AtGen_6_8211"/>
+				<sample name="AtGen_6_8214"/>
+			</tissue>
+			<tissue id="Heat_Shoot_After_1_Hour" name="Heat Shoot After 1 Hour" colorKey="#00CC09">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-921"/>
+				<sample name="AtGen_6_9211"/>
+				<sample name="AtGen_6_9212"/>
+			</tissue>
+		</group>
+		<group name="Root After 1 Hour">
+			<control sample="AtGen_6_0221"/>
+			<control sample="AtGen_6_0222"/>
+			<tissue id="Control_Root_After_1_Hour" name="Control Root After 1 Hour" colorKey="#CC7700">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-022"/>
+				<sample name="AtGen_6_0221"/>
+				<sample name="AtGen_6_0222"/>
+			</tissue>
+			<tissue id="Cold_Root_After_1_Hour" name="Cold Root After 1 Hour" colorKey="#CC7701">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-122"/>
+				<sample name="AtGen_6_1221"/>
+				<sample name="AtGen_6_1222"/>
+			</tissue>
+			<tissue id="Osmotic_Root_After_1_Hour" name="Osmotic Root After 1 Hour" colorKey="#CC7702">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-222"/>
+				<sample name="AtGen_6_2221"/>
+				<sample name="AtGen_6_2222"/>
+			</tissue>
+			<tissue id="Salt_Root_After_1_Hour" name="Salt Root After 1 Hour" colorKey="#CC7703">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-322"/>
+				<sample name="AtGen_6_3221"/>
+				<sample name="AtGen_6_3222"/>
+			</tissue>
+			<tissue id="Drought_Root_After_1_Hour" name="Drought Root After 1 Hour" colorKey="#CC7704">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-422"/>
+				<sample name="AtGen_6_4221"/>
+				<sample name="AtGen_6_4222"/>
+			</tissue>
+			<tissue id="Genotoxic_Root_After_1_Hour" name="Genotoxic Root After 1 Hour" colorKey="#CC7705">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-522"/>
+				<sample name="AtGen_6_5221"/>
+				<sample name="AtGen_6_5222"/>
+			</tissue>
+			<tissue id="Oxidative_Root_After_1_Hour" name="Oxidative Root After 1 Hour" colorKey="#CC7706">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-622"/>
+				<sample name="AtGen_6_6223"/>
+				<sample name="AtGen_6_6224"/>
+			</tissue>
+			<tissue id="UV-B_Root_After_1_Hour" name="UV-B Root After 1 Hour" colorKey="#CC7707">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-722"/>
+				<sample name="AtGen_6_7221"/>
+				<sample name="AtGen_6_7222"/>
+			</tissue>
+			<tissue id="Wounding_Root_After_1_Hour" name="Wounding Root After 1 Hour" colorKey="#CC7708">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-822"/>
+				<sample name="AtGen_6_8224"/>
+				<sample name="AtGen_6_8225"/>
+			</tissue>
+			<tissue id="Heat_Root_After_1_Hour" name="Heat Root After 1 Hour" colorKey="#CC7709">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-922"/>
+				<sample name="AtGen_6_9221"/>
+				<sample name="AtGen_6_9222"/>
+			</tissue>
+		</group>
+		<group name="Shoot After 3 Hours">
+			<control sample="AtGen_6_0311"/>
+			<control sample="AtGen_6_0312"/>
+			<tissue id="Control_Shoot_After_3_Hours" name="Control Shoot After 3 Hours" colorKey="#00BB00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-031"/>
+				<sample name="AtGen_6_0311"/>
+				<sample name="AtGen_6_0312"/>
+			</tissue>
+			<tissue id="Cold_Shoot_After_3_Hours" name="Cold Shoot After 3 Hours" colorKey="#00BB01">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-131"/>
+				<sample name="AtGen_6_1311"/>
+				<sample name="AtGen_6_1312"/>
+			</tissue>
+			<tissue id="Osmotic_Shoot_After_3_Hours" name="Osmotic Shoot After 3 Hours" colorKey="#00BB02">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-231"/>
+				<sample name="AtGen_6_2311"/>
+				<sample name="AtGen_6_2312"/>
+			</tissue>
+			<tissue id="Salt_Shoot_After_3_Hours" name="Salt Shoot After 3 Hours" colorKey="#00BB03">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-331"/>
+				<sample name="AtGen_6_3311"/>
+				<sample name="AtGen_6_3312"/>
+			</tissue>
+			<tissue id="Drought_Shoot_After_3_Hours" name="Drought Shoot After 3 Hours" colorKey="#00BB04">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-431"/>
+				<sample name="AtGen_6_4311"/>
+				<sample name="AtGen_6_4312"/>
+			</tissue>
+			<tissue id="Genotoxic_Shoot_After_3_Hours" name="Genotoxic Shoot After 3 Hours" colorKey="#00BB05">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-531"/>
+				<sample name="AtGen_6_5311"/>
+				<sample name="AtGen_6_5312"/>
+			</tissue>
+			<tissue id="Oxidative_Shoot_After_3_Hours" name="Oxidative Shoot After 3 Hours" colorKey="#00BB06">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-631"/>
+				<sample name="AtGen_6_6311"/>
+				<sample name="AtGen_6_6312"/>
+			</tissue>
+			<tissue id="UV-B_Shoot_After_3_Hours" name="UV-B Shoot After 3 Hours" colorKey="#00BB07">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-731"/>
+				<sample name="AtGen_6_7311"/>
+				<sample name="AtGen_6_7312"/>
+			</tissue>
+			<tissue id="Wounding_Shoot_After_3_Hours" name="Wounding Shoot After 3 Hours" colorKey="#00BB08">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-831"/>
+				<sample name="AtGen_6_8313"/>
+				<sample name="AtGen_6_8314"/>
+			</tissue>
+			<tissue id="Heat_Shoot_After_3_Hours" name="Heat Shoot After 3 Hours" colorKey="#00BB09">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-931"/>
+				<sample name="AtGen_6_9311"/>
+				<sample name="AtGen_6_9312"/>
+			</tissue>
+		</group>
+		<group name="Root After 3 Hours">
+			<control sample="AtGen_6_0321"/>
+			<control sample="AtGen_6_0322"/>
+			<tissue id="Control_Root_After_3_Hours" name="Control Root After 3 Hours" colorKey="#BB7700">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-032"/>
+				<sample name="AtGen_6_0321"/>
+				<sample name="AtGen_6_0322"/>
+			</tissue>
+			<tissue id="Cold_Root_After_3_Hours" name="Cold Root After 3 Hours" colorKey="#BB7701">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-132"/>
+				<sample name="AtGen_6_1321"/>
+				<sample name="AtGen_6_1322"/>
+			</tissue>
+			<tissue id="Osmotic_Root_After_3_Hours" name="Osmotic Root After 3 Hours" colorKey="#BB7702">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-232"/>
+				<sample name="AtGen_6_2321"/>
+				<sample name="AtGen_6_2322"/>
+			</tissue>
+			<tissue id="Salt_Root_After_3_Hours" name="Salt Root After 3 Hours" colorKey="#BB7703">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-332"/>
+				<sample name="AtGen_6_3321"/>
+				<sample name="AtGen_6_3322"/>
+			</tissue>
+			<tissue id="Drought_Root_After_3_Hours" name="Drought Root After 3 Hours" colorKey="#BB7704">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-432"/>
+				<sample name="AtGen_6_4321"/>
+				<sample name="AtGen_6_4322"/>
+			</tissue>
+			<tissue id="Genotoxic_Root_After_3_Hours" name="Genotoxic Root After 3 Hours" colorKey="#BB7705">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-532"/>
+				<sample name="AtGen_6_5321"/>
+				<sample name="AtGen_6_5322"/>
+			</tissue>
+			<tissue id="Oxidative_Root_After_3_Hours" name="Oxidative Root After 3 Hours" colorKey="#BB7706">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-632"/>
+				<sample name="AtGen_6_6322"/>
+				<sample name="AtGen_6_6323"/>
+			</tissue>
+			<tissue id="UV-B_Root_After_3_Hours" name="UV-B Root After 3 Hours" colorKey="#BB7707">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-732"/>
+				<sample name="AtGen_6_7321"/>
+				<sample name="AtGen_6_7322"/>
+			</tissue>
+			<tissue id="Wounding_Root_After_3_Hours" name="Wounding Root After 3 Hours" colorKey="#BB7708">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-832"/>
+				<sample name="AtGen_6_8324"/>
+				<sample name="AtGen_6_8325"/>
+			</tissue>
+			<tissue id="Heat_Root_After_3_Hours" name="Heat Root After 3 Hours" colorKey="#BB7709">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-932"/>
+				<sample name="AtGen_6_9321"/>
+				<sample name="AtGen_6_9322"/>
+			</tissue>
+		</group>
+		<group name="Shoot After 4 Hours">
+			<control sample="AtGen_6_0811"/>
+			<control sample="AtGen_6_0812"/>
+			<tissue id="Control_Shoot_After_4_Hours" name="Control Shoot After 4 Hours" colorKey="#00B200">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-081"/>
+				<sample name="AtGen_6_0811"/>
+				<sample name="AtGen_6_0812"/>
+			</tissue>
+			<tissue id="Heat_Shoot_After_4_Hours" name="Heat Shoot After 4 Hours" colorKey="#00B209">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-981"/>
+				<sample name="AtGen_6_9811"/>
+				<sample name="AtGen_6_9812"/>
+			</tissue>
+		</group>
+		<group name="Root After 4 Hours">
+			<control sample="AtGen_6_0821"/>
+			<control sample="AtGen_6_0822"/>
+			<tissue id="Control_Root_After_4_Hours" name="Control Root After 4 Hours" colorKey="#B27700">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-082"/>
+				<sample name="AtGen_6_0821"/>
+				<sample name="AtGen_6_0822"/>
+			</tissue>
+			<tissue id="Heat_Root_After_4_Hours" name="Heat Root After 4 Hours" colorKey="#B27709">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-982"/>
+				<sample name="AtGen_6_9821"/>
+				<sample name="AtGen_6_9822"/>
+			</tissue>
+		</group>
+		<group name="Shoot After 6 Hours">
+			<control sample="AtGen_6_0411"/>
+			<control sample="AtGen_6_0412"/>
+			<tissue id="Control_Shoot_After_6_Hours" name="Control Shoot After 6 Hours" colorKey="#00AA00">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-041"/>
+				<sample name="AtGen_6_0411"/>
+				<sample name="AtGen_6_0412"/>
+			</tissue>
+			<tissue id="Cold_Shoot_After_6_Hours" name="Cold Shoot After 6 Hours" colorKey="#00AA01">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-141"/>
+				<sample name="AtGen_6_1411"/>
+				<sample name="AtGen_6_1412"/>
+			</tissue>
+			<tissue id="Osmotic_Shoot_After_6_Hours" name="Osmotic Shoot After 6 Hours" colorKey="#00AA02">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-241"/>
+				<sample name="AtGen_6_2411"/>
+				<sample name="AtGen_6_2412"/>
+			</tissue>
+			<tissue id="Salt_Shoot_After_6_Hours" name="Salt Shoot After 6 Hours" colorKey="#00AA03">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-341"/>
+				<sample name="AtGen_6_3411"/>
+				<sample name="AtGen_6_3412"/>
+			</tissue>
+			<tissue id="Drought_Shoot_After_6_Hours" name="Drought Shoot After 6 Hours" colorKey="#00AA04">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-441"/>
+				<sample name="AtGen_6_4411"/>
+				<sample name="AtGen_6_4412"/>
+			</tissue>
+			<tissue id="Genotoxic_Shoot_After_6_Hours" name="Genotoxic Shoot After 6 Hours" colorKey="#00AA05">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-541"/>
+				<sample name="AtGen_6_5411"/>
+				<sample name="AtGen_6_5412"/>
+			</tissue>
+			<tissue id="Oxidative_Shoot_After_6_Hours" name="Oxidative Shoot After 6 Hours" colorKey="#00AA06">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-641"/>
+				<sample name="AtGen_6_6411"/>
+				<sample name="AtGen_6_6412"/>
+			</tissue>
+			<tissue id="UV-B_Shoot_After_6_Hours" name="UV-B Shoot After 6 Hours" colorKey="#00AA07">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-741"/>
+				<sample name="AtGen_6_7411"/>
+				<sample name="AtGen_6_7412"/>
+			</tissue>
+			<tissue id="Wounding_Shoot_After_6_Hours" name="Wounding Shoot After 6 Hours" colorKey="#00AA08">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-841"/>
+				<sample name="AtGen_6_8411"/>
+				<sample name="AtGen_6_8412"/>
+			</tissue>
+			<tissue id="Heat_Shoot_After_6_Hours" name="Heat Shoot After 6 Hours" colorKey="#00AA09">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-941"/>
+				<sample name="AtGen_6_9411"/>
+				<sample name="AtGen_6_9412"/>
+			</tissue>
+		</group>
+		<group name="Root After 6 Hours">
+			<control sample="AtGen_6_0421"/>
+			<control sample="AtGen_6_0422"/>
+			<tissue id="Control_Root_After_6_Hours" name="Control Root After 6 Hours" colorKey="#AA7700">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-042"/>
+				<sample name="AtGen_6_0421"/>
+				<sample name="AtGen_6_0422"/>
+			</tissue>
+			<tissue id="Cold_Root_After_6_Hours" name="Cold Root After 6 Hours" colorKey="#AA7701">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-142"/>
+				<sample name="AtGen_6_1421"/>
+				<sample name="AtGen_6_1422"/>
+			</tissue>
+			<tissue id="Osmotic_Root_After_6_Hours" name="Osmotic Root After 6 Hours" colorKey="#AA7702">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-242"/>
+				<sample name="AtGen_6_2421"/>
+				<sample name="AtGen_6_2422"/>
+			</tissue>
+			<tissue id="Salt_Root_After_6_Hours" name="Salt Root After 6 Hours" colorKey="#AA7703">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-342"/>
+				<sample name="AtGen_6_3421"/>
+				<sample name="AtGen_6_3422"/>
+			</tissue>
+			<tissue id="Drought_Root_After_6_Hours" name="Drought Root After 6 Hours" colorKey="#AA7704">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-442"/>
+				<sample name="AtGen_6_4421"/>
+				<sample name="AtGen_6_4422"/>
+			</tissue>
+			<tissue id="Genotoxic_Root_After_6_Hours" name="Genotoxic Root After 6 Hours" colorKey="#AA7705">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-542"/>
+				<sample name="AtGen_6_5421"/>
+				<sample name="AtGen_6_5422"/>
+			</tissue>
+			<tissue id="Oxidative_Root_After_6_Hours" name="Oxidative Root After 6 Hours" colorKey="#AA7706">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-642"/>
+				<sample name="AtGen_6_6421"/>
+				<sample name="AtGen_6_6422"/>
+			</tissue>
+			<tissue id="UV-B_Root_After_6_Hours" name="UV-B Root After 6 Hours" colorKey="#AA7707">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-742"/>
+				<sample name="AtGen_6_7421"/>
+				<sample name="AtGen_6_7422"/>
+			</tissue>
+			<tissue id="Wounding_Root_After_6_Hours" name="Wounding Root After 6 Hours" colorKey="#AA7708">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-842"/>
+				<sample name="AtGen_6_8423"/>
+				<sample name="AtGen_6_8424"/>
+			</tissue>
+			<tissue id="Heat_Root_After_6_Hours" name="Heat Root After 6 Hours" colorKey="#AA7709">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-942"/>
+				<sample name="AtGen_6_9421"/>
+				<sample name="AtGen_6_9422"/>
+			</tissue>
+		</group>
+		<group name="Shoot After 12 Hours">
+			<control sample="AtGen_6_0511"/>
+			<control sample="AtGen_6_0512"/>
+			<tissue id="Control_Shoot_After_12_Hours" name="Control Shoot After 12 Hours" colorKey="#009900">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-051"/>
+				<sample name="AtGen_6_0511"/>
+				<sample name="AtGen_6_0512"/>
+			</tissue>
+			<tissue id="Cold_Shoot_After_12_Hours" name="Cold Shoot After 12 Hours" colorKey="#009901">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-151"/>
+				<sample name="AtGen_6_1511"/>
+				<sample name="AtGen_6_1512"/>
+			</tissue>
+			<tissue id="Osmotic_Shoot_After_12_Hours" name="Osmotic Shoot After 12 Hours" colorKey="#009902">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-251"/>
+				<sample name="AtGen_6_2511"/>
+				<sample name="AtGen_6_2512"/>
+			</tissue>
+			<tissue id="Salt_Shoot_After_12_Hours" name="Salt Shoot After 12 Hours" colorKey="#009903">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-351"/>
+				<sample name="AtGen_6_3511"/>
+				<sample name="AtGen_6_3512"/>
+			</tissue>
+			<tissue id="Drought_Shoot_After_12_Hours" name="Drought Shoot After 12 Hours" colorKey="#009904">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-451"/>
+				<sample name="AtGen_6_4511"/>
+				<sample name="AtGen_6_4512"/>
+			</tissue>
+			<tissue id="Genotoxic_Shoot_After_12_Hours" name="Genotoxic Shoot After 12 Hours" colorKey="#009905">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-551"/>
+				<sample name="AtGen_6_5511"/>
+				<sample name="AtGen_6_5512"/>
+			</tissue>
+			<tissue id="Oxidative_Shoot_After_12_Hours" name="Oxidative Shoot After 12 Hours" colorKey="#009906">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-651"/>
+				<sample name="AtGen_6_6511"/>
+				<sample name="AtGen_6_6512"/>
+			</tissue>
+			<tissue id="UV-B_Shoot_After_12_Hours" name="UV-B Shoot After 12 Hours" colorKey="#009907">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-751"/>
+				<sample name="AtGen_6_7511"/>
+				<sample name="AtGen_6_7512"/>
+			</tissue>
+			<tissue id="Wounding_Shoot_After_12_Hours" name="Wounding Shoot After 12 Hours" colorKey="#009908">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-851"/>
+				<sample name="AtGen_6_8511"/>
+				<sample name="AtGen_6_8512"/>
+			</tissue>
+			<tissue id="Heat_Shoot_After_12_Hours" name="Heat Shoot After 12 Hours" colorKey="#009909">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-951"/>
+				<sample name="AtGen_6_9511"/>
+				<sample name="AtGen_6_9512"/>
+			</tissue>
+		</group>
+		<group name="Root After 12 Hours">
+			<control sample="AtGen_6_0521"/>
+			<control sample="AtGen_6_0522"/>
+			<tissue id="Control_Root_After_12_Hours" name="Control Root After 12 Hours" colorKey="#997700">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-052"/>
+				<sample name="AtGen_6_0521"/>
+				<sample name="AtGen_6_0522"/>
+			</tissue>
+			<tissue id="Cold_Root_After_12_Hours" name="Cold Root After 12 Hours" colorKey="#997701">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-152"/>
+				<sample name="AtGen_6_1521"/>
+				<sample name="AtGen_6_1522"/>
+			</tissue>
+			<tissue id="Osmotic_Root_After_12_Hours" name="Osmotic Root After 12 Hours" colorKey="#997702">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-252"/>
+				<sample name="AtGen_6_2521"/>
+				<sample name="AtGen_6_2522"/>
+			</tissue>
+			<tissue id="Salt_Root_After_12_Hours" name="Salt Root After 12 Hours" colorKey="#997703">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-352"/>
+				<sample name="AtGen_6_3521"/>
+				<sample name="AtGen_6_3522"/>
+			</tissue>
+			<tissue id="Drought_Root_After_12_Hours" name="Drought Root After 12 Hours" colorKey="#997704">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-452"/>
+				<sample name="AtGen_6_4521"/>
+				<sample name="AtGen_6_4522"/>
+			</tissue>
+			<tissue id="Genotoxic_Root_After_12_Hours" name="Genotoxic Root After 12 Hours" colorKey="#997705">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-552"/>
+				<sample name="AtGen_6_5521"/>
+				<sample name="AtGen_6_5522"/>
+			</tissue>
+			<tissue id="Oxidative_Root_After_12_Hours" name="Oxidative Root After 12 Hours" colorKey="#997706">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-652"/>
+				<sample name="AtGen_6_6523"/>
+				<sample name="AtGen_6_6524"/>
+			</tissue>
+			<tissue id="UV-B_Root_After_12_Hours" name="UV-B Root After 12 Hours" colorKey="#997707">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-752"/>
+				<sample name="AtGen_6_7521"/>
+				<sample name="AtGen_6_7522"/>
+			</tissue>
+			<tissue id="Wounding_Root_After_12_Hours" name="Wounding Root After 12 Hours" colorKey="#997708">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-852"/>
+				<sample name="AtGen_6_8524"/>
+				<sample name="AtGen_6_8525"/>
+			</tissue>
+			<tissue id="Heat_Root_After_12_Hours" name="Heat Root After 12 Hours" colorKey="#997709">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-952"/>
+				<sample name="AtGen_6_9521"/>
+				<sample name="AtGen_6_9522"/>
+			</tissue>
+		</group>
+		<group name="Shoot After 24 Hours">
+			<control sample="AtGen_6_0611"/>
+			<control sample="AtGen_6_0612"/>
+			<tissue id="Control_Shoot_After_24_Hours" name="Control Shoot After 24 Hours" colorKey="#008800">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-061"/>
+				<sample name="AtGen_6_0611"/>
+				<sample name="AtGen_6_0612"/>
+			</tissue>
+			<tissue id="Cold_Shoot_After_24_Hours" name="Cold Shoot After 24 Hours" colorKey="#008801">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-161"/>
+				<sample name="AtGen_6_1611"/>
+				<sample name="AtGen_6_1612"/>
+			</tissue>
+			<tissue id="Osmotic_Shoot_After_24_Hours" name="Osmotic Shoot After 24 Hours" colorKey="#008802">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-261"/>
+				<sample name="AtGen_6_2611"/>
+				<sample name="AtGen_6_2612"/>
+			</tissue>
+			<tissue id="Salt_Shoot_After_24_Hours" name="Salt Shoot After 24 Hours" colorKey="#008803">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-361"/>
+				<sample name="AtGen_6_3611"/>
+				<sample name="AtGen_6_3612"/>
+			</tissue>
+			<tissue id="Drought_Shoot_After_24_Hours" name="Drought Shoot After 24 Hours" colorKey="#008804">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-461"/>
+				<sample name="AtGen_6_4611"/>
+				<sample name="AtGen_6_4612"/>
+			</tissue>
+			<tissue id="Genotoxic_Shoot_After_24_Hours" name="Genotoxic Shoot After 24 Hours" colorKey="#008805">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-561"/>
+				<sample name="AtGen_6_5611"/>
+				<sample name="AtGen_6_5612"/>
+			</tissue>
+			<tissue id="Oxidative_Shoot_After_24_Hours" name="Oxidative Shoot After 24 Hours" colorKey="#008806">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-661"/>
+				<sample name="AtGen_6_6611"/>
+				<sample name="AtGen_6_6612"/>
+			</tissue>
+			<tissue id="UV-B_Shoot_After_24_Hours" name="UV-B Shoot After 24 Hours" colorKey="#008807">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-761"/>
+				<sample name="AtGen_6_7611"/>
+				<sample name="AtGen_6_7612"/>
+			</tissue>
+			<tissue id="Wounding_Shoot_After_24_Hours" name="Wounding Shoot After 24 Hours" colorKey="#008808">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-861"/>
+				<sample name="AtGen_6_8611"/>
+				<sample name="AtGen_6_8612"/>
+			</tissue>
+			<tissue id="Heat_Shoot_After_24_Hours" name="Heat Shoot After 24 Hours" colorKey="#008809">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-961"/>
+				<sample name="AtGen_6_9611"/>
+				<sample name="AtGen_6_9612"/>
+			</tissue>
+		</group>
+		<group name="Root After 24 Hours">
+			<control sample="AtGen_6_0621"/>
+			<control sample="AtGen_6_0622"/>
+			<tissue id="Control_Root_After_24_Hours" name="Control Root After 24 Hours" colorKey="#887700">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-062"/>
+				<sample name="AtGen_6_0621"/>
+				<sample name="AtGen_6_0622"/>
+			</tissue>
+			<tissue id="Cold_Root_After_24_Hours" name="Cold Root After 24 Hours" colorKey="#887701">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-162"/>
+				<sample name="AtGen_6_1621"/>
+				<sample name="AtGen_6_1622"/>
+			</tissue>
+			<tissue id="Osmotic_Root_After_24_Hours" name="Osmotic Root After 24 Hours" colorKey="#887702">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-262"/>
+				<sample name="AtGen_6_2621"/>
+				<sample name="AtGen_6_2622"/>
+			</tissue>
+			<tissue id="Salt_Root_After_24_Hours" name="Salt Root After 24 Hours" colorKey="#887703">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-362"/>
+				<sample name="AtGen_6_3621"/>
+				<sample name="AtGen_6_3622"/>
+			</tissue>
+			<tissue id="Drought_Root_After_24_Hours" name="Drought Root After 24 Hours" colorKey="#887704">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-462"/>
+				<sample name="AtGen_6_4621"/>
+				<sample name="AtGen_6_4622"/>
+			</tissue>
+			<tissue id="Genotoxic_Root_After_24_Hours" name="Genotoxic Root After 24 Hours" colorKey="#887705">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-562"/>
+				<sample name="AtGen_6_5621"/>
+				<sample name="AtGen_6_5622"/>
+			</tissue>
+			<tissue id="Oxidative_Root_After_24_Hours" name="Oxidative Root After 24 Hours" colorKey="#887706">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-662"/>
+				<sample name="AtGen_6_6621"/>
+				<sample name="AtGen_6_6625"/>
+			</tissue>
+			<tissue id="UV-B_Root_After_24_Hours" name="UV-B Root After 24 Hours" colorKey="#887707">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-762"/>
+				<sample name="AtGen_6_7621"/>
+				<sample name="AtGen_6_7622"/>
+			</tissue>
+			<tissue id="Wounding_Root_After_24_Hours" name="Wounding Root After 24 Hours" colorKey="#887708">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-862"/>
+				<sample name="AtGen_6_8621"/>
+				<sample name="AtGen_6_8622"/>
+			</tissue>
+			<tissue id="Heat_Root_After_24_Hours" name="Heat Root After 24 Hours" colorKey="#887709">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?SlideID=AtGen_6-962"/>
+				<sample name="AtGen_6_9621"/>
+				<sample name="AtGen_6_9622"/>
+			</tissue>
+		</group>
+	</view>
+</specimen>

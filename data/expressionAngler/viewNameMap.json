@@ -1,0 +1,20 @@
+{ 
+	"PlantView":"DevelopmentalMap",
+	"ChemicalView":"Chemical",
+	"AbioticStressView":"AbioticStress"	,
+	"TissueSpecificRootView":"TissueSpecificRoot",
+	"TissueSpecificEmbryoDevelopmentView":"TissueSpecificEmbryoDevelopment",
+	"TissueSpecificGuardAndMesophyllCellsView":"TissueSpecificGuardAndMesophyllCells",
+	"TissueSpecificMicrogametogenesisView":"TissueSpecificMicrogametogenesis",
+	"TissueSpecificPollenGerminationView":"TissueSpecificPollenGermination",
+	"TissueSpecificShootApicalMeristemView":"TissueSpecificShootApicalMeristem",
+	"TissueSpecificStemEpidermisView":"TissueSpecificStemEpidermis",
+	"TissueSpecificStigmaAndOvariesView":"TissueSpecificStigmaAndOvaries",
+	"TissueSpecificTrichomesView":"TissueSpecificTrichomes",
+	"TissueSpecificXylemAndCorkView":"TissueSpecificXylemAndCork",
+	"BioticStressBotrytiscinereaView":"BioticStressBotrytiscinerea",
+	"BioticStressElicitorsView":"BioticStressElicitors",
+	"BioticStressErysipheorontiiView":"BioticStressErysipheorontii",
+	"BioticStressPhytophthorainfestansView":"BioticStressPhytophthorainfestans",
+	"BioticStressPseudomonassyringaeView":"BioticStressPseudomonassyringae"
+}

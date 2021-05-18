@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<view name="all" class="" db="atgenexp_hormone">
+	<webservice>//bar.utoronto.ca/eplant/cgi-bin/plantefp.cgi?datasource=atgenexp_hormone&amp;</webservice>
+<info>
+	<li>Plant material from 7 day old wild-type Arabidopsis thaliana seedlings of Columbia-0 ecotype was analyzed</li>
+	<li>Plants grown in liquid MS media under continuous light conditions at 23°C</li>
+	<li>All measurements were taken in duplicates - the average of which is shown</li>
+	<li>RNA was isolated and hybridized to the ATH1 GeneChip</li>
+	<li>The data were normalized by GCOS normalization TGT 100</li>
+	<li>This study is part of the AtGenExpress project, funded by RIKEN</li>
+	<li>Results provided by the Shimada Lab</li>
+</info>
+
+<tissue id="Control_at_12_Hours" name="Control at 12 Hours" colorKey="#88FF11">
+	<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=185"/>
+	<sample name="RIKEN-GODA2A2" /> 
+	<sample name="RIKEN-GODA2B2" />
+</tissue>
+
+<tissue id="Control_at_3_Hours" name="Control at 3 Hours" colorKey="#99FD11">
+	<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=187"/>
+	<sample name="RIKEN-GODA1A2" /> 
+	<sample name="RIKEN-GODA1B2" />
+</tissue>
+
+<group name="Gibberellic_Acid_Inhibitors_at_3_Hours">
+	<control sample="RIKEN-GODA1A2"/>
+	<control sample="RIKEN-GODA1B2"/>
+	<tissue id="Propiconazole_Treated_at_3_Hours" name="Propiconazole Treated at 3 Hours" colorKey="#99FF22">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=185"/>
+		<sample name="RIKEN-GODA3A2" /> 
+		<sample name="RIKEN-GODA3B2" />
+	</tissue>
+	<tissue id="Uniconazole_Treated_at_3_Hours" name="Uniconazole Treated at 3 Hours" colorKey="#99FF33" >
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=185"/>
+		<sample name="RIKEN-GODA5A2" /> 
+		<sample name="RIKEN-GODA5B2" />
+	</tissue>
+	<tissue id="Paclobutrazol_Treated_at_3_Hours" name="Paclobutrazol Treated at 3 Hours" colorKey="#99FF44">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=185"/>
+		<sample name="RIKEN-GODA11A2" /> 
+		<sample name="RIKEN-GODA11B2" />
+	</tissue>
+	<tissue id="Prohexadione_Treated_at_3_Hours" name="Prohexadione Treated at 3 Hours" colorKey="#99FF55">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=185"/>
+		<sample name="RIKEN-GODA13A2" /> 
+		<sample name="RIKEN-GODA13B2" />
+	</tissue>
+</group>
+<group name="Gibberellic_Acid_Inhibitors_at_12_Hours">
+	<control sample="RIKEN-GODA2A2"/>
+	<control sample="RIKEN-GODA2B2"/>
+	<tissue id="Propiconazole_Treated_at_12_Hours" name="Propiconazole Treated at 12 Hours" colorKey="#88FF22">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=185"/>
+		<sample name="RIKEN-GODA4A2" /> 
+		<sample name="RIKEN-GODA4B2" />
+	</tissue>
+	<tissue id="Uniconazole_Treated_at_12_Hours" name="Uniconazole Treated at 12 Hours" colorKey="#88FF33">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=185"/>
+		<sample name="RIKEN-GODA6A2" /> 
+		<sample name="RIKEN-GODA6B2" />
+	</tissue>
+	<tissue id="Paclobutrazol_Treated_at_12_Hours" name="Paclobutrazol Treated at 12 Hours" colorKey="#88FF44">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=185"/>
+		<sample name="RIKEN-GODA12A2" /> 
+		<sample name="RIKEN-GODA12B2" />
+	</tissue>
+	<tissue id="Prohexadione_Treated_at_12_Hours" name="Prohexadione Treated at 12 Hours" colorKey="#88FF55">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=185"/>
+		<sample name="RIKEN-GODA14A2" /> 
+		<sample name="RIKEN-GODA14B2" />
+	</tissue>
+</group>
+<group name="Auxin_Inhibitors">
+	<control sample="RIKEN-GODA1A2"/>
+	<control sample="RIKEN-GODA1B2"/>
+	<tissue id="2_4_6-T_Treated" name="2,4,6-T Treated" colorKey="#99FE22">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=186"/>
+		<sample name="RIKEN-GODA23A3" /> 
+		<sample name="RIKEN-GODA23B3" />
+	</tissue>
+	<tissue id="PCIB_Treated" name="PCIB Treated" colorKey="#99FE33">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=186"/>
+		<sample name="RIKEN-GODA24A3" /> 
+		<sample name="RIKEN-GODA24B3" />
+	</tissue>
+	<tissue id="TIBA_Treated" name="TIBA Treated" colorKey="#99FE44">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=186"/>
+		<sample name="RIKEN-GODA25A3" /> 
+		<sample name="RIKEN-GODA25B3" />
+	</tissue>
+	<tissue id="NPA_Treated" name="NPA Treated" colorKey="#99FE55">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=186"/>
+		<sample name="RIKEN-GODA26A3" /> 
+		<sample name="RIKEN-GODA26B3" />
+	</tissue>
+</group>
+<group name="Brassinosteroid_Inhibitors_at_3_Hours">
+	<control sample="RIKEN-GODA1A2"/>
+	<control sample="RIKEN-GODA1B2"/>
+	<tissue id="10uM_Brz220_Treated_at_3_Hours" name="10uM Brz220 Treated at 3 Hours" colorKey="#99FD22">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=187"/>
+		<sample name="RIKEN-GODA7A4" /> 
+		<sample name="RIKEN-GODA7B4" />
+	</tissue>
+	<tissue id="3uM_Brz220_Treated_at_3_Hours" name="3uM Brz220 Treated at 3 Hours" colorKey="#99FD44">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=187"/>
+		<sample name="RIKEN-GODA30A4" /> 
+		<sample name="RIKEN-GODA30B4" />
+	</tissue>
+</group>
+<group name="Brassinosteroid_Inhibitors_at_12_Hours">
+	<control sample="RIKEN-GODA2A2"/>
+	<control sample="RIKEN-GODA2B2"/>
+	<tissue id="10uM_Brz91_Treated_at_12_Hours" name="10uM Brz91 Treated at 12 Hours" colorKey="#88FD33">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=187"/>
+		<sample name="RIKEN-GODA10A4" /> 
+		<sample name="RIKEN-GODA10B4" />
+	</tissue>
+	</group>
+	<group name="Ethylene Inhibitors">
+	<control sample="RIKEN-GODA1A2"/>
+	<control sample="RIKEN-GODA1B2"/>
+	<tissue id="10uM_AgNO3_Treated" name="10uM AgNO3 Treated" colorKey="#88FF66">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=188"/>
+		<sample name="RIKEN-GODA19A7" /> 
+		<sample name="RIKEN-GODA19B7" />
+	</tissue>
+	<tissue id="10uM_AVG_Treated" name="10uM AVG Treated" colorKey="#77FF66">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=188"/>
+		<sample name="RIKEN-GODA20A7" /> 
+		<sample name="RIKEN-GODA20B7" />
+	</tissue>
+</group>
+<group name="Cyclohexamide">
+	<control sample="RIKEN-GODA1A2"/>
+	<control sample="RIKEN-GODA1B2"/>
+	<tissue id="10uM_CHX_Treated" name="10uM CHX Treated" colorKey="#88FF77">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=189"/>
+		<sample name="RIKEN-GODA27A8" /> 
+		<sample name="RIKEN-GODA27B8" />
+	</tissue>
+</group>
+<group name="Proteasome_Inhibitor_MG13">
+	<control sample="RIKEN-GODA1A2"/>
+	<control sample="RIKEN-GODA1B2"/>
+	<tissue id="10uM_MG132_Treated" name="10uM MG132 Treated" colorKey="#88FF88">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=190"/>
+		<sample name="RIKEN-GODA22A9" /> 
+		<sample name="RIKEN-GODA22B9" />
+	</tissue>
+</group>
+<group name="Photosynthesis_Inhibitor_PN08_at_3_Hours">
+	<control sample="RIKEN-GODA1A2"/>
+	<control sample="RIKEN-GODA1B2"/>
+	<tissue id="1uM_PNO8_Treated_at_3_Hours" name="1uM PNO8 Treated at 3 Hours" colorKey="#BBFF11">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=191"/>
+		<sample name="RIKEN-GODA15A5" /> 
+		<sample name="RIKEN-GODA15B5" />
+	</tissue>
+	<tissue id="10uM_PNO8_Treated_at_3_Hours" name="10uM PNO8 Treated at 3 Hours" colorKey="#BBFF22">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=191"/>
+		<sample name="RIKEN-GODA29A5" /> 
+		<sample name="RIKEN-GODA29B5" />
+	</tissue>
+</group>
+<group name="Photosynthesis_Inhibitor_PN08_at_12_Hours">
+	<control sample="RIKEN-GODA2A2"/>
+	<control sample="RIKEN-GODA2B2"/>
+	<tissue id="1uM_PNO8_Treated_at_12_Hours" name="1uM PNO8 Treated at 12 Hours" colorKey="#BBEE11" >
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=191"/>
+		<sample name="RIKEN-GODA16A5" /> 
+		<sample name="RIKEN-GODA16B5" />
+	</tissue>
+</group>
+<group name="Ibuprofen_Salycylic_Acid_and_Daminozide">
+	<control sample="RIKEN-GODA1A2"/>
+	<control sample="RIKEN-GODA1B2"/>
+	<tissue id="Ibuprofen_Treated" name="Ibuprofen Treated" colorKey="#CCFF44">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=192"/>
+		<sample name="RIKEN-GODA17AH" /> 
+		<sample name="RIKEN-GODA17BH" />
+	</tissue>
+	<tissue id="Salicylic_Acid_Treated" name="Salicylic Acid Treated" colorKey="#CCFF55">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=192"/>
+		<sample name="RIKEN-GODA21AH" /> 
+		<sample name="RIKEN-GODA21BH" />
+	</tissue>
+	<tissue id="Daminozide_Treated" name="Daminozide Treated" colorKey="#CCFF66">
+		<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=192"/>
+		<sample name="RIKEN-GODA18AH" /> 
+		<sample name="RIKEN-GODA18BH" />
+	</tissue>
+</group>
+</view>
+</specimen>

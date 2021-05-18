@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<view name="all" class="" db="atgenexp_plus" img="TissueSpecific-StigmaAndOvaries.svg">
+<webservice>//bar.utoronto.ca/eplant/cgi-bin/plantefp.cgi?datasource=atgenexp_plus&amp;</webservice>
+	<group name="CTRL_7">
+		<info>
+			<li>Stigma and ovary tissues were isolated from pistils after emasculating stage 8 buds of Landsberg erecta (Ler) flowers. After 1 day of growth, pistils were harvested and frozen in liquid N2. </li>
+			<li>Stigmas were then separated from pistils using superfine scissors. Stigmas and the remaining ovaries were placed in separate tubes on dry ice until collections were complete</li>
+			<li>Samples were taken in duplicate: average shown</li>
+			<li>RNA was isolated and hybridized to the ATH1 chip</li>
+			<li>Data normalized by GCOS/MAS5, TGT 100</li>
+			<li>Swanson et al. (2005) Plant Sexual Reprod. 18: 163.</li>
+		</info>
+		<control sample="ATGE_CTRL_7"/> 
+		<tissue id="Stigma_tissue" name="Stigma tissue" colorKey="#6E9EF6">
+			<link url="http://www.springerlink.com/content/p145784518186347/"/> 			 
+			<sample name="GSM67084"/> 
+			<sample name="GSM67086"/> 
+			<sample name="GSM67087"/> 
+		</tissue>		
+		<tissue id="Ovary_tissue" name="Ovary tissue" colorKey="#3469CB">
+			<link url="http://www.springerlink.com/content/p145784518186347/"/> 			 
+			<sample name="GSM67078"/> 
+			<sample name="GSM67079"/> 
+			<sample name="GSM67080"/> 
+			<sample name="GSM67081"/> 
+		</tissue>
+	</group>
+</view>
+</specimen>

@@ -1,0 +1,315 @@
+@CHARSET "ISO-8859-1";
+
+/*! changing default Green tooltip (qtip2 library) style 
+//cdn.jsdelivr.net/qtip2/2.2.1/jquery.qtip.min.css */
+
+/*! Green tooltip style */
+.a_qtip-green{
+	background-color: rgba(255, 255, 255, 1) !important;/*#99cc00*/
+	border-color: rgba(221, 221, 221, 1) !important;
+	-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+}
+
+.a_qtip-green .qtip-content{
+    font-size: 16px !important;
+	line-height: normal !important;
+	text-shadow: none;
+}
+
+.a_qtip-green .qtip-titlebar{
+	background-color: #B0DE78;
+}
+
+.a_qtip-green .qtip-close.qtip-icon{
+background:none;
+border:none;
+top:-18;
+left:-18;
+}
+
+.a_qtip-green .qtip-close.qtip-icon .ui-icon-close{
+	    width: 35px;
+		font-size:0;
+    height: 18px;
+    color: #FFFFFF;
+    height: 35px;
+    font: 400 bold 10px/13px Tahoma,sans-serif;
+    color: inherit;
+    background-image: url(../js/skins/idialog/idialog_s.png);
+    background-repeat: no-repeat;
+    background-position: 0 -60px;
+}
+
+.a_qtip-green .qtip-close.qtip-icon .ui-icon-close:hover{
+    background-position: 0 -94px;
+}
+
+.a_qtip-shadow{
+	-webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+}
+
+.lower-z-index{
+	z-index:1!important;
+	
+}
+
+/* END qtip2 library changes */
+
+
+h4.features {
+	margin-bottom: 0px;
+	margin-top:15px;
+	font-weight: bold;
+}
+
+.roundButton{
+	margin: 2px 12px;   
+	width: 20px;
+	height: 20px;    
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background:lightgray;
+	cursor:pointer;
+	display: inline-block;
+	line-height: 18px;
+	text-shadow: none;
+	color:#ffffff;
+}
+
+/* For the residues from alignment and the | (pipe) 
+	* Don't use this in other parts, the class name is used by javascript
+	* to remove the alignment when necessary
+*/
+span.alignment{
+	display: inline-block;
+	padding-left: 3px;
+	cursor: default;
+	width: auto;/*22px;*/
+	height: 30px;
+	text-align: center;
+	vertical-align: bottom;
+	color: black;
+	font-weight: normal;
+	    font-size: 40px;
+    line-height: 13px;
+}
+
+div.labelnumber{
+	width: 22px;
+	height: 22px; /* there is a layout crash without this param */
+	text-align: center;
+	vertical-align: bottom;
+}
+
+span.sequenceModel{
+		display: inline-block;
+	padding-left: 3px;
+	cursor: pointer;
+	width: 22px;
+	text-align: center;
+	vertical-align: bottom;
+	padding: 10px 0px;
+	color: black;
+}
+
+span.sequence{
+	display: inline-block;
+	padding-left: 3px;
+	cursor: pointer;
+	width: 22px;
+	text-align: center;
+	vertical-align: bottom;
+	padding: 10px 0px;
+	color: grey;
+}
+
+span.deselected {
+
+	font-weight: normal;
+	font-size: 20px;
+}
+
+span.selected {
+	color: #99cc00;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+span.hoveron {
+	color: #556B2F; /* DarkOliveGreen */
+	font-size: 24px;
+    background:#c4c4c4;
+}
+
+span.loading {
+}
+
+span.loading:before {
+	content: "";
+    display: inline-block;
+    background: url("../img/loading.gif") no-repeat;
+    width: 30px;
+    height: 16px;
+    float: left;
+    margin: 2px 8px 0 2px;
+    vertical-align: middle;
+}
+
+span.radioMenu {
+	float: left;
+	clear: left;
+}
+
+/* apply to this class and its children */
+span.radioMenu *{
+	cursor: pointer;
+}
+
+input[type="radio"] {
+	/*margin-left: 0px;*/
+margin-right:2px;
+	margin-top: -1px;
+    vertical-align: middle;
+}
+
+label{
+	vertical-align: middle;
+}
+
+.all  {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
+	"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: normal;
+	text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+	/* text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff; */
+	color: gray;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 20px;
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow:hidden;/*hide scrool bar*/
+}
+
+.main {
+	overflow: hidden;
+	padding: 10px;
+	float: left;
+}
+
+.jmolcontent {
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* Preserve aspect ratio */
+	min-width: 100%;
+	min-height: 100%;
+	height: 100%;
+	width: 100%;
+	
+}
+
+/*reset for the context jsmol menu*/
+.jmolPopupMenu {
+	line-height: initial;
+}
+
+/* user can't select text */
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* user can select text */
+.yesselect {
+    -webkit-touch-callout: all;
+    -webkit-user-select: all;
+    -khtml-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+}
+
+/*from //bar.utoronto.ca/eplant/*/
+.mbutton {
+	background-color: #99cc00;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-border-radius: 5px;
+	border: none;
+	padding: 10px 0;
+	width: 47%;
+	margin: 1%;
+	color: #FFF;
+	display: inline-block;
+	margin-top: 4px;
+	cursor: pointer;
+	height: 34px;
+}
+
+/*from //bar.utoronto.ca/eplant/*/
+.selectbutton {
+	background-color: #99cc00;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-border-radius: 5px;
+	border: none;
+	padding: 10px 0;
+	width: 27%;
+	margin: 1%;
+	color: #FFF;
+	display: inline-block;
+	margin-top: 4px;
+	cursor: pointer;
+	height: 34px;
+}
+
+/* for fade effect at sequence div */
+.fadeOnCornersSequence{
+	z-index: 3;
+	width: 200px;
+    height: 100px;
+    position: absolute; 
+    bottom: 0px;
+    pointer-events: none;
+}
+
+/* for fade effect at left of sequence div */
+.fadeOnCornersSequenceLeft {
+    /* http://www.colorzilla.com/gradient-editor/ */
+    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(40%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+	left: 0px;
+}
+
+/* for fade effect at right of sequence div */
+.fadeOnCornersSequenceRight {	
+    /* http://www.colorzilla.com/gradient-editor/ */
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(60%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+	right: 0px;
+	/* 	 border: 2px solid blue;  */
+}

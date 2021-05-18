@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM '//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd'>
+<specimen name="Arabidopsis">
+	<webservice>//bar.utoronto.ca/eplant/cgi-bin/plantefp.cgi?datasource=klepikova&amp;</webservice>
+	<info>
+		<li>Data from A high resolution map of the Arabidopsis thaliana developmental transcriptome based on RNA-seq profiling: Klepikova et al., 2016, Plant J. 88:1058-1070.</li>
+		<li>Total RNA was extracted with RNeasy Plant Kit and Illumina cDNA libraries were generated using the respective manufacturer's protocols. cDNA was then sequenced using Illumina HiSeq2000 with a 50bp read length. The read data are publicly available in NCBI’s Sequence Read Archive under the BioProject ID 314076 (accession: PRJNA314076).</li>
+		<li>Reads were aligned to the reference TAIR10 genome (Lamesch et al., 2012) using TopHat (Trapnell et al., 2009).</li>
+		<li>Reads per gene were counted with an in-house Python script using functions from the HTSeq package (Anders et al., 2015).</li>
+		<li>RPKM values were compiled using an in-house R script.</li>
+	</info>
+	<view class="" db="klepikova" img="Klepikova.svg" name="all">
+		<group name="Developmental Transcriptome">
+			<control sample="Med_CTRL"/>
+			<tissue colorKey="#00e600" desc="S.H, Hypocotyl of one-day-old seedling from place of the attachment of cotyledons to the beginning of root." id="S_H" name="Seedling Hypocotyl">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581336"/>
+				<sample name="SRR3581740"/>
+			</tissue>
+			<tissue colorKey="#00e601" desc="S.M, Seedling shoot apical meristem with adjacent tissues." id="S_M" name="Seedling Meristem">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581346"/>
+				<sample name="SRR3581831"/>
+			</tissue>
+			<tissue colorKey="#00e602" desc="S.C, Cotyledons of one-day-old seedling, collected with petioles." id="S_C" name="Seedling Cotyledons">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581345"/>
+				<sample name="SRR3581833"/>
+			</tissue>
+			<tissue colorKey="#00e603" desc="S.R, Root of one-day old seedling. Immediately before collection seedlings were gently pulled out of soil and washed under fresh water." id="S_R" name="Seedling Root">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581347"/>
+				<sample name="SRR3581834"/>
+			</tissue>
+			<tissue colorKey="#00e604" desc="L.PET.y, Petiole of the third leaf. Sample was collected at 7th day after germination (3 mm leaf). All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="L_PET_y" name="Leaf Petiole of the young leaf">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581383"/>
+				<sample name="SRR3581837"/>
+			</tissue>
+			<tissue colorKey="#00e605" desc="L.LAM.y, Leaf blade of the third leaf. Sample was collected at 7th day after germination (3 mm leaf). All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="L_LAM_y" name="Leaf Lamina of the young leaf">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581388"/>
+				<sample name="SRR3581838"/>
+			</tissue>
+			<tissue colorKey="#00e606" desc="L.PET.i1, Petiole of the third leaf. Sample was collected at 9th day after germination (5 mm leaf). All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="L_PET_i1" name="Leaf Petiole, intermediate 1">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581499"/>
+				<sample name="SRR3581839"/>
+			</tissue>
+			<tissue colorKey="#00e607" desc="L.LAM.i1, Leaf blade of the third leaf. Sample was harvested at 9th day after germination (5 mm leaf). All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="L_LAM_i1" name="Leaf Lamina, intermediate 1">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581591"/>
+				<sample name="SRR3581840"/>
+			</tissue>
+			<tissue colorKey="#00e608" desc="L.PET.i2, Petiole of third leaf. Sample was collected at 12th day after germination (10 mm leaf). All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="L_PET_i2" name="Leaf Petiole, intermediate 2">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581639"/>
+				<sample name="SRR3581841"/>
+			</tissue>
+			<tissue colorKey="#00e609" desc="L.VN.i2, Midrib of the third leaf. Sample was collected at 12th day after germination (10 mm leaf). All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="L_VN_i2" name="Leaf Vein, intermediate 2">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581672"/>
+				<sample name="SRR3581842"/>
+			</tissue>
+			<tissue colorKey="#00e610" desc="L.LAM.i2, Parts of the leaf blade without veins. Sample was collected at 12th day after germination (10 mm leaf). All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="L_LAM_i2" name="Leaf Lamina, intermediate 2">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581676"/>
+				<sample name="SRR3581843"/>
+			</tissue>
+			<tissue colorKey="#00e611" desc="L.lg, Whole third leaf. Sample was collected at the moment of anthesis of the first flower. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="L_lg" name="Leaf, mature">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581681"/>
+				<sample name="SRR3581847"/>
+			</tissue>
+			<tissue colorKey="#00e612" desc="L.PET.lg, Petiole of the third leaf. Sample was collected at the moment of anthesis of the first flower. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="L_PET_lg" name="Leaf Petiole of the mature leaf">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581678"/>
+				<sample name="SRR3581844"/>
+			</tissue>
+			<tissue colorKey="#00e613" desc="L.VN.lg, Midrib of the third leaf. Sample was collected at the moment of anthesis of the first flower. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="L_VN_lg" name="Leaf Vein of the mature leaf">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581679"/>
+				<sample name="SRR3581845"/>
+			</tissue>
+			<tissue colorKey="#00e614" desc="L.LAM.lg, Parts of the leaf blade without veins. Sample was collected at the moment of anthesis of the first flower. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="L_LAM_lg" name="Leaf Lamina of the mature leaf">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581680"/>
+				<sample name="SRR3581846"/>
+			</tissue>
+			<tissue colorKey="#00e615" desc="L.PET.sn, Petiole of the third leaf. Sample was collected when first silique was completely mature and nearly opened. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="L_PET_sn" name="Leaf Petiole of the senescent leaf">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581682"/>
+				<sample name="SRR3581848"/>
+			</tissue>
+			<tissue colorKey="#00e616" desc="L.VN.sn, Midrib of the third leaf. Sample was collected when first silique was completely mature and nearly opened. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="L_VN_sn" name="Leaf Vein of the senescent leaf">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581683"/>
+				<sample name="SRR3581849"/>
+			</tissue>
+			<tissue colorKey="#00e617" desc="F1, Whole flower 1 without pedicel. All samples of this series were collected at moment of the anthesis of the first flower." id="F1" name="Flower 1">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581693"/>
+				<sample name="SRR3581859"/>
+			</tissue>
+			<tissue colorKey="#00e618" desc="F2, Whole flower 2 without pedicel. All samples of this series were collected at moment of the anthesis of the first flower." id="F2" name="Flower 2">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581694"/>
+				<sample name="SRR3581860"/>
+			</tissue>
+			<tissue colorKey="#00e619" desc="F3, Whole flower 3 without pedicel. All samples of this series were collected at moment of the anthesis of the first flower." id="F3" name="Flower 3">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581695"/>
+				<sample name="SRR3581861"/>
+			</tissue>
+			<tissue colorKey="#00e620" desc="F4, Whole flower 4 without pedicel. All samples of this series were collected at moment of the anthesis of the first flower." id="F4" name="Flower 4">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581696"/>
+				<sample name="SRR3581862"/>
+			</tissue>
+			<tissue colorKey="#00e621" desc="F5, Whole flower 5 without pedicel. All samples of this series were collected at moment of the anthesis of the first flower." id="F5" name="Flower 5">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581697"/>
+				<sample name="SRR3581863"/>
+			</tissue>
+			<tissue colorKey="#00e622" desc="F6-8, Whole flowers 6, 7 and 8 without pedicel. All samples of this series were collected at moment of the anthesis of the first flower." id="F6-8" name="Flowers 6-8">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581698"/>
+				<sample name="SRR3581864"/>
+			</tissue>
+			<tissue colorKey="#00e623" desc="F9-11, Whole flowers 9, 10 and 11 without pedicel. All samples of this series were collected at moment of the anthesis of the first flower." id="F9-11" name="Flowers 9-11">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581699"/>
+				<sample name="SRR3581865"/>
+			</tissue>
+			<tissue colorKey="#00e624" desc="F12-14, Whole flowers 12, 13 and 14 without pedicel. All samples of this series were collected at moment of the anthesis of the first flower." id="F12-14" name="Flowers 12-14">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581700"/>
+				<sample name="SRR3581866"/>
+			</tissue>
+			<tissue colorKey="#00e625" desc="F15-18, Whole flowers 15, 16, 17 and 18 without pedicel. All samples of this series were collected at moment of the anthesis of the first flower." id="F15-18" name="Flowers 15-18">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581701"/>
+				<sample name="SRR3581867"/>
+			</tissue>
+			<tissue colorKey="#00e626" desc="F19+, Whole inflorescence apex from flower 19 to meristem. All samples of this series were collected at moment of the anthesis of the first flower." id="F19" name="Flowers 19 and following">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581702"/>
+				<sample name="SRR3581868"/>
+			</tissue>
+			<tissue colorKey="#00e627" desc="F.AN, Anthers of first flower; sample collected at the moment of the anthesis of the first flower. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="F_AN" name="Opened anthers">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581684"/>
+				<sample name="SRR3581850"/>
+			</tissue>
+			<tissue colorKey="#00e628" desc="F.CA.ad, Pistil of the third flower; sample collected at the moment of the anthesis of the first flower. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="F_CA_ad" name="Carpels of the mature flower (before pollination)">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581685"/>
+				<sample name="SRR3581851"/>
+			</tissue>
+			<tissue colorKey="#00e629" desc="F.AN.ad, Anthers of the third flower; sample collected at the moment of the anthesis of the first flower. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="F_AN_ad" name="Anthers of the mature flower (before opening)">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581852"/>
+				<sample name="SRR3581686"/>
+			</tissue>
+			<tissue colorKey="#00e630" desc="F.FM.ad, Filaments of stamens of the third flower; sample collected at the moment of the anthesis of the first flower. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="F_FM_ad" name="Stamen filaments of the mature flower">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581687"/>
+				<sample name="SRR3581853"/>
+			</tissue>
+			<tissue colorKey="#00e631" desc="F.PT.ad, Petals of the third flower; sample collected at the moment of the anthesis of the first flower. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="F_PT_ad" name="Petals of the mature flower">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581688"/>
+				<sample name="SRR3581854"/>
+			</tissue>
+			<tissue colorKey="#00e632" desc="F.SP.ad, Sepals of the third flower; sample collected at the moment of the anthesis of the first flower. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="F_SP_ad" name="Sepals of the mature flower">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581689"/>
+				<sample name="SRR3581855"/>
+			</tissue>
+			<tissue colorKey="#00e633" desc="F.CA.y, Pistil of young flower (at stage 9 according to Smyth et al., 1990). Sample collected at the moment of the anthesis of the first flower. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="F_CA_y" name="Carpels of the young flower">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581690"/>
+				<sample name="SRR3581856"/>
+			</tissue>
+			<tissue colorKey="#00e634" desc="F.AN.y, Anthers of young flower (at stage 9 according to Smyth et al., 1990). Sample collected at the moment of the anthesis of the first flower. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="F_AN_y" name="Anthers of the young flower">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581691"/>
+				<sample name="SRR3581857"/>
+			</tissue>
+			<tissue colorKey="#00e635" desc="F.SP.y, Sepals of young flower (at stage 9 according to Smyth et al., 1990). Sample collected at the moment of the anthesis of the first flower. All leaf samples were taken from the third leaf, if other not indicated. Samples were collected at 5 stages: 7 days after germination (young, ~ 3mm in length), 9 days after germination (intermediate 1, ~ 5 mm in length), 12 days after germination (intermediate 2, ~ 10 mm in length), at the moment of anthesis of the first flower (mature leaf) and at the stage of maturation of seeds in first siliques (senescent leaf)." id="F_SP_y" name="Sepals of the young flower">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581692"/>
+				<sample name="SRR3581858"/>
+			</tissue>
+			<tissue colorKey="#00e636" desc="STI, Stigmatic tissue from pistils of 6th and 7th flowers (before pollination). Sample collected at the moment of the abscission of the first flower." id="STI" name="Stigmatic tissue">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581728"/>
+				<sample name="SRR3581890"/>
+			</tissue>
+			<tissue colorKey="#00e637" desc="POD.y6-7, Pistils of 6th and 7th flowers (before pollination), ovules and stigma removed. Sample collected at the moment of the abscission of the first flower." id="POD_y6-7" name="Carpel of the 6th and 7th flowers">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581730"/>
+				<sample name="SRR3581891"/>
+			</tissue>
+			<tissue colorKey="#00e638" desc="OV.y6-7, Ovules from 6th and 7th flowers (before pollination). Sample collected at the moment of the abscission of the first flower." id="OV_y6-7" name="Ovules from the 6th and 7th flowers">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581727"/>
+				<sample name="SRR3581889"/>
+			</tissue>
+			<tissue colorKey="#00e639" desc="PED, Pedicel of the first flower. All samples are collected at the moment of the anthesis of the first flower." id="PED" name="Pedicel">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581703"/>
+				<sample name="SRR3581869"/>
+			</tissue>
+			<tissue colorKey="#00e640" desc="Ax, Axis of the inflorescence without flowers and pedicels. All samples are collected at the moment of the anthesis of the first flower." id="Ax" name="Axis of influorescence">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581704"/>
+				<sample name="SRR3581870"/>
+			</tissue>
+			<tissue colorKey="#00e641" desc="IN, First elongated internode (from last rosette leaf to first cauline leaf). All samples are collected at the moment of the anthesis of the first flower." id="IN" name="Internode">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581705"/>
+				<sample name="SRR3581871"/>
+			</tissue>
+			<tissue colorKey="#00e642" desc="R.A, Apex of the root, collected from plants at 7th day after germination." id="R_A" name="Root Apex">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581352"/>
+				<sample name="SRR3581835"/>
+			</tissue>
+			<tissue colorKey="#00e643" desc="R, Root without apex, collected from plants at 7th day after germination." id="R" name="Root">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581356"/>
+				<sample name="SRR3581836"/>
+			</tissue>
+			<tissue colorKey="#00e644" desc="SD.y1, Seeds from silique 1. All samples of this series were taken at the moment of abscission of the first flower. Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="SD_y1" name="Young seeds 1">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581719"/>
+				<sample name="SRR3581884"/>
+			</tissue>
+			<tissue colorKey="#00e645" desc="SD.y2, Seeds from silique 2. All samples of this series were taken at the moment of abscission of the first flower. Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="SD_y2" name="Young seeds 2">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581720"/>
+				<sample name="SRR3581885"/>
+			</tissue>
+			<tissue colorKey="#00e646" desc="SD.y3, Seeds from silique 3. All samples of this series were taken at the moment of abscission of the first flower. Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="SD_y3" name="Young seeds 3">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581721"/>
+				<sample name="SRR3581886"/>
+			</tissue>
+			<tissue colorKey="#00e647" desc="SD.y4, Seeds from silique 4. All samples of this series were taken at the moment of abscission of the first flower. Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="SD_y4" name="Young seeds 4">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581724"/>
+				<sample name="SRR3581887"/>
+			</tissue>
+			<tissue colorKey="#00e648" desc="SD.y5, Seeds from silique 5. All samples of this series were taken at the moment of abscission of the first flower. Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="SD_y5" name="Young seeds 5">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581726"/>
+				<sample name="SRR3581888"/>
+			</tissue>
+			<tissue colorKey="#00e649" desc="SD1, Seeds from silique 1. All samples of this series were taken at the moment when first silique is 1-1.5 cm long (corresponds to the moment of the abscission of the 8th flower). Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="SD1" name="Seeds 1">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581706"/>
+				<sample name="SRR3581872"/>
+			</tissue>
+			<tissue colorKey="#00e650" desc="SD3, Seeds from silique 3. All samples of this series were taken at the moment when first silique is 1-1.5 cm long (corresponds to the moment of the abscission of the 8th flower). Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="SD3" name="Seeds 3">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581709"/>
+				<sample name="SRR3581875"/>
+			</tissue>
+			<tissue colorKey="#00e651" desc="SD5, Seeds from silique 5. All samples of this series were taken at the moment when first silique is 1-1.5 cm long (corresponds to the moment of the abscission of the 8th flower). Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="SD5" name="Seeds 5">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581712"/>
+				<sample name="SRR3581878"/>
+			</tissue>
+			<tissue colorKey="#00e652" desc="SD7, Seeds from silique 7. All samples of this series were taken at the moment when first silique is 1-1.5 cm long (corresponds to the moment of the abscission of the 8th flower). Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="SD7" name="Seeds 7">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581715"/>
+				<sample name="SRR3581881"/>
+			</tissue>
+			<tissue colorKey="#00e653" desc="SD.d, Dry seeds." id="SD_d" name="Dry Seeds">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581731"/>
+				<sample name="SRR3581892"/>
+			</tissue>
+			<tissue colorKey="#00e654" desc="SD.g1, Seeds at first day after soaking." id="SD_g1" name="Germinating seeds 1">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581732"/>
+				<sample name="SRR3581893"/>
+			</tissue>
+			<tissue colorKey="#00e655" desc="SD.g2, Seeds at second day after soaking." id="SD_g2" name="Germinating seeds 2">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581733"/>
+				<sample name="SRR3581894"/>
+			</tissue>
+			<tissue colorKey="#00e656" desc="SD.g3, Seeds at third day after soaking." id="SD_g3" name="Germinating seeds 3">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581734"/>
+				<sample name="SRR3581895"/>
+			</tissue>
+			<tissue colorKey="#00e657" desc="IN.sn, First elongated internode (from last rosette leaf to first cauline leaf). Sample was collected when first silique was yellow and ready to open." id="IN_sn" name="Senescent internode">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581738"/>
+				<sample name="SRR3581899"/>
+			</tissue>
+			<tissue colorKey="#00e658" desc="SD.sn1, Seeds from the senescent silique 1. Sample was collected when first silique was yellow and ready to open." id="SD_sn1" name="Seeds from the senescent silique 1">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581735"/>
+				<sample name="SRR3581896"/>
+			</tissue>
+			<tissue colorKey="#00e659" desc="POD.sn1, Pod of the senescent silique 1. Sample was collected when first silique was yellow and ready to open." id="POD_sn1" name="Pod of the senescent silique 1">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581736"/>
+				<sample name="SRR3581897"/>
+			</tissue>
+			<tissue colorKey="#00e660" desc="SL.sn2, Whole senescent silique 2. Sample was collected when first silique was yellow and ready to open." id="SL_sn2" name="Senescent silique 2">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581737"/>
+				<sample name="SRR3581898"/>
+			</tissue>
+			<tissue colorKey="#00e661" desc="POD1, Pod of the silique 1 without seeds. All samples of this series were taken at the moment when first silique is 1-1.5 cm long (corresponds to the moment of the abscission of the 8th flower). Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="POD1" name="Pod of the silique 1">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581707"/>
+				<sample name="SRR3581873"/>
+			</tissue>
+			<tissue colorKey="#00e662" desc="POD3, Pod of the silique 3 without seeds. All samples of this series were taken at the moment when first silique is 1-1.5 cm long (corresponds to the moment of the abscission of the 8th flower). Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="POD3" name="Pod of the silique 3">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581710"/>
+				<sample name="SRR3581876"/>
+			</tissue>
+			<tissue colorKey="#00e663" desc="POD5, Pod of the silique 5 without seeds. All samples of this series were taken at the moment when first silique is 1-1.5 cm long (corresponds to the moment of the abscission of the 8th flower). Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="POD5" name="Pod of the silique 5">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581713"/>
+				<sample name="SRR3581879"/>
+			</tissue>
+			<tissue colorKey="#00e664" desc="POD7, Pod of the silique 7 without seeds. All samples of this series were taken at the moment when first silique is 1-1.5 cm long (corresponds to the moment of the abscission of the 8th flower). Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="POD7" name="Pod of the silique 7">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581716"/>
+				<sample name="SRR3581882"/>
+			</tissue>
+			<tissue colorKey="#00e665" desc="SL2, Whole silique 2. All samples of this series were taken at the moment when first silique is 1-1.5 cm long (corresponds to the moment of the abscission of the 8th flower). Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="SL2" name="Silique 2">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581708"/>
+				<sample name="SRR3581874"/>
+			</tissue>
+			<tissue colorKey="#00e666" desc="SL4, Whole silique 4. All samples of this series were taken at the moment when first silique is 1-1.5 cm long (corresponds to the moment of the abscission of the 8th flower). Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="SL4" name="Silique 4">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581711"/>
+				<sample name="SRR3581877"/>
+			</tissue>
+			<tissue colorKey="#00e667" desc="SL6, Whole silique 6. All samples of this series were taken at the moment when first silique is 1-1.5 cm long (corresponds to the moment of the abscission of the 8th flower). Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="SL6" name="Silique 6">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581714"/>
+				<sample name="SRR3581880"/>
+			</tissue>
+			<tissue colorKey="#00e668" desc="SL8, Whole silique 8. All samples of this series were taken at the moment when first silique is 1-1.5 cm long (corresponds to the moment of the abscission of the 8th flower). Before collection, siliques were washed in RNAlater solution in order to remove pollen." id="SL8" name="Silique 8">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="SRR3581717"/>
+				<sample name="SRR3581883"/>
+			</tissue>
+		</group>
+	</view>
+</specimen>

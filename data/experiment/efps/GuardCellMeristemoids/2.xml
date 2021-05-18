@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<webservice>//bar.utoronto.ca/eplant/cgi-bin/plantefp.cgi?datasource=guard_cell&amp;</webservice>
+<view name="all" db="guard_cell" img="GuardCell-xxxx-2015-01-13.svg">
+	<group name="GSM738872_C2;GSM738873_C3;GSM738874_C4">
+		<control sample="GSM738872_C2"/>
+		<control sample="GSM738873_C3"/>
+		<control sample="GSM738874_C4"/>
+		<tissue id="Col-0_WT_whole_seedling_at_5_dpg" name="Col-0 WT whole seedling at 5 dpg" colorKey="#99ff00">
+			<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE29814"/>
+			<sample name="GSM738872_C2"/>
+			<sample name="GSM738873_C3"/>
+			<sample name="GSM738874_C4"/>
+		</tissue>
+		<tissue id="spch_whole_seedling_at_5_dpg" name="spch whole seedling at 5 dpg" colorKey="#7961a9">
+			<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE29814"/>
+			<sample name="GSM738875_S2"/>
+			<sample name="GSM738876_S3"/>
+			<sample name="GSM738877_S4"/>
+		</tissue>
+		<tissue id="scrm-D_mute_whole_seedling_at_5_dpg" name="scrm-D mute whole seedling at 5 dpg" colorKey="#28a9df">
+			<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE29814"/>
+			<sample name="GSM738878_M2"/>
+			<sample name="GSM738879_M3"/>
+			<sample name="GSM738880_M4"/>
+		</tissue>
+		<tissue id="scrm-D_whole_seedling_at_5_dpg" name="scrm-D whole seedling at 5 dpg" colorKey="#24913d">
+			<link url="http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE29814"/>
+			<sample name="GSM738881_R2"/>
+			<sample name="GSM738882_R3"/>
+			<sample name="GSM738883_R4"/>
+		</tissue>
+	</group>
+</view>
+</specimen>

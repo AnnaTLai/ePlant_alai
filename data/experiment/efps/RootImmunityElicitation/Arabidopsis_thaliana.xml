@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM 'http://bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd'>
+<specimen name="Arabidopsis">
+	<info>
+		<li>Data from Schaefer's group.</li>
+	</info>
+	<view class="" db="root_Schaefer_lab" img="Schaefer.svg" name="all">
+		<group name="Epidermis">
+			<control sample="WTCHG_203594_01"/>
+			<control sample="WTCHG_203594_05"/>
+			<control sample="WTCHG_203839_04"/>
+			<tissue colorKey="#00e600" id="Mock-Epidermis" name="Control - Epidermis">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="WTCHG_203594_01"/>
+				<sample name="WTCHG_203594_05"/>
+				<sample name="WTCHG_203839_04"/>
+			</tissue>
+			<tissue colorKey="#00e603"  id="flg22-Epidermis" name="flg22 - Epidermis">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="WTCHG_203594_03"/>
+				<sample name="WTCHG_203594_07"/>
+				<sample name="WTCHG_203839_06"/>
+			</tissue>
+			<tissue colorKey="#00e606" id="Pep1-Epidermis" name="Pep1 - Epidermis">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="WTCHG_203839_01"/>
+				<sample name="WTCHG_203594_10"/>
+				<sample name="WTCHG_203839_08"/>
+			</tissue>
+		</group>
+		<group name="Cortex">
+			<control sample="WTCHG_129187_01"/>
+			<control sample="WTCHG_129189_01"/>
+			<control sample="WTCHG_129190_01"/>
+			<tissue colorKey="#00e601" id="Mock-Cortex" name="Control - Cortex">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="WTCHG_129187_01"/>
+				<sample name="WTCHG_129189_01"/>
+				<sample name="WTCHG_129190_01"/>
+			</tissue>
+			<tissue colorKey="#00e604" id="flg22-Cortex" name="flg22 - Cortex">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="WTCHG_129187_03"/>
+				<sample name="WTCHG_129189_03"/>
+				<sample name="WTCHG_129190_03"/>
+			</tissue>
+			<tissue colorKey="#00e607" id="Pep1-Cortex" name="Pep1 - Cortex">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="WTCHG_129187_05"/>
+				<sample name="WTCHG_129189_05"/>
+				<sample name="WTCHG_129187_07"/>
+			</tissue>
+		</group>
+		<group name="Pericycle">
+			<control sample="WTCHG_131167_01"/>
+			<control sample="WTCHG_125416_01"/>
+			<control sample="WTCHG_129190_05"/>
+			<tissue colorKey="#00e602" id="Mock-Pericycle" name="Control - Pericycle">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="WTCHG_131167_01"/>
+				<sample name="WTCHG_125416_01"/>
+				<sample name="WTCHG_129190_05"/>
+			</tissue>
+			<tissue colorKey="#00e605"  id="flg22-Pericycle" name="flg22 - Pericycle">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="WTCHG_131167_03"/>
+				<sample name="WTCHG_125416_03"/>
+				<sample name="WTCHG_129190_07"/>
+			</tissue>
+			<tissue colorKey="#00e608" id="Pep1-Pericycle" name="Pep1 - Pericycle">
+				<link url="//bar.utoronto.ca"/>
+				<sample name="WTCHG_131167_05"/>
+				<sample name="WTCHG_125416_05"/>
+				<sample name="WTCHG_129189_07"/>
+			</tissue>
+		</group>
+	</view>
+</specimen>

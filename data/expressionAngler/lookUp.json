@@ -1,0 +1,74 @@
+[  
+   {  
+      "name":"Abiotic Stress",
+      "database":"AtGenExpress_Stress_raw"
+   },
+   {  
+      "name":"Chemical",
+      "database":"AtGenExpress_Hormone_raw"
+   },
+   {  
+      "name":"Guard Cell Meristemoids",
+      "database":"AtGenExpress_Tissue_raw"
+   },
+   {  
+      "name":"Guard Cell Mutant And Wild Type Guard Cell ABA Response",
+      "database":"AtGenExpress_Tissue_Plus_raw"
+   },
+   {  
+      "name":"Guard Cell Suspension Cell ABA Response With ROS Scavenger",
+      "database":"AtGenExpress_Tissue_Plus_raw"
+   },
+   {  
+      "name":"Tissue Specific Guard And Mesophyll Cells",
+      "database":"AtGenExpress_Tissue_Plus_raw"
+   },
+   {  
+      "name":"Tissue Specific Pollen Germination",
+      "database":"AtGenExpress_Root_raw"
+   },
+   {  
+      "name":"Tissue Specific Root",
+      "database":"AtGenExpress_Tissue_Plus_raw",
+	  "sampleDB":"AtGenExpress_Plus_PID:14671301",
+	  "sampleMaps":{
+		"endo_stage3":"endo_stage3_endo_stage3+%5bAtGenExpress_Plus_PID:14671301%5d",
+"cortex-endo_stage3":"cortex-endo_stage3_cortex_endo_stage3+%5bAtGenExpress_Plus_PID:14671301%5d",
+"stele_stage3":"stele_stage3_stele_stage3+%5bAtGenExpress_Plus_PID:14671301%5d",
+"epidermis_stage3":"epidermis_stage3_epidermis_stage3+%5bAtGenExpress_Plus_PID:14671301%5d",
+"lat_root_cap_stage3":"lat_root_cap_stage3_lat_root_cap_stage3+%5bAtGenExpress_Plus_PID:14671301%5d",
+"stele_stage2":"stele_stage2_stele_stage2+%5bAtGenExpress_Plus_PID:14671301%5d",
+"endo_stage2":"endo_stage2_endo_stage2+%5bAtGenExpress_Plus_PID:14671301%5d",
+"cortex-endo_stage2":"cortex-endo_stage2_cortex_endo_stage2+%5bAtGenExpress_Plus_PID:14671301%5d",
+"epidermis_stage2":"epidermis_stage2_epidermis_stage2+%5bAtGenExpress_Plus_PID:14671301%5d",
+"lat_root_cap_stage2":"lat_root_cap_stage2_lat_root_cap_stage2+%5bAtGenExpress_Plus_PID:14671301%5d",
+"stele_stage1":"stele_stage1_stele stage1+%5bAtGenExpress_Plus_PID:14671301%5d",
+"endo_stage1":"endo_stage1_endo_stage1+%5bAtGenExpress_Plus_PID:14671301%5d",
+"cortex-endo_stage1":"cortex-endo_stage1_cortex_endo_stage1+%5bAtGenExpress_Plus_PID:14671301%5d",
+"epidermis_stage1":"epidermis_stage1_epidermis_stage1+%5bAtGenExpress_Plus_PID:14671301%5d",
+"lat_root_cap_stage1":"lat_root_cap_stage1_lat_root_cap_stage1+%5bAtGenExpress_Plus_PID:14671301%5d",
+"ARTH1_AGL42-01":"ARTH1_AGL42-01_ARTH1_AGL42_rep1+%5bAtGenExpress_Plus_PID:15937229%5d",
+"ARTH1_AGL42-02":"ARTH1_AGL42-02_ARTH1_AGL42_rep2+%5bAtGenExpress_Plus_PID:15937229%5d",
+	  }
+   },
+   {  
+      "name":"Tissue Specific Shoot Apical Meristem",
+      "database":"AtGenExpress_Tissue_Plus_raw"
+   },
+   {  
+      "name":"Tissue Specific Stem Epidermis",
+      "database":"AtGenExpress_Tissue_Plus_raw"
+   },
+   {  
+      "name":"Tissue Specific Stigma And Ovaries",
+      "database":"AtGenExpress_Tissue_Plus_raw"
+   },
+   {  
+      "name":"Tissue Specific Trichomes",
+      "database":"AtGenExpress_Tissue_Plus_raw"
+   },
+   {  
+      "name":"Tissue Specific Xylem And Cork",
+      "database":"AtGenExpress_Tissue_Plus_raw"
+   }
+]

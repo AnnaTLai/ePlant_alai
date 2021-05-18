@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 960 600" enable-background="new 0 0 960 600" xml:space="preserve" width="90" height="56">
+	<g id="Pin">
+		<g id="pinMarker">
+			<line id="pinMarkerLine" fill="none" stroke="#FF0000" stroke-width="6" x1="400" y1="587" x2="400" y2="220" />
+			<circle id="pinMarkerCircle" fill="none" stroke="#FF0000" stroke-width="6" cx="400" cy="200" r="20" strokeWidth="2" />
+			<text id="pinMarkerValue" x="400" y="130" text-anchor="middle" fill="#000000" font-family="'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif" font-size="150">50%</text>
+
+
+		</g>
+	</g>
+	<g id="ChartBody">
+		<line id="baseline" fill="none" stroke="#BCBCBB" stroke-width="10" x1="144" y1="587" x2="724" y2="587"/>
+		<g id="curve">
+			<path fill="none" stroke="#010101" stroke-width="6" d="M144,579c58,0,114-1,172-1c54,0,107-1,161-2c49-1,99-2,149-6
+				c20-1,40-2,59-10c11-4,20-8,26-21c6-11,8-23,9-36c4-32,2-68,3-102c0-40,0-80,0-121c0-6,0-12,0-18"/>
+		</g>
+	</g>
+</svg>

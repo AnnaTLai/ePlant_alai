@@ -1,0 +1,201 @@
+<div id="divMainJsmol" class="all" style="position: relative;z-index: 2;height: 100%;width: 100%;">
+	<div id="divJmolcontent" class="jmolcontent">
+		<!-- jsmol will load here -->
+	</div>
+	<div id="divMoleculeSetting" style="display:none;margin-top: -10px;">
+		<div style="float: left;width: 100%;">
+			<h4 class="features">Platform Speed</h4>
+			<div id="viewOptions" style="">
+				<span id='platSpeed' class='radioMenu'>
+					<!--<input type='radio' id='ps1' name='pSpeed' value='1'><label for='ps1'>1</label>-->
+					<input type='radio' id='ps2' name='pSpeed' value='2' ><label for='ps2'>1</label>
+					<!--<input type='radio' id='ps3' name='pSpeed' value='3'><label for='ps3'>3</label>-->
+					<input type='radio' id='ps4' name='pSpeed' value='4' style="margin-left: 10px;"><label for='ps4'>2</label>
+					<!--<input type='radio' id='ps5' name='pSpeed' value='5'><label for='ps5'>5</label>-->
+					<input type='radio' id='ps6' name='pSpeed' value='6' style="margin-left: 10px;"><label for='ps6'>3</label>
+					<!--<input type='radio' id='ps7' name='pSpeed' value='7'><label for='ps7'>7</label>-->
+					<input type='radio' id='ps8' name='pSpeed' value='8' style="margin-left: 10px;" checked="checked"><label for='ps8'>4</label>
+				</span>
+			</div>
+		</div>
+		<div style="float: left;width: 100%;">
+			<h4 class="features">Model Quality</h4>
+			<div id="viewOptions" style="">
+				<span id='spanquality' class='radioMenu'>
+					<input type='radio' id='mq' name='quality' value='medium' checked="checked"><label for='mq'>Medium</label>
+					<input type='radio' id='hq' name='quality' value='high' style="margin-left: 10px;"><label for='hq'>High</label>
+				</span>
+			</div>
+		</div>
+		<div style="float: left;width: 100%;">
+			<h4 class="features">Spin</h4>
+			<div id="viewOptions" style="">
+				<span id='spanspin' class='radioMenu'>
+					<input type='radio' id='sOff' name='spin' value='off' checked="checked"><label for='sOff'>Off</label>
+					<input type='radio' id='sOn' name='spin' style="margin-left: 10px;" value='on'><label for='sOn'>On</label>
+				</span>
+			</div>
+		</div>
+		<div style="float: left;width: 100%;">
+			<h4 class="features">Slab</h4>
+			<div id="viewOptions" style="">
+				<span id='spanslab' class='radioMenu'>
+					<input type='radio' id='std' name='slab' value='std' checked="checked"><label for='std'>Standard</label><br>
+					<input type='radio' id='bhalf' name='slab' value='bhalf'><label for='bhalf'>Back half</label><br>
+					<input type='radio' id='fhalf' name='slab' value='fhalf'><label for='fhalf'>Front half</label><br>
+					<input type='radio' id='middle50' name='slab' value='middle50'><label for='middle50'>Middle 50%</label><br>
+					<input type='radio' id='middle20' name='slab' value='middle20'><label for='middle20'>Middle 20%</label>
+				</span>
+			</div>
+		</div>
+		
+		<div style="float: left;width: 100%;">
+			<h4 class="features">Color style</h4>
+			<div id="viewOptions" style="">
+				<span id='spancolor' class='radioMenu'>
+					<input type='radio' id='opaque' name='color' value='opaque' checked="checked"><label for='opaque'>Opaque</label>
+					<input type='radio' id='translucent' name='color' style="margin-left: 10px;" value='translucent'><label for='translucent'>Translucent</label>
+				</span>
+			</div>
+		</div>
+		<div style="float: left;width: 100%;">
+			<h4 class="features">Color by</h4>
+			<div id="viewOptions" style="">
+				<span id='hydrPolCharg' class='radioMenu'>
+					<input type='radio' id='rd1' name='feature' value='hydro'><label for='rd1'>Hydrophobic/polar & charged residues</label>
+				</span>
+				<!--<span id='tempFactor' class='radioMenu'>
+					<input type='radio' id='rd2' name='feature' value='temp'><label for='rd2'>Temperature factor</label>
+					</span>
+					<span id='spancchain' class='radioMenu'>
+					<input type='radio' id='cchain' name='feature' value='cchain'><label for='cchain'>Chain</label>
+				</span>-->
+				<span id='spancstruc' class='radioMenu'>
+					<input type='radio' id='cstruc' name='feature' value='cstruc'><label for='cstruc'>Structure</label>
+				</span>
+				<span id='spancgroup' class='radioMenu'>
+					<input type='radio' id='cgroup' name='feature' value='cgroup'><label for='cgroup'>Rainbow</label>
+				</span>
+			</div>
+		</div>
+		
+	</div>
+	<div id="divMain" class="noselect main" style="position: relative;z-index: 2;">
+		<div id="divMenu" style="float: left;display:inline-block;width: 200px;overflow: hidden;padding-bottom:20px;margin-top:40px;margin-left:5px;padding-left: 5px;">
+			<!--<h4 class="features">Zoom & Move</h4>-->
+			<div style="float: left;">
+				<div id="viewOptions" style="text-align: center;margin: auto;display: none;">
+					<!--<span id="zoomvalue"></span>			-->
+					<div id="zoom-slider" style="height:70px;margin: 0 16px;display:none"></div>
+					<div id="" class="zoomButton roundButton" data-zoom="zoomin" style="  margin: 12px 0px 5px 0px;">+</div><br>
+					<div id="" class="zoomButton roundButton" data-zoom="zoomout" style="  margin: 5px 0px 12px 0px;">-</div>
+				</div>
+			</div>
+			<div style="float: left;">
+				
+				<div id="viewOptions" style="text-align: center;">
+					<div id="" class="viewArrow roundButton" data-direction="up">&#8593;</div><br>
+					<div id="" class="viewArrow roundButton" data-direction="left">&#8592;</div>
+					<div id="" class="viewArrow roundButton" data-direction="right">&#8594;</div><br>
+					<div id="" class="viewArrow roundButton" data-direction="down">&#8595;</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div id="divMenuRight" style="position: absolute; top: 10px;right: 0px;width: 230px; z-index: 2;overflow: auto;white-space: nowrap;padding-left: 5px;">
+		<div style="overflow: auto;padding-left: 3%;">
+			<button id="btnReset" class='greyButton' style="height: 30px;
+			padding: 0 15px;
+			width: auto;">
+				Reset Model
+			</button>
+		</div>
+		<div style="float: left;width: 97%;padding-left: 3%;">
+			<h4 class="features">Select residues</h4>
+			<div style="">
+				<input type="text" id="selResidues" style="margin-left: 5px;width: 90px;"/>
+				<img src="img/info-grey.png" class="hint--left hint--success hint--rounded" title="<b style='font-weight: bold;'>Example Search Queries</b><br/>lys<br/>glu, asn, cys<br/>L,<br/>E, N, C<br/>"
+				style="
+				height: 20px;
+				vertical-align: middle;
+				margin-top: -3px;
+				">
+				<button id="btnSelect" class='greyButton' style="height: 30px;
+				padding: 0 15px;
+				width: auto;">
+					Search
+				</button>
+			</div>
+		</div>
+		<div style="float: left;width: 97%;padding-left: 3%;">
+			<h4 class="features">Default Color</h4>
+			<div style="">
+				<span class="radioMenu">
+					<input type="radio" name="feature" value="TODO" style="">
+					<label for="content">Default Grey</label>
+				</span>
+			</div>
+		</div>
+		<div style="float: left;width: 97%;padding-left: 3%;">
+			<h4 class="features">Molecular Surface</h4>
+			<div style="cursor:pointer">
+				<input id="chkSurface" type="checkbox" style="    
+				margin-left: 5px;
+				margin-right: 10px;
+				margin-top: -1px;
+				vertical-align: middle;
+				pointer-events: none;
+				cursor:pointer;"
+				disabled/>
+				<label id="btnSurface" style="cursor:pointer">Show Molecular Surface</label>
+				
+			</div>
+		</div>
+		<div style="float: left;width: 97%;padding-left: 3%;">
+			<h4 class="features">Pfam Domains</h4>
+			<div style="">
+				<div id="PfamDomains" style=""></div>
+			</div>
+		</div>
+		<div style="float: left;width: 97%;padding-left: 3%;">
+			<h4 class="features">CDD Feature Hits</h4>
+			<div style="">
+				<div id="CDDdomains" style=""></div>
+			</div>
+		</div>
+		<div style="float: left;width: 97%;padding-left: 3%;">
+			<h4 class="features" style="white-space: normal;">Predicted Carbohydrate Binding Sites</h4>
+			<div style="">
+				<div id="PCBindingSites" style=""></div>
+			</div>
+		</div>
+	</div>
+	<div id="divBottomWrapper" class="noselect" style="overflow: hidden;position: absolute; bottom: 0px;width: 100%; z-index: 2;bottom: 0px;pointer-events: none;">
+		
+		<div style="position:relative">
+			<div id='divSeqContainer' class="" style="overflow-y: hidden; overflow-x: hidden;">
+				<div id="protSeq" style="display:inline-block;white-space: nowrap;margin-bottom: 20px;padding-top: 70px;height:20px;pointer-events: all;">
+				</div>
+			</div>
+			
+			<!-- left fade effect over sequence div -->
+			<div class="fadeOnCornersSequence fadeOnCornersSequenceLeft" id="fadeLeft">
+			</div>
+			<!-- right fade effect over sequence div -->
+			<div class="fadeOnCornersSequence fadeOnCornersSequenceRight" id="fadeRight">
+			</div>
+		</div>
+		<div style="pointer-events: all;position:absolute;width: 100%;bottom: -15px">
+			<div id="SeqSlider" class="overviewSlider" style="">
+			</div>
+		</div>
+		<div>
+			<div class="sequenceOverview" style="pointer-events: all;">
+				<div class="sequenceIndicator"></div>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>

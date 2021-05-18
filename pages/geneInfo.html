@@ -1,0 +1,83 @@
+
+<!-- anchor for Back to Top button -->
+<span id="linktotop"></span>
+
+<!-- Back to Top button -->
+<a href="#0" class="cd-top">Top</a>
+<div class="geneInfoTableHolder selectable" style="
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    overflow: auto;
+    padding: 45px 5% 30px;
+">
+<table style="margin:0 auto;">
+	<!--////////////////////// Section: Gene Information
+	<tr>
+		<td></td>
+		<td><p class="sectionHeader">Gene Information</p></td>
+	</tr>-->
+
+	<!-- Gene Name (aka "locus") -->
+	<tr class="tableRow">
+		<td class="tableLabel">Gene:</td>
+		<td class="tableContent" id="info_locus">loading...</td>
+	</tr>
+
+	<!-- Aliases -->
+	<tr class="tableRow">
+		<td class="tableLabel">Aliases:</td>
+		<td class="tableContent" id="info_aliases">loading...</td>
+	</tr>
+
+	<!-- Full Name -->
+	<tr class="tableRow">
+		<td class="tableLabel">Full Name:</td>
+		<td class="tableContent" id="info_fullName">loading...</td>
+	</tr>
+
+	<!-- Brief Description -->
+	<tr class="tableRow">
+		<td class="tableLabel">Brief Description:</td>
+		<td class="tableContent" id="info_briefDescription">loading...</td>
+	</tr>
+
+	<!-- Computational Description -->
+	<tr class="tableRow">
+		<td class="tableLabel">Computational Description:</td>
+		<td class="tableContent" id="info_computationalDescription">loading...</td>
+	</tr>
+
+	<!-- Curator Summary -->
+	<tr class="tableRow">
+		<td class="tableLabel">Curator Summary:</td>
+		<td class="tableContent" id="info_curatorSummary">loading...</td>
+	</tr>
+
+	<!-- Location &  Model -->
+	<tr class="tableRow">
+		<td class="tableLabel">Location & Gene Model:</td>
+		<td class="tableContent" id="info_locationModel">
+			<div id="info_Holder"  class="selectable">
+				<span id="info_location">Chr</span>: <span id="info_chromosome_start"></span> to <span id="info_chromosome_end"></span>, Strand <span id="info_strand"></span>
+			</div>
+			<div class="selectable" id="geneModel" style="width: 600px;position: relative;"></div>
+			<div>
+			</div>
+		</td>
+	</tr>
+
+	<!-- DNA Sequence -->
+	<tr class="tableRow">
+		<td class="tableLabel">DNA Sequence:</td>
+		<td class="tableContent"><div  class="selectable" id="info_DNAsequence" style="word-break: break-all;max-width:600px; overflow-wrap:break-word;font-size:10px;">loading...</div></td>
+	</tr>
+
+	<tr class="tableRow">
+		<td class="tableLabel">Protein Sequence:</td>
+		<td class="tableContent"><div  class="selectable" id="info_proteinSequence" style="word-break: break-all;max-width:600px; overflow-wrap:break-word;font-size:10px;">loading...</div></td>
+	</tr>
+
+	<!-- end of main table on page -->
+</table>
+</div>

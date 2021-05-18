@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<view name="all" class="" db="atgenexp_plus" img="TissueSpecific-XylemAndCork.svg">
+<info>
+	<li>Plant material from the xylem and cork of Arabidopsis thaliana plants of Columbia-0 ecotype was analyzed</li>
+	<li>Secondary thickened hypocotyl was induced by continual removal of the inflorescence stem for 10 weeks</li>
+	<li>Plants grown in growth room under continuous light conditions at 22°C</li>
+	<li>All measurements were taken in triplicates - the average of which is shown</li>
+	<li>RNA was isolated and hybridized to the ATH1 GeneChip</li>
+	<li>The data were normalized by GCOS normalization, TGT 100</li>
+	<li>Results provided by the Campbell Lab</li>
+</info>
+	<group name="CTRL_7">
+		<control sample="ATGE_CTRL_7"/> 
+		<tissue id="Xylem_MYB61 knockout" name="Xylem MYB61 knockout" colorKey="#FF11CC">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=92"/> 			 
+			<sample name="Dubos_A-3-6kx_Rep1"/> 
+			<sample name="Dubos_A-3-6kx_Rep2"/> 
+			<sample name="Dubos_A-3-6kx_Rep3"/> 
+		</tissue>
+		<tissue id="Cork_MYB61_knockout" name="Cork MYB61 knockout" colorKey="#7711CC">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=92"/> 			 
+			<sample name="Dubos_A-4-6kc_Rep1"/> 
+			<sample name="Dubos_A-4-6kc_Rep2"/> 
+			<sample name="Dubos_A-4-6kc_Rep3"/> 
+		</tissue>
+		<tissue id="Xylem_MYB50_knockout" name="Xylem MYB50 knockout" colorKey="#FF22CC">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=92"/> 			 
+			<sample name="Dubos_A-5-5kx_Rep1"/> 
+			<sample name="Dubos_A-5-5kx_Rep2"/> 
+			<sample name="Dubos_A-5-5kx_Rep3"/> 
+		</tissue>
+		<tissue id="Cork_MYB50_knockout" name="Cork MYB50 knockout" colorKey="#7722CC">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=92"/> 			 
+			<sample name="Dubos_A-6-5kc_Rep1"/> 
+			<sample name="Dubos_A-6-5kc_Rep2"/> 
+			<sample name="Dubos_A-6-5kc_Rep3"/> 
+		</tissue>		
+		<tissue id="Xylem_Col-0" name="Xylem Col-0" colorKey="#FF00CC">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=92"/> 			 
+			<sample name="Dubos_A-1-wtx_Rep1"/> 
+			<sample name="Dubos_A-1-wtx_Rep2"/> 
+			<sample name="Dubos_A-1-wtx_Rep3"/> 
+		</tissue>
+		<tissue id="Cork_Col-0" name="Cork Col-0" colorKey="#7700CC">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=92"/> 			 
+			<sample name="Dubos_A-2-wtc_Rep1"/> 
+			<sample name="Dubos_A-2-wtc_Rep2"/> 
+			<sample name="Dubos_A-2-wtc_Rep3"/> 
+		</tissue>
+		<tissue id="Hypocotyl_Col-0" name="Hypocotyl Col-0" colorKey="#BB00CC">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=92"/> 
+			<sample name="Dubos_A-10-wth_Rep1"/> 
+			<sample name="Dubos_A-10-wth_Rep2"/> 
+			<sample name="Dubos_A-10-wth_Rep3"/> 
+		</tissue>
+		<tissue id="Hypocotyl_Ler" name="Hypocotyl Ler" colorKey="#BB11CC">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=92"/> 
+			<sample name="Dubos_A-7-wlh_Rep1"/> 
+			<sample name="Dubos_A-7-wlh_Rep2"/> 
+			<sample name="Dubos_A-7-wlh_Rep3"/> 
+		</tissue>
+		<tissue id="Hypocotyl_abi1" name="Hypocotyl abi1" colorKey="#BB22CC">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=92"/> 			 
+			<sample name="Dubos_A-8-aih_Rep1"/> 
+			<sample name="Dubos_A-8-aih_Rep2"/> 
+			<sample name="Dubos_A-8-aih_Rep3"/> 
+		</tissue>
+		<tissue id="Hypocotyl_aba1" name="Hypocotyl aba1" colorKey="#BB33CC">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=92"/> 			 
+			<sample name="Dubos_A-9-aah_Rep1"/> 
+			<sample name="Dubos_A-9-aah_Rep2"/> 
+			<sample name="Dubos_A-9-aah_Rep3"/> 
+		</tissue>
+		<tissue id="Hypocotyl_max4" name="Hypocotyl max4" colorKey="#BB44CC">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=92"/> 			 
+			<sample name="Dubos_A-11-mxh_Rep1"/> 
+			<sample name="Dubos_A-11-mxh_Rep2"/> 
+			<sample name="Dubos_A-11-mxh_Rep3"/> 
+		</tissue>
+		<tissue id="Hypocotyl_axr1" name="Hypocotyl axr1" colorKey="#BB55CC">
+			<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=92"/> 			 
+			<sample name="Dubos_A-12-arh_Rep1"/> 
+			<sample name="Dubos_A-12-arh_Rep2"/> 
+			<sample name="Dubos_A-12-arh_Rep3"/> 
+		</tissue>
+	</group>
+</view>
+</specimen>

@@ -1,0 +1,707 @@
+/*
+	// ┌─────────────────────────────────────────────────────────────────────┐ \\
+	// │ TopoPhyloMap - Phylogenetic Topographic Map Generator               │ \\
+	// ├─────────────────────────────────────────────────────────────────────┤ \\
+	// │ CSS settings                                                        │ \\
+	// ├─────────────────────────────────────────────────────────────────────┤ \\
+	// │ Copyright (c) 2014 Jamie Waese, Nicholas Provart & David Guttman    │ \\
+	// │ University of Toronto                                               │ \\
+	// └─────────────────────────────────────────────────────────────────────┘ \\
+*/
+
+/*---------------------------------------------------------------------*/
+/* Bootstrap & JQuery override settings */
+.carousel-caption {
+	color:#BBB;
+	font-size: 2.5em;
+	text-shadow: 2px 2px #000;
+	font-weight: bold;
+}
+
+.modal-body {
+	overflow-wrap: break-word;
+}
+
+.modal-open {
+    /*
+		overflow: auto !important;
+		padding-right:0px !important;
+	*/
+}
+
+.btn-group {
+    display: inline-flex !important;
+}
+
+
+/*---------------------------------------------------------------------*/
+/* Dropdown box sub-menu settings  */
+.dropdown-menu {cursor:pointer;}
+.dropdown-submenu{position:relative;}
+.dropdown-submenu>.dropdown-menu{top:0;left:100%;margin-top:-6px;margin-left:-1px;-webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;}
+.dropdown-submenu:hover>.dropdown-menu{display:block;}
+.dropdown-submenu>a:after{display:block;content:" ";float:right;width:0;height:0;border-color:transparent;border-style:solid;border-width:5px 0 5px 5px;border-left-color:#cccccc;margin-top:5px;margin-right:-10px;}
+.dropdown-submenu:hover>a:after{border-left-color:#ffffff;}
+.dropdown-submenu.pull-left{float:none;}.dropdown-submenu.pull-left>.dropdown-menu{left:-100%;margin-left:10px;-webkit-border-radius:6px 0 6px 6px;-moz-border-radius:6px 0 6px 6px;border-radius:6px 0 6px 6px;}
+
+
+/*---------------------------------------------------------------------*/
+/* Main page */
+
+body{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif !important;
+	font-weight: 300;
+	position: absolute;
+    height: 100%;
+    width: 100%;
+	overflow: hidden;
+}
+
+.jumbotron h1, .jumbotron .h1 {
+	font-size: 3em !important;
+}
+
+.logo {
+	float: left;
+	width: 37px;
+	margin-right: 35px;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	outline: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+}
+
+svg path:hover {
+    stroke: black;
+    opacity: 0.5;
+    pointer-events: all;
+    cursor: pointer;
+}
+.instructions-heading {
+	float: left;
+	font-size: 20px;
+	font-weight: normal;
+	margin-left:10px;
+}
+.instructions {
+	float: left;
+}
+
+input[type=checkbox] {
+	/* All browsers except webkit*/
+	transform: scale(1.5);
+	
+	/* Webkit browsers*/
+	-webkit-transform: scale(1.5);
+	width: 13px;
+    height: 13px;
+}
+
+input[type=checkbox]:checked {
+    background-color: #fff;
+}
+
+a {
+	color: #99CC00;
+}
+/*---------------------------------------------------------------------*/
+/* Display Window */
+
+.display {
+	text-align: center;
+}
+
+.svg {
+	width: 100%;
+}
+
+/*---------------------------------------------------------------------*/
+/* Select Level Modal Popup with slider for setting expression levels  */
+
+#tissueName {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+	margin:10px;
+}
+
+
+#setExpressionLevelPopup {
+	width: 400px;
+}
+
+#textboxAbsolute {
+	background-color: #FFFF00;
+	padding-left:5px;
+}
+
+#sliderAbsolute {
+	margin-top: 5px;
+}
+
+#tissue-pop-up {
+	visibility: hidden;
+	position: absolute;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #DDDDDD;
+	vertical-align: middle;
+	font-size: 90%;
+	-webkit-box-shadow: 2px 2px 7px 0px rgba(50, 50, 50, 0.37);
+	-moz-box-shadow:    2px 2px 7px 0px rgba(50, 50, 50, 0.37);
+	box-shadow:         2px 2px 7px 0px rgba(50, 50, 50, 0.37);
+	opacity:0;
+	transition:visibility 0.1s linear 0.1s,opacity 0.1s linear;  
+}
+
+#info-pop-up {
+	visibility: hidden;
+	position: absolute;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+	background: #FFFFFF;
+	color: #000000;
+	border: 1px solid #DDDDDD;
+	vertical-align: middle;
+	font-size: 90%;
+	-webkit-box-shadow: 2px 2px 7px 0px rgba(50, 50, 50, 0.37);
+	-moz-box-shadow:    2px 2px 7px 0px rgba(50, 50, 50, 0.37);
+	box-shadow:         2px 2px 7px 0px rgba(50, 50, 50, 0.37);
+	opacity:0;
+	transition:visibility 0.1s linear 0.1s,opacity 0.1s linear;  
+}
+
+
+/*---------------------------------------------------------------------*/
+/* Popup panel to show values when hovering over SVG shapes */
+#tissue-title {
+	font-weight: bold;
+}
+
+
+/*---------------------------------------------------------------------*/
+/* Information panel to show <info> tags for each view */
+.info .li {
+	display: list-item;
+}
+
+/*---------------------------------------------------------------------*/
+/* Custom Bait selection table */
+.selectionTableTextInput {
+	font-size:small;
+	padding-left:5px;
+	margin-left:20px;
+	margin-right:10px;
+	margin-bottom:5px;
+}
+
+.selectionTableSample {
+	padding-left:10px;
+	/* display: initial; */
+}
+
+.excludeTissueTableButton {
+	float:left;
+	margin-left:15px;
+	margin-top:3px;
+	color:#999999;
+	cursor:pointer;
+}
+.excludeTissueTableButton:hover {
+	color:#000000;
+}
+
+.resetTissueTableButton {
+	float:left;
+	margin-left:10px;
+	margin-top:3px;
+	color:#999999;
+	cursor:pointer;
+}
+.resetTissueTableButton:hover {
+	color:#000000;
+}
+
+.col1 {
+	float:left;
+	width:18%;
+}
+
+.col2 {
+	float:left;
+	width:30%;
+}
+
+.col3 {
+	float:left;
+	width:40%;
+	padding-left:5px;
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+.searchOption{
+	width: 50px;
+	height: 20px;
+}
+
+.searchOptionDiv{
+	opacity:0.5;
+	padding:20px;
+	padding-bottom:80px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	max-width: 50%;
+}
+
+.searchOptionDiv h3{
+	text-align:center;
+}
+
+.searchOptionDiv.rightBorder:after{
+	content:''; 
+	width:1px; 
+	height:100%;
+	background:#aaa; 
+	position:absolute; 
+	right:-1px;
+	top:0%;
+}
+
+.activeSearchOptionDiv{
+	opacity:1;
+	padding:16px;
+	padding-bottom:76px;
+	border:4px solid #99cc00;
+	float: none;
+    display: table-cell;
+    vertical-align: top;
+}
+
+.activeSearchOptionDiv .buttonHolder{
+	bottom:26px;
+	
+}
+
+
+.optionsHolder{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    margin-bottom: 30px;
+}
+
+.proceedButton{
+	width:120px;
+	
+}
+
+.buttonHolder{
+	position: absolute;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -100px;
+	width: 205px;	
+}
+
+.btn-success{
+	background:#99cc00;
+	border-color:#99cc00;
+}
+
+.btn-success:hover{
+	background:#80A24A;
+	border-color:#80A24A;
+}
+
+.btn-success.disabled, .btn-success[disabled], fieldset[disabled] .btn-success, .btn-success.disabled:hover, .btn-success[disabled]:hover, fieldset[disabled] .btn-success:hover, .btn-success.disabled:focus, .btn-success[disabled]:focus, fieldset[disabled] .btn-success:focus, .btn-success.disabled.focus, .btn-success[disabled].focus, fieldset[disabled] .btn-success.focus, .btn-success.disabled:active, .btn-success[disabled]:active, fieldset[disabled] .btn-success:active, .btn-success.disabled.active, .btn-success[disabled].active, fieldset[disabled] .btn-success.active {
+	background:#B2CC64;
+	border-color:#B2CC64;
+}
+
+p#instructionText {
+	margin: 15px;
+}
+
+
+/* Tab Navigation */
+.nav-tabs {
+    margin: 0;
+    padding: 0;
+    border: 0;    
+}
+.nav-tabs > li > a {
+    background: #DADADA;
+    border-radius: 0;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	color:#444;
+}
+
+.nav-tabs > li:last-child  > a{
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+}
+.nav-tabs > li:first-child > a{
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-left-radius: 5px;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover {
+    background: #fff
+	color:#000;
+	z-index: 1;
+}
+
+/* Tab Content */
+.tab-pane {
+    background: #fff;
+    border-radius: 0;
+    padding: 5px;
+	height:100%; 
+	border: 1px solid gainsboro;
+}
+.tab-content {
+	height:90%;
+}
+
+#selectionTableBody span{
+}
+
+.gene-tr{
+	padding:10px 0;
+	height:25px;
+}
+
+.gene-tr table td{
+	padding-left:4px;
+}
+
+.view-td{
+	padding:2px;
+	height:25px;
+	cursor: pointer;
+}
+
+.qtip{
+	max-width:initial;
+}
+
+.text-ellipsis{
+	
+	white-space: nowrap;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+}
+
+
+.efp-view-svg {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+}
+
+/* On off switch */
+.onoffswitch {
+    position: relative; width: 52px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 12px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 14px; padding: 0; 
+    font-size: 12px; color: white; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 7px;
+    background-color: #99CC00; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 7px;
+    background-color: #999999; color: #ffffff;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 34px;
+    border: 2px solid #999999; border-radius: 12px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+#dropdown-rsvp{
+	white-space: nowrap;
+}
+
+#dropdown-rsvp input{
+	margin-right: 10px;
+	margin-top:-4px;
+	vertical-align: middle;
+}
+
+.button{
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-border-radius: 5px;
+	border: none;
+	padding: 10px 0;
+	width: 47%;
+	margin: 1%;
+	color: #FFF;
+	display: inline-block;
+	margin-top: 4px;
+	cursor:pointer;
+	height: 34px;
+	border:1px solid #ccc;
+	background:#fff;
+	color:#000;
+	line-height: 0px;
+}
+.button:hover{
+	background-color:#ddd;
+}
+#expressionAnglerDialog pre{
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: middle;
+	margin: 0;
+	padding: 2px;
+	overflow: hidden;
+	padding: 2;
+	background-color: #fff;
+}
+
+.progressBar {
+	position:relative;
+}
+.progressLabel {
+	position:absolute;
+	top:4px;
+	left:50%;
+}
+
+.geneInfoQtip {
+	width:200px;
+}
+
+.geneValueQtip {
+	width:260px;
+}
+
+.heatmapGeneLoading{
+	width: 98%;
+	border-bottom: 1px solid #000;
+	line-height: 0.1em;
+	margin: 10px 0 15px;
+	position: relative;
+	padding-top:10px;
+}
+
+.heatmapGeneLoading span{
+	font-weight:normal;
+	background: #fff;
+	padding: 0 10px;
+	vertical-align: middle;
+	position: absolute;
+	left: 50%;
+	margin-left: -80px;
+	font-size:14px;
+}
+
+.heatmapLoading{
+	width: 98%;
+	border-bottom: 1px solid #000;
+	line-height: 0.1em;
+	margin: 10px 0 15px;
+	position: relative;
+	padding-top:10px;
+	margin-top: 2px;
+}
+
+.heatmapLoading span{
+	font-weight:normal;
+	background: #fff;
+	padding: 0 10px;
+	vertical-align: middle;
+	position: absolute;
+	left: 50%;
+	margin-left: -73px;
+	font-size:14px;
+	top: -3px;
+}
+
+
+.eplant-geneticElementPanel-item-focus .heatmapLoading span, .eplant-geneticElementPanel-item-focus .heatmapLoading span{
+	background: #f0f0f0;
+	font-weight:bold;
+}
+
+
+.eplant-geneticElementPanel-item {
+	cursor: pointer;
+	border: none;
+	padding:0;
+	position:relative;
+	height:27px;
+	line-height:27px;
+	
+}
+.eplant-geneticElementPanel-item img {
+	
+	width:16px;
+	height: 16px;
+	margin: 0 7px 4px 4px;
+}
+.eplant-geneticElementPanel-item span {
+	line-height:27px;
+}
+.eplant-geneticElementPanel-item div {
+	line-height:27px;
+	height:27px;
+}
+.eplant-geneticElementPanel-item-focus{
+	font-weight:bold;
+	background:#f0f0f0;
+}
+
+.progressBar {
+	position:relative;
+}
+.progressLabel {
+	position:absolute;
+	top:4px;
+	left:50%;
+}
+.ui-progressbar .ui-progressbar-value{
+	margin: -1px;
+	height: 100%;
+	background:#99cc00;
+}
+
+.ui-widget-overlay {
+	background: #333;
+}
+
+.aboutPageLink{
+	cursor:pointer;
+}
+
+.contactPageLink{
+	cursor:pointer;
+}
+
+
+.efp-color-preset{
+	border: 1px solid rgb(153, 153, 153);
+	display: inline-block;
+	padding: 5px;
+	margin:5px;
+}
+
+.efp-color-preset-color{
+	height: 10px;
+	width: 10px;
+	display: inline-block;
+}
+
+.paletteInput {
+    width: 100px;
+    border: 1px solid rgb(204, 204, 204);
+    height: 33px;
+    margin-left: 10px;
+    padding: 0 20;
+}
+
+/* IconSmall class */
+.iconSmall {
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	cursor: pointer;
+	vertical-align: middle;
+	display: inline-block;
+}
+.iconSmall img {
+	width: 23px;
+	height: 23px;
+	
+}
+
+
+.svg-container {
+	display: inline-block;
+	width: 100%;
+	vertical-align: top;
+	overflow: hidden;
+}
+.svg-content-responsive {
+	display: inline-block;
+	top: 10px;
+	left: 0;
+}
+
+.x.axis line {
+	stroke: lightgrey;
+}
+.x.axis path {
+	display: none;
+}
+
+.y.axis line, .y.axis path {
+	fill: none;
+	stroke: lightgrey;
+}
+
+@media screen and (max-width: 900px) {
+    /* For tablets: */
+	body{
+		overflow: auto;
+	}
+}

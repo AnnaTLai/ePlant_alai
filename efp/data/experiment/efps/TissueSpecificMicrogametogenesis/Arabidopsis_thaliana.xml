@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<view name="all" class="" db="atgenexp_plus" img="TissueSpecific-Microgametogenesis.svg">
+	<info>
+		<li>Plant material from the pollen of 5.10 growth stage wild-type Arabidopsis thaliana plants of Ler-0 ecotype was analyzed</li>
+		<li>Plants grown under 16/8 hour light/dark conditions at 21°C</li>
+		<li>All measurements were taken in duplicates - the average of which is shown</li>
+		<li>RNA was isolated and hybridized to the ATH1 GeneChip</li>
+		<li>The data were normalized by GCOS normalization, TGT 100</li>
+		<li>Honys & Twell (2004) Geno. Biol. 5:R85 </li>
+	</info>
+	<group name="CTRL_7">
+		<control sample="ATGE_CTRL_7" /> 
+			<tissue id="Uninucleate_Microphore" name="Uninucleate Microphore">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=48" /> 			 
+				<sample name="Honys_UNM1_SLD" /> 
+				<sample name="Honys_UNM2_SLD" /> 
+			</tissue>
+			<tissue id="Bicellular_Pollen" name="Bicellular Pollen">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=48" /> 			 
+				<sample name="Honys_BCP1_SLD" /> 
+				<sample name="Honys_BCP2_SLD" /> 
+			</tissue>
+			<tissue id="Tricellular_Pollen" name="Tricellular Pollen">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=48" /> 			 
+				<sample name="Honys_TCP1_SLD" /> 
+				<sample name="Honys_TCP2_SLD" /> 
+			</tissue>
+			<tissue id="Mature_Pollen_Grain" name="Mature Pollen Grain">
+				<link url="//bar.utoronto.ca/NASCArrays/index.php?ExpID=48" /> 			 
+				<sample name="Honys_MPG1_SLD" /> 
+			</tissue>
+		</group>
+</view>
+</specimen>

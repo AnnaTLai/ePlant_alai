@@ -1,0 +1,22 @@
+[
+	{
+		"scientificName": "Arabidopsis thaliana",
+		"commonName": "Thale cress",
+		"exampleQuery": "ABI3, SIN1, At1g04170, At5g20620"
+	},
+	{
+		"scientificName": "Solanum tuberosum",
+		"commonName": "Potato",
+		"exampleQuery": ""
+	},
+	{
+		"scientificName": "Solanum lycopersicum",
+		"commonName": "Tomato",
+		"exampleQuery": ""
+	},
+	{
+		"scientificName": "Populus trichocarpa",
+		"commonName": "Poplar",
+		"exampleQuery": ""
+	}
+]

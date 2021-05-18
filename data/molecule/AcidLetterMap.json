@@ -1,0 +1,26 @@
+{
+	"A":"Ala",
+	"R":"Arg",
+	"N":"Asn",
+	"D":"Asp",
+	"B":"Asx",
+	"C":"Cys",
+	"E":"Glu",
+	"Q":"Gln",
+	"Z":"Glx",
+	"G":"Gly",
+	"H":"His",
+	"I":"Ile",
+	"L":"Leu",
+	"K":"Lys",
+	"M":"Met",
+	"F":"Phe",
+	"F":"Phe",
+	"P":"Pro",
+	"S":"Ser",
+	"T":"Thr",
+	"W":"Trp",
+	"Y":"Tyr",
+	"V":"Val"
+}
+

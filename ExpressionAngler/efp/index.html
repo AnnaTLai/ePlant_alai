@@ -1,0 +1,78 @@
+
+<!--
+   Welcome to ePlant, a unique data visualization tool for integrating and exploring multiple levels of biological data.
+   
+   This project was produced in Nicholas Provart's lab in the department of Cell & Systems Biology, University of Toronto.
+   
+   This is the outer frame / tabs holder of the application.
+   
+   Design & UI by Jamie Waese
+   Code by Jim Fan
+   
+   It is based on an earlier version of ePlant by Nicholas Provart: //bar.utoronto.ca/eplant/
+   
+   -->
+<html style="height: 100%;width:100%;">
+   <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+      <title>ePlant</title>
+      <meta name="keywords" content="" />
+      <!--[if lt IE 9]>
+      <script type="text/javascript">alert("Sorry but your browser does not support the canvas tag. Try using a recent version of Firefox, Chrome or Safari.");</script>
+      <![endif]-->
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+
+            <!-- Application contents -->
+            <script type="text/javascript" src="GeneticElement.js"></script>
+            <script type="text/javascript" src="EFP.js"></script>
+            <script type="text/javascript" src="EFP.Legend.js"></script>
+<script type="text/javascript" src="Util.js"></script>
+<style>
+
+	#efpTooltip{
+		margin:8px;
+		padding:8px;
+		border:1px solid blue;
+		background-color:yellow;
+		position: absolute;
+		z-index: 2;
+	}
+
+</style>
+   </head>
+   <body style="height: 100%;width:100%;">
+Gene:<br>
+<input type="text" id="geneInput" name="gene"><input id="enter" type="submit" value="enter">
+<div id="efp_container" style="width:100%;
+	height:100%;
+	margin:0 auto;
+	position:absolute;
+	//border-radius:20px;
+	background:#fff;
+	overflow:hidden;"></div>
+<script type="text/javascript">
+$('#enter').on('click',function(){
+$.getJSON(' //bar.utoronto.ca/eplant/cgi-bin/querygene.cgi?species=Arabidopsis_thaliana&term=' + $('#geneInput').val(), $.proxy(function(response) {
+if(response)
+{
+				this.geneticElement = new GeneticElement({
+					chromosome: response.chromosome,
+					identifier: response.id,
+					aliases: response.aliases,
+					annotation: response.annotation,
+					type: "gene",
+					strand: response.strand,
+					start: response.start,
+					end: response.end
+				});
+var view = new EFP(this.geneticElement);  
+}
+	}, this));     
+
+});
+            </script>
+
+   </body>
+</html>

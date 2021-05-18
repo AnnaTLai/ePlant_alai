@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+
+Welcome to ePlant, a unique data visualization tool for integrating and exploring multiple levels of biological data.
+
+This project was produced in Nicholas Provart's lab in the department of Cell & Systems Biology, University of Toronto.
+
+Design & UI by Jamie Waese
+Code by Hans Yu
+
+It is based on an earlier version of ePlant by Nicholas Provart: //bar.utoronto.ca/eplant/
+
+-->
+
+
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>ePlant</title>
+    <meta name="keywords" content="" />
+
+    <!--[if lt IE 9]>
+        <script type="text/javascript">alert("Sorry but your browser does not support the canvas tag. Try using a recent version of Firefox, Chrome or Safari.");</script>
+    <![endif]-->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="lib/spectrum/spectrum.js"></script>
+    <link rel="stylesheet" href="lib/spectrum/spectrum.css"></link>
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css"></link>
+    <script type="text/javascript" src="lib/JSmol/JSmol.min.nojq.js"></script>
+    <script type="text/javascript" src="lib/JSmol/JSmolThree.js"></script>
+    <script type="text/javascript" src="lib/JSmol/JSmolGLmol.js"></script>
+    <script type="text/javascript" src="lib/cytoscape/cytoscape.min.js"></script>
+    <script type="text/javascript" src="lib/cytoscape/arbor.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDT2IJLsslEC94ECmcXlAvz9ukPRH0fbh0&sensor=false"></script>
+    <script type="text/javascript" src="lib/GMaps/infobox_packed.js"></script>
+    <script type="text/javascript" src="lib/OverlappingMarkerSpiderfier/oms.min.js"></script>
+    <script type="text/javascript" src="lib/dalliance/dalliance-compiled.js"></script>
+    <script type="text/javascript" src="lib/html2canvas/html2canvas.js"></script>
+
+    <!-- Tooltip Pop-Up Stylesheet. (From: https://github.com/chinchang/hint.css) -->
+    <link rel="stylesheet" href="lib/hint/hint.css"></link>
+
+    <!-- Facebook Like Button -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="style/eplant.css"></link>
+
+	<link rel="stylesheet" type="text/css" media="all"
+		href="style/jquery-ui-1.11.2/jquery-ui.css"/>
+
+	<script type="text/javascript" 
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+	</script>
+
+	<script type="text/javascript" 
+		src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js">
+	</script>
+
+        <style>
+
+
+#tabs li .ui-icon-close {
+    float:left;
+    margin:0.4em 0.2em 0 0;
+    cursor:pointer;
+}
+#add_tab {
+    cursor:pointer;
+}
+div#tabs {
+    position:absolute;
+    top:0px;
+    left:50%;
+    width:98%;
+    height:98%;
+    margin-left:-49.5%;
+}
+div#tabs div {
+    display:inline-block;
+    padding:0px;
+    width:100%;
+    height:90%;
+}
+        </style>
+        <script>
+            $(document).ready(function() {
+var websiteframe = '<iframe src="browser.html" width="100%" height="100%" allowtransparency="true" frameBorder="0">Your browser does not support IFRAME</iframe>';
+var tabs = $("#tabs").tabs();
+var tabTitle = $('#tab_title'),
+tabTemplate = "<li><a href='#{href}'>#{label}</a> <span class='ui-icon ui-icon-close' role='presentation'>Remove Tab</span></li>",
+tabCounter = 2;
+
+function addTab() {
+    var label = tabTitle.val() || "" + tabCounter,
+        id = "tabs-" + tabCounter,
+        li = $(tabTemplate.replace(/#\{href\}/g, "#" + id).replace(/#\{label\}/g, label)),
+        websiteframe = '<iframe src="tabs.html" width="100%" height="100%" allowtransparency="true" frameBorder="0">Your browser does not support IFRAME</iframe>';
+    tabs.find(".ui-tabs-nav").append(li);
+    tabs.append("<div align='center' id='" + id + "'>" + websiteframe + "</div>");
+    tabs.tabs("refresh");
+    tabCounter++;
+}
+
+$("#add_tab").click(function () {
+    addTab();
+});
+
+var tabs = $( "#tabs" ).tabs();
+
+ 
+    // close icon: removing the tab on click
+    tabs.delegate( "span.ui-icon-close", "click", function() {
+      var panelId = $( this ).closest( "li" ).remove().attr( "aria-controls" );
+      $( "#" + panelId ).remove();
+      tabs.tabs( "refresh" );
+    });
+
+
+            });
+$(window).on('resize', function(){
+        $("iframe").height($(window).height()-80);
+
+	$("iframe").contents().find('body').height($(window).height()-80);
+});
+        </script>
+
+</head>
+
+
+<body>
+    <div id="content">
+        <!-- Title strip -->
+        <table width="90%">
+            <tr>
+                <!-- BAR logo -->
+                <td width="227px" style="text-align:center;">
+                    <div class="hint--right  hint--success  hint--rounded" data-hint="See more bio visualization tools at the BAR." data-enabled="true">
+                        <a href='//bar.utoronto.ca'><img id="logo" src='img/BAR.png' alt='To the Bio-Array Resource Homepage' align="absmiddle" style="position:relative;left:-4px;"></a>&nbsp;&nbsp;
+                    </div>
+                </td>
+                <!-- ePlant title & species name -->
+                <td width="460px">
+                    <span id="logoText">ePlant&nbsp;&nbsp;</span>
+                    <span id="speciesLabel" class="hiddenInSpeciesView">
+                        <!-- Plant name should update when user changes species -->
+                    </span>
+                </td>
+                <!-- Enter Gene ID box -->
+                <td width="284px"></td>
+
+                <!-- Example button -->
+                <td>
+
+                </td>
+            </tr>
+        </table>
+         <div id="tabs">
+    <ul>
+        <li><a href="#tabs-1" id="tab_title">Home</a>  <span class="ui-icon ui-icon-close" role="presentation">Remove Tab</span>
+        </li>
+        <li style="float:right;"><a id="add_tab">+</a>
+        </li>
+    </ul>
+    <div id="tabs-1">
+        <iframe src="tabs.html" width="100%" height="100%" allowtransparency="true" frameBorder="0">Your browser does not support IFRAME's</iframe>
+    </div>
+</div>
+
+</body>
+</html>

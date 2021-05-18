@@ -1,0 +1,8 @@
+[
+	{
+		"name": "Test View",
+		"class": "PlantView",
+		"snapshot": "data/experiment/snapshots/test.png",
+		"efp": "data/experiment/efps/test.json"
+	}
+]

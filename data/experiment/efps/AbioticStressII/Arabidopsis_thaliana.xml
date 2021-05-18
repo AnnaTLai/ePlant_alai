@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE specimen SYSTEM 'http://www.bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd'>
+<specimen name="Arabidopsis">
+	<info>
+		<li><b>Drought Stress II</b>; figure and data provided by the Campbell Lab (Wilkens et al., 2010. Plant J 63.) </li>
+		<li>Rosette tissue from the leaves of 32 day old wild-type <i>Arabidopsis thaliana</i> plants was analyzed</li>
+		<li>Cold stratified seeds were placed in chambers at 21°C and grown in 12/12 hours light/dark conditions with the light intensity at 120 μEinstein m<sup>-2</sup> sec<sup>-1</sup></li>
+		<li>Seedlings were grown for 28 days by watering with tap water to maintain moisture near field capacity</li>
+		<li>Then the samples were divided into 2 groups: one group was watered as before, but the other was grown with water limitation (water withheld until 25% of water was lost)</li>
+		<li>One the fourth day after water limitation, rosette tissue was harvested</li>
+		<li>For each treatment, three replicatess were collected, the average of which is shown</li>
+		<li>RNA was isolated and hybridized to the ATH1 GeneChip</li>
+		<li>The data were normalized by GCOS normalization, TGT 100</li>
+		<li><b>Hypoxia Stress</b>; figure and data provided by the Bailey-Serres Lab (Christina Branco-Price et al., 2005. Ann Bot 96.)</li>
+		<li>Plant material from wild-type <i>Arabidopsis thaliana</i>plants of Landsberg erecta ecotype were analyzed</li>
+		<li>Plants were grown on plates with solid MS media in chambers at 20°C, 16/8 hour light/dark conditions</li>
+		<li>After 7 days of growth, stress treatment was carried out by placing plates vertically in sealed Lucite chambers where 99.998% argon gas was allowed to escape under positive pressure at room temperature</li>
+		<li>Non stress treatment were maintained under same conditions, but the chambers were open to air</li>
+		<li>Three biological replicates were used for the analysis by RT-PCR</li>
+		<li>One biological replicate was processed</li>
+		<li>RNA was isolated and hybridized to the ATH1 GeneChip</li>
+		<li>The data were normalized by GCOS normalization, TGT 100</li>
+		<li><b>Selenium Response</b>; figure and data provided by the Pilon-Smits Lab (Van Hoewky et al., 2008. Physiologia Platarum 132.)</li>
+		<li>Plant material from wild-type <i>Arabidopsis thaliana</i> plants of Wassilewskija ecotypes were analyzed</li>
+		<li>Plants were grown on growth plates with or without 40 μM selenate in chambers at 24°C, 16/8 hour light/dark conditions</li>
+		<li>After 10 days of grown, plants were used for microarray studies</li>
+		<li>Two biological replicates were processed, the average of which is shown</li>
+		<li>RNA was isolated from roots and shoots of the plants and hybridized to the ATH1 GeneChip</li>
+		<li>The data were normalized by GCOS normalization, TGT 100</li>
+	</info>
+	<view class="" db="atgenexp_stress" img="Abiotic_Stress_II_image.png" name="all" table="sample_data">
+		<group name="GSM491684;GSM491685;GSM491686">
+			<control sample="GSM491684"/>
+			<control sample="GSM491685"/>
+			<control sample="GSM491686"/>
+			<tissue colorKey="#00cc00" name="Water limited (dry), Pre-dawn" id="WaterLimited-Predawn">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE19700"/>
+				<area coords="357,381,358,452,495,454,496,381"/>
+				<sample name="GSM491687"/>
+				<sample name="GSM491688"/>
+				<sample name="GSM491689"/>
+			</tissue>
+			<tissue colorKey="#00ff00" name="Well watered, pre-dawn (control)" id="WellWatered-Predawn">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE19700"/>
+				<area coords="361,288,499,286,498,358,361,356"/>
+				<sample name="GSM491684"/>
+				<sample name="GSM491685"/>
+				<sample name="GSM491686"/>
+			</tissue>
+		</group>
+		<group name="GSM491672;GSM491673;GSM491674">
+			<control sample="GSM491672"/>
+			<control sample="GSM491673"/>
+			<control sample="GSM491674"/>
+			<tissue colorKey="#66ff66" name="Well watered, Late day (control)" id="WellWatered-LateDay">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE19700"/>
+				<area coords="656,295,658,370,799,367,798,294,798,294"/>
+				<sample name="GSM491672"/>
+				<sample name="GSM491673"/>
+				<sample name="GSM491674"/>
+			</tissue>
+			<tissue colorKey="#66cc66" name="Water limited (dry), Late day" id="WaterLimited-LateDay">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE19700"/>
+				<area coords="659,385,661,456,803,456,803,442,804,383,804,383"/>
+				<sample name="GSM491675"/>
+				<sample name="GSM491676"/>
+				<sample name="GSM491677"/>
+			</tissue>
+		</group>
+		<group name="GSM237280;GSM237281">
+			<control sample="GSM237280"/>
+			<control sample="GSM237281"/>
+			<tissue colorKey="#ff7701" name="Root, non-selenate treated (control)" id="NonSelenate-Root">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE9311"/>
+				<area coords="501,881,500,851,502,851,536,849,536,849,538,918,537,918,502,918,503,917"/>
+				<sample name="GSM237280"/>
+				<sample name="GSM237281"/>
+			</tissue>
+			<tissue colorKey="#ff7702" name="Root, Selenate treated " id="Selenate-Root">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE9311"/>
+				<area coords="611,851,646,851,647,919,612,918"/>
+				<sample name="GSM237282"/>
+				<sample name="GSM237283"/>
+			</tissue>
+		</group>
+		<group name="GSM491666;GSM491667;GSM491668">
+			<control sample="GSM491666"/>
+			<control sample="GSM491667"/>
+			<control sample="GSM491668"/>
+			<tissue colorKey="#33cc33" name="Water limited (dry), Midday" id="WaterLimited-Midday">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE19700"/>
+				<area coords="532,377,649,377,649,453,642,453,506,448,502,377"/>
+				<sample name="GSM491669"/>
+				<sample name="GSM491670"/>
+				<sample name="GSM491671"/>
+			</tissue>
+			<tissue colorKey="#33ff33" name="Well watered, Midday (control)" id="WellWatered-Midday">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE19700"/>
+				<area coords="507,294,645,293,644,365,508,364,508,364"/>
+				<sample name="GSM491666"/>
+				<sample name="GSM491667"/>
+				<sample name="GSM491668"/>
+			</tissue>
+		</group>
+		<group name="GSM392492;GSM392493">
+			<control sample="GSM392492"/>
+			<control sample="GSM392493"/>
+			<tissue colorKey="#00ff55" name="Shoot, non-selenate treated (control)" id="NonSelenate-Shoot">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE9311"/>
+				<area coords="482,795,551,796,551,835,482,836"/>
+				<sample name="GSM392492"/>
+				<sample name="GSM392493"/>
+			</tissue>
+		</group>
+		<group name="GSM40552">
+			<control sample="GSM40552"/>
+			<tissue colorKey="#00ff33" name="Non Stressed (control), Total RNA" id="NonStressed-TotalRNA">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE2218"/>
+				<area coords="474,519,473,610,554,610,556,519"/>
+				<sample name="GSM40552"/>
+			</tissue>
+			<tissue colorKey="#00ff44" name="Hypoxia Stress, Total RNA" id="Hypoxia-TotalRNA">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE2218"/>
+				<area coords="589,523,589,523,591,608,664,608,664,608,662,522"/>
+				<sample name="GSM40553"/>
+			</tissue>
+		</group>
+		<group name="GSM40554">
+			<control sample="GSM40554"/>
+			<tissue colorKey="#00ff33" name="Non Stressed (control), Polysomal RNA" id="NonStressed-PolysomalMRNA">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE2218"/>
+				<area coords="478,616,552,616,552,704,481,704"/>
+				<sample name="GSM40554"/>
+			</tissue>
+			<tissue colorKey="#00ff44" name="Hypoxia Stress, Polysomal RNA" id="Hypoxia-PolysomalMRNA">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE2218"/>
+				<area coords="593,615,667,616,668,620,668,705,668,705,594,704"/>
+				<sample name="GSM40555"/>
+			</tissue>
+		</group>
+		<group name="GSM237292;GSM237293">
+			<control sample="GSM237292"/>
+			<control sample="GSM237293"/>
+			<tissue colorKey="#00ff66" name="Shoot, selenate treated " id="Selenate-Shoot">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE9311"/>
+				<area coords="588,794,621,793,662,793,662,793,661,838,586,835,588,834"/>
+				<sample name="GSM237294"/>
+				<sample name="GSM237295"/>
+			</tissue>
+		</group>
+		<group name="GSM491678;GSM491679;GSM491680">
+			<control sample="GSM491678"/>
+			<control sample="GSM491679"/>
+			<control sample="GSM491680"/>
+			<tissue colorKey="#99ff99" name="Well watered, midnight (control)" id="WellWatered-Midnight">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE19700"/>
+				<area coords="806,347,807,311,808,297,945,297,945,367,935,367,808,365"/>
+				<sample name="GSM491678"/>
+				<sample name="GSM491679"/>
+				<sample name="GSM491680"/>
+			</tissue>
+			<tissue colorKey="#99cc99" name="Water limited (dry), midnight" id="WaterLimited-Midnight">
+				<link url="http://www.ncbi.nlm.nih.gov/projects/geo/query/acc.cgi?acc=GSE19700"/>
+				<area coords="810,419,809,391,950,388,951,457,951,460,811,462"/>
+				<sample name="GSM491681"/>
+				<sample name="GSM491682"/>
+				<sample name="GSM491683"/>
+			</tissue>
+		</group>
+	</view>
+</specimen>

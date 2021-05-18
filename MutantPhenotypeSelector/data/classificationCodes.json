@@ -1,0 +1,137 @@
+{
+    "name": "Phenotype Classes",
+    "children": [
+        {
+            "name": "Essential",
+            "symbol": "ESN",
+            "children": [
+
+                {
+                    "name": "Gametophyte",
+                    "symbol": "G",
+                    "children": [
+                        {"name": "Gametophyte defective (<2% mutant seeds)", "symbol": "GAM", "subsetNumber": "1", "children": [{"name":""}]},
+                        {"name": "Gametophyte, embryo defective (2-10% mutant seeds)", "symbol": "GEM", "subsetNumber": "2", "children": [{"name":""}]},
+                        {"name": "Embryo, gametophyte defective (>10% mutant seeds)", "symbol": "EMG", "subsetNumber": "3", "children": [{"name":""}]},
+                        {"name": "Miscellaneous gametophyte defective", "symbol": "MGD", "subsetNumber": "4", "children": [{"name":""}]}
+                    ]
+                },   
+                {
+                    "name": "Embryo / Seed",
+                    "symbol": "S",
+                    "children": [
+                        {"name": "True embryo defective; No known gametophyte defects", "symbol": "EMB", "subsetNumber": "5", "children": [{"name":""}]},
+                        {"name": "Miscellaneous seed defective", "symbol": "MSD", "subsetNumber": "6", "children": [{"name":""}]}                    
+                    ]
+                },   
+                {
+                    "name": "Lethal",
+                    "symbol": "L",
+                    "children": [
+                        {"name": "No homozygous mutant plants; Cause not determined", "symbol": "NHM", "subsetNumber": "7", "children": [{"name":""}]},
+                        {"name": "Seedling, rosette lethal; Severe seedling defective", "symbol": "SRL", "subsetNumber": "8", "children": [{"name":""}]}
+                    ]
+                }   
+            ]
+        },   
+        {
+            "name": "Morphological",
+            "symbol": "MRP",
+            "children": [
+                {
+                    "name": "Vegetative",
+                    "symbol": "V",
+                    "children": [
+                        {"name": "Germination: Rate, frequency; seed dormancy", "symbol": "GER", "subsetNumber": "9", "children": [{"name":""}]},                    
+                        {"name": "Non-lethal seedling: Cotyledon, hypocotyl", "symbol": "NLS", "subsetNumber": "10", "children": [{"name":""}]},                    
+                        {"name": "Pigmentation: Plant coloration", "symbol": "PIG", "subsetNumber": "11", "children": [{"name":""}]},                    
+                        {"name": "Plant growth rate, size", "symbol": "GRS", "subsetNumber": "12", "children": [{"name":""}]},                   
+                        {"name": "Root: Size, morphology, growth rate", "symbol": "ROT", "subsetNumber": "13", "children": [{"name":""}]},                    
+                        {"name": "Leaf: Size, morphology, number", "symbol": "LEF", "subsetNumber": "14", "children": [{"name":""}]},                    
+                        {"name": "Inflorescence stem: Length, morphology", "symbol": "IST", "subsetNumber": "15", "children": [{"name":""}]},                   
+                        {"name": "Shoot architecture: Branching; phyllotaxy; growth pattern", "symbol": "ARC", "subsetNumber": "16", "children": [{"name":""}]},                    
+                        {"name": "Miscellaneous shoot, leaf morphology", "symbol": "MSL", "subsetNumber": "17", "children": [{"name":""}]}     
+                    ]
+                },
+                {
+                    "name": "Reproductive",
+                    "symbol": "R",
+                    "children": [
+                        {"name": "Floral, silique morphology", "symbol": "FSM", "subsetNumber": "18", "children": [{"name":""}]},                    
+                        {"name": "Ovule, pollen; sporophytic", "symbol": "OVP", "subsetNumber": "19", "children": [{"name":""}]},                    
+                        {"name": "Seed, seed coat; maternal sporophytic", "symbol": "SSC", "subsetNumber": "20", "children": [{"name":""}]}                    
+                    ]
+                },
+                {
+                    "name": "Timing",
+                    "symbol": "T",
+                    "children": [
+                        {"name": "Flowering time", "symbol": "FLT", "subsetNumber": "22", "children": [{"name":""}]},                    
+                        {"name": "Senescence", "symbol": "SEN", "subsetNumber": "23", "children": [{"name":""}]},                    
+                        {"name": "Circadian rhythms", "symbol": "CDR", "subsetNumber": "24", "children": [{"name":""}]},                  
+                        {"name": "Misc. timing; Phase change; vernalization", "symbol": "MTM", "subsetNumber": "25", "children": [{"name":""}]}                    
+                    ]
+                }
+            ]
+        },        
+        {
+            "name": "Cellular and Biochemical",
+            "symbol": "CLB",
+            "children": [
+                {
+                    "name": "Cellular",
+                    "symbol": "C",
+                    "children": [
+                        {"name": "Stomata, trichomes: Distribution, morphology", "symbol": "SIT", "subsetNumber": "26", "children": [{"name":""}]},                    
+                        {"name": "Root hairs: Distribution, morphology", "symbol": "RTH", "subsetNumber": "27", "children": [{"name":""}]},                    
+                        {"name": "Tissue, cell morphology: Structure, shape, patterning", "symbol": "TCM", "subsetNumber": "28", "children": [{"name":""}]},                    
+                        {"name": "Cell ultrastructure: Organelles, chromosomes, cytoskeleton", "symbol": "CUL", "subsetNumber": "29", "children": [{"name":""}]}                    ]
+                },
+                {
+                    "name": "Biochemical",
+                    "symbol": "B",
+                    "children": [
+                        {"name": "Product accumulation: Hormones, metabolites, storage products", "symbol": "PRA", "subsetNumber": "30", "children": [{"name":""}]},                                     
+                        {"name": "Cellular, physiological processes", "symbol": "CPR", "subsetNumber": "31", "children": [{"name":""}]}                    
+                    ]
+                }
+            ]
+        },   
+        {
+            "name": "Conditional",
+            "symbol": "CND",
+            "children": [
+                {
+                    "name": "Physical",
+                    "symbol": "C",
+                    "children": [
+                        {"name": "Water levels, availability", "symbol": "WAT", "subsetNumber": "32", "children": [{"name":""}]},                    
+                        {"name": "Temperature", "symbol": "TMP", "subsetNumber": "33", "children": [{"name":""}]},                    
+                        {"name": "Light: Amount, type, duration, direction", "symbol": "LIT", "subsetNumber": "34", "children": [{"name":""}]},                    
+                        {"name": "Mechanical stimulus: Touch, pressure", "symbol": "MEC", "subsetNumber": "35", "children": [{"name":""}]},                    
+                        {"name": "Miscellaneous physical conditions", "symbol": "MPH", "subsetNumber": "36", "children": [{"name":""}]}                    
+                    ]
+                },
+                {
+                    "name": "Chemical",
+                    "symbol": "H",
+                    "children": [
+                        {"name": "Nutrient levels, availability", "symbol": "NUT", "subsetNumber": "37", "children": [{"name":""}]},                    
+                        {"name": "Exogenous hormones", "symbol": "HRM", "subsetNumber": "38", "children": [{"name":""}]},                    
+                        {"name": "Chemical stress, toxins, mutagens", "symbol": "CHS", "subsetNumber": "39", "children": [{"name":""}]},                    
+                        {"name": "Miscellaneous chemicals", "symbol": "MCH", "subsetNumber": "40", "children": [{"name":""}]}                    
+                    ]
+                },
+                {
+                    "name": "Biological",
+                    "symbol": "I",
+                    "children": [
+                        {"name": "Pathogens, herbivores", "symbol": "PTH", "subsetNumber": "41", "children": [{"name":""}]},                                
+                        {"name": "Other biological interactors", "symbol": "OBI", "subsetNumber": "42", "children": [{"name":""}]}                    
+                    ]
+                }
+
+            ]
+        }   
+    ]
+}

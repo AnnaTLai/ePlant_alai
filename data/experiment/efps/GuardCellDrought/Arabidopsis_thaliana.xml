@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE specimen SYSTEM 'http://www.bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd'>
+<specimen name="">
+  <info/>
+  <view class="" db="gc_drought" img="" name="">
+    <group name="L60w3;L60w1;L60w2">
+      <control sample="L60w3"/>
+      <control sample="L60w1"/>
+      <control sample="L60w2"/>
+      <tissue colorKey="#FFFFFF" name="L60d" id="L60d">
+        <link url="Link"/>
+        <sample name="L60d1"/>
+        <sample name="L60d2"/>
+        <sample name="L60d3"/>
+      </tissue>
+    </group>
+    <group name="L60w1;L60w2;L60w3">
+      <control sample="L60w1"/>
+      <control sample="L60w2"/>
+      <control sample="L60w3"/>
+      <tissue colorKey="#FFFFFF" name="L60w" id="L60w">
+        <link url="Link"/>
+        <sample name="L60w1"/>
+        <sample name="L60w2"/>
+        <sample name="L60w3"/>
+      </tissue>
+    </group>
+    <group name="L20w1;L20w2;L20w3">
+      <control sample="L20w1"/>
+      <control sample="L20w2"/>
+      <control sample="L20w3"/>
+      <tissue colorKey="#FFFFFF" name="L20w" id="L20w">
+        <link url="Link"/>
+        <sample name="L20w1"/>
+        <sample name="L20w2"/>
+        <sample name="L20w3"/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="Lrw" id="Lrw">
+        <link url="Link"/>
+        <sample name="Lrw1"/>
+        <sample name="Lrw2"/>
+        <sample name="Lrw3"/>
+      </tissue>
+    </group>
+    <group name="">
+      <tissue colorKey="#FFFFFF" name="svg6" id="svg6">
+        <link url=""/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="svg12" id="svg12">
+        <link url=""/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="svg13" id="svg13">
+        <link url=""/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="Text Element 0" id="Text_Element_0">
+        <link url=""/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="Text Element 1" id="Text_Element_1">
+        <link url=""/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="Text Element 2" id="Text_Element_2">
+        <link url=""/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="Text Element 3" id="Text_Element_3">
+        <link url=""/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="Text Element 4" id="Text_Element_4">
+        <link url=""/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="Text Element 5" id="Text_Element_5">
+        <link url=""/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="Unnamed Element 0" id="Unnamed_Element_0">
+        <link url=""/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="Unnamed Element 1" id="Unnamed_Element_1">
+        <link url=""/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="Text Element 6" id="Text_Element_6">
+        <link url=""/>
+      </tissue>
+    </group>
+    <group name="L40w1;L40w2;L40w3">
+      <control sample="L40w1"/>
+      <control sample="L40w2"/>
+      <control sample="L40w3"/>
+      <tissue colorKey="#FFFFFF" name="L40d" id="L40d">
+        <link url="Link"/>
+        <sample name="L40d1"/>
+        <sample name="L40d2"/>
+        <sample name="L40d3"/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="L40w" id="L40w">
+        <link url="Link"/>
+        <sample name="L40w1"/>
+        <sample name="L40w2"/>
+        <sample name="L40w3"/>
+      </tissue>
+    </group>
+    <group name="GC60w1;GC60w2;GC60w3">
+      <control sample="GC60w1"/>
+      <control sample="GC60w2"/>
+      <control sample="GC60w3"/>
+      <tissue colorKey="#FFFFFF" name="GC60w" id="GC60w">
+        <link url="Link"/>
+        <sample name="GC60w1"/>
+        <sample name="GC60w2"/>
+        <sample name="GC60w3"/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="GC60d" id="GC60d">
+        <link url="Link"/>
+        <sample name="GC60d1"/>
+        <sample name="GC60d2"/>
+        <sample name="GC60d3"/>
+      </tissue>
+    </group>
+    <group name="GC40w1;GC40w2;GC40w3">
+      <control sample="GC40w1"/>
+      <control sample="GC40w2"/>
+      <control sample="GC40w3"/>
+      <tissue colorKey="#FFFFFF" name="GC40w" id="GC40w">
+        <link url="Link"/>
+        <sample name="GC40w1"/>
+        <sample name="GC40w2"/>
+        <sample name="GC40w3"/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="GC40d" id="GC40d">
+        <link url="Link"/>
+        <sample name="GC40d1"/>
+        <sample name="GC40d2"/>
+      </tissue>
+    </group>
+    <group name="GC20w1;GC20w2;GC20w3">
+      <control sample="GC20w1"/>
+      <control sample="GC20w2"/>
+      <control sample="GC20w3"/>
+      <tissue colorKey="#FFFFFF" name="GC20d" id="GC20d">
+        <link url="Link"/>
+        <sample name="GC20d1"/>
+        <sample name="GC20d2"/>
+        <sample name="GC20d3"/>
+        <sample name="GC20d4"/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="GC20w" id="GC20w">
+        <link url="Link"/>
+        <sample name="GC20w1"/>
+        <sample name="GC20w2"/>
+        <sample name="GC20w3"/>
+      </tissue>
+      <tissue colorKey="#FFFFFF" name="GCrw" id="GCrw">
+        <link url="Link"/>
+        <sample name="GCrw1"/>
+        <sample name="GCrw2"/>
+        <sample name="GCrw3"/>
+      </tissue>
+    </group>
+    <group name="L20w3;L20w2;L20w1">
+      <control sample="L20w3"/>
+      <control sample="L20w2"/>
+      <control sample="L20w1"/>
+      <tissue colorKey="#FFFFFF" name="L20d" id="L20d">
+        <link url="Link"/>
+        <sample name="L20d1"/>
+        <sample name="L20d2"/>
+        <sample name="L20d3"/>
+      </tissue>
+    </group>
+  </view>
+</specimen>

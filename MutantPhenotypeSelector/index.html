@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="shortcut icon" type="image/x-icon"  href="images/barLogo.png">
+		
+		<title>Mutant Phenotype Gene Selector</title>
+		
+		<!-- Bootstrap Core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		
+		<!-- DataTables CSS -->
+		<link href="css/datatables.min.css" rel="stylesheet">
+		<link href="css/select.dataTables.min.css" rel="stylesheet">
+		
+		
+		<!-- Tooltips "Hint" CSS -->
+		<link href="css/hint.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/classificationTree.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<link rel="stylesheet" href="css/phenotype-geneList.css">
+		
+		
+		
+		<style>
+			body {
+			padding-top: 0px;
+			/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+			}
+		</style>
+		
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+	</head>
+	
+	<body>
+		
+		
+		
+		<!-- Page Content -->
+		<div class="container">
+			
+			<!-- Header Line -->
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h1>Find Arabidopsis Genes by Mutant Phenotype</h1>
+				</div>
+			</div>
+			
+			<!-- Tab Selector -->
+			<ul class="nav nav-tabs nav-justified" data-tabs="tabs">
+				<li role="presentation" class="active"><a href="#SearchByClassification" data-toggle="tab">Search by Classification</a></li>
+				<li role="presentation"><a href="#SearchByDataTable" data-toggle="tab">Search by Data Table</a></li>
+			</ul>
+			
+			<!-- Tab panes -->
+			<div class="tab-content">
+				
+				<!-- SearchByClassification Tab  -->
+				<div class="tab-pane fade in active" id="SearchByClassification">
+					
+					<!-- Tree Visualization goes here -->
+					<div id="classificationView" style="
+					overflow: hidden;
+					"></div>
+					
+					<!-- Popup Gene List Panel goes here -->
+					<div id="classificationView-geneList-container" class="phenotype-geneList-container animated hide">
+						<button id="classificationView-geneList-closeButton" class="phenotype-geneList-closeButton" onclick="hideGeneList()">X</button>
+						<div id="classificationView-geneList-panel" class="phenotype-geneList-panel">
+							<div id="classificationView-geneList-header" class="phenotype-geneList-header"></div>
+							<div id="classificationView-geneList-body" class="phenotype-geneList-body" onmouseout="$('#classificationView-geneInfoPopup').addClass('fadeOut')"></div>
+						</div>
+						<button type="button" class="btn btn btn-success searchButton" onclick="classificationView_loadGenes()" style="width:230px; margin-top:10px">Download Selected Genes</button>
+					</div>
+					
+					<!-- Gene Information popups when hovering over (i) icon goes here -->
+					<div id="classificationView-geneInfoPopup" class="phenotype-geneInfoPopup shadowed hide animated"></div>
+				</div>
+				
+				
+				
+				<!-- SearchByDataTable Tab  -->
+				<div class="tab-pane fade" id="SearchByDataTable">
+					<div class="row" style="margin-top:20px;">
+						
+						<!-- Records Showing indicator -->
+						<div class="col-sm-3">
+							<div style="margin-left:30px;">
+								
+								<div id="currentlyDisplaying">Displaying 100% of genes in table</div>
+								<div class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
+									<div id="currentlyDisplayingIndicator" class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="background:#99cc00; width: 100%;"></div>
+								</div>
+							</div>
+						</div>
+						
+						
+						
+						<!-- Global search box -->
+						<div class="col-sm-6">
+							<input type="text" id="dataTableSearchBox" class="clearable form-control" placeholder="Enter global search terms here" aria-label="Input search box">
+						</div>
+						
+						<!-- Download Button -->
+						<div class="col-sm-3">
+							<button type="button" class="btn btn-success searchButton" onclick="tableView_downloadSelectedGenes();">Download Selected Genes</button>
+						</div>
+					</div>
+					<!-- datatable-->
+					<table id="allPhenotypesTable" class="display" cellspacing="0" width="100%">
+						
+					</table>
+					
+				</div>
+				
+				
+			</div>
+			
+		</div>
+		<!-- /.container -->
+		
+		<!-- Footer -->
+		<br>
+		<div class="col-sm-1">
+		</div>
+		<div class="col-sm-10">
+			Data source: Johnny Lloyd and David Meinke (2012). A Comprehensive Dataset of Genes with a Loss-of-Function Mutant Phenotype in Arabidopsis. Plant Physiol. 2012 Mar; 158(3): 1115–1129. doi: 10.1104/pp.111.192393
+		</div>
+		<div class="col-sm-1">
+		</div>
+		
+		
+		<!-- About Modal -->
+		<div class="modal fade pg-show-modal" id="AboutModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button> 
+						<h4 class="modal-title">About</h4>
+					</div>
+					<div class="modal-body">
+						<p class="text-left">Use this tool to identify genes associated with a loss-of-function mutant phenotype in Arabidopsis.</p>
+						<p class="text-left">It is based on a literature curation effort by Johnny Lloyd and David Meinke (2012) to identify 2,400 Arabidopsis genes with a documented loss-of-function mutant phenotype.</p>
+						<div class="well">
+							<p class="text-left">Johnny Lloyd and David Meinke (2012). A Comprehensive Dataset of Genes with a Loss-of-Function Mutant Phenotype in Arabidopsis. Plant Physiol. 2012 Mar; 158(3): 1115–1129. <a href="http://www.plantphysiol.org/content/158/3/1115">doi: 10.1104/pp.111.192393</a></p>
+							<p>
+								<button class="pull-left btn btn-default btn-sm"><a style="color:black; text-decoration:none;" href="data/Plant Physiol.-2012-Lloyd-1115-29.pdf">Click here to download the paper</a></button>
+								<button class="pull-right btn btn-default btn-sm"><a style="color:black; text-decoration:none;" href="data/192393Table_S2_Final_Revised.xlsx">Click here to download the data</a></button>
+							</p>
+							<p>
+								&nbsp 
+							</p>
+						</div>
+						<p class="text-left">This tool was designed and built by <a href="mailto:jamie.waese@mail.utoronto.ca?Subject=Mutant Phenotype viewer" target="_top">Jamie Waese</a> at the Department of Cell and Systems Biology, University of Toronto as a gene selector plugin for <a href="bar.utoronto.ca/eplant">ePlant</a></p>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- jQuery elements -->
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery.csv-0.71.min.js"></script>
+		
+		<script type="text/javascript" src="../js/artDialog.js?skin=idialog"></script>
+		<script type="text/javascript" src="../js/iframeTools.js"></script>
+		
+		<!-- Bootstrap Core JavaScript -->
+		<script src="js/bootstrap.js"></script>
+		
+		<!-- ClearSearch -->
+		<script src="js/jquery.clearsearch-1.0.4.js"></script>
+		
+		<!-- D3 Elements JavaScript -->
+		<script src="js/d3.min.js"></script>
+		<script src="js/d3.layout.min.js"></script>
+		
+		<!-- DataTables JavaScript -->
+		<script src="js/datatables.min.js"></script>
+		<script src="js/dataTables.select.min.js"></script>
+		
+		<!-- FileSaver JavaScript -->
+		<script src="js/fileSaver.min.js"></script>
+		
+		<!-- Custom JavaScript - placed at end so library functions are loaded first -->
+		<script src="js/buildDataTable.js"></script>
+		<script src="js/buildClassificationTree.js"></script>
+		<script src="js/buildTerminalDrawings.js"></script>
+		<script src="js/custom.js"></script>
+		
+		
+		
+	</body>
+	
+</html>

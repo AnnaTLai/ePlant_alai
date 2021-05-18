@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE specimen SYSTEM "http://www.bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+	<view name="all" class="" db="single_cell" dbGroup="RNASeq" img="Single_Cell.png" table="sample_data">
+		<lookup db="None" table="None" geneid_col="None"/>
+		<coords graphX="13" graphY="0" graphWidth="60" graphHeight="80" legendX="0" legendY="300"/>
+		<info>
+			<li>
+				Data from Single-Cell RNA Sequencing Resolves Molecular Relationships Among Individual Plant Cells: Ryu et al., Plant Physiology; DOI: 10.1104/pp.18.01482
+			</li>
+			<li>
+				Raw reads were demultiplexed and mapped to the TAIR10 reference genome by 10X Genomics Cell Ranger pipeline (v2.1.1) using default parameters. All downstream single-cell analyses were performed using Seurat unless mentioned specifically (v2.3.3; Butler et al., 2018). In brief, for each gene and each cell barcode (filtered by CellRanger), unique molecule identifiers were counted to construct digital expression matrices. A gene with expression in more than 3 cells was considered as expressed, and each cell was required to have at least 200 expressed genes. Then, each individual dataset was log-normalized, scaled, and corrected for dataset-specific batch effects using ComBat (sra v3.26.00; Leek et al., 2018). A union set of top 1000 highly variable genes from each dataset expressed in all samples was used by Seurat multicanonical correlation analysis to further correct for dataset-specific batch effects (Butler et al., 2018).
+			</li>
+		</info>
+		<group name="Med_CTRL">
+			<control sample="Med_CTRL"/>
+			<tissue colorKey="#ff61c3" name="Stele cells (6)" id="SteleG0-SteleCells6">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="566,324,555,331,549,352,549,370,554,378,561,375,568,365,584,363,585,357,583,343,577,332"/>
+				<sample name="cluster6_WT1.ExprMean" />
+				<sample name="cluster6_WT2.ExprMean" />
+				<sample name="cluster6_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#f17d50" name="Differentiating non-hair epidermal cells (1)" id="EpidermisNG3-DifferentiatingNonHairEpidermalCells1">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="697,252,673,240,654,237,644,273,647,283,671,291"/>
+				<sample name="cluster1_WT1.ExprMean" />
+				<sample name="cluster1_WT2.ExprMean" />
+				<sample name="cluster1_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#d39200" name="Endodermis cells (12)" id="EndodermisG7-EndodermisCells12">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="522,112,536,113,550,129,545,147,526,148,514,144,504,134,515,118"/>
+				<sample name="cluster12_WT1.ExprMean" />
+				<sample name="cluster12_WT2.ExprMean" />
+				<sample name="cluster12_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#5eb300" name="Stele cells (18)" id="SteleG5-SteleCells18">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="480,312,498,328,491,338,489,345,480,352,473,349,472,341,465,320"/>
+				<sample name="cluster18_WT1.ExprMean" />
+				<sample name="cluster18_WT2.ExprMean" />
+				<sample name="cluster18_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#ff64b0" name="Stele cells (including pericyte) (7)" id="SteleG0-SteleCellsIncludingPericyte7">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="591,381,585,375,586,364,585,364,585,359,603,368,595,380"/>
+				<area coords="601,386,590,388,575,400,575,410,576,422,591,422,613,415,607,389"/>
+				<sample name="cluster7_WT1.ExprMean" />
+				<sample name="cluster7_WT2.ExprMean" />
+				<sample name="cluster7_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#f564e3" name="Mid-stage differentiating root hair epidermal cells (4)" id="EpidermisHG4-MidStageDifferentiatingRootHairEpidermalCells4">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="518,215,512,219,511,229,509,229,511,244,506,246,510,258,513,259,531,263,538,258,539,252,545,248,552,235,541,225"/>
+				<sample name="cluster4_WT1.ExprMean" />
+				<sample name="cluster4_WT2.ExprMean" />
+				<sample name="cluster4_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#00bfc4" name="Dividing meristem cell (25)" id="RootCapG1-DividingMeristemCells25">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="591,238,600,245,597,257,590,252,587,240"/>
+				<area coords="585,296,575,296,557,292,551,280,562,275,579,277"/>
+				<sample name="cluster25_WT1.ExprMean" />
+				<sample name="cluster25_WT2.ExprMean" />
+				<sample name="cluster25_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#00a5ff" name="Late-stage differentiating root hair epidermal cells (3)" id="EpidermisHG4-LateStageDifferentiatingRootHairEpidermalCells3">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="479,204,498,203,517,215,512,218,513,226,507,235,508,240,509,256,506,257,497,242,480,244,471,222"/>
+				<sample name="cluster3_WT1.ExprMean" />
+				<sample name="cluster3_WT2.ExprMean" />
+				<sample name="cluster3_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#b79f00" name="Stele cells (including pericyte) (14)" id="SteleG0-SteleCellsIncludingPericyte14">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="603,389,601,376,588,379,584,363,576,361,562,379,556,382,565,397,572,404,577,401,590,388,596,388"/>
+				<sample name="cluster14_WT1.ExprMean" />
+				<sample name="cluster14_WT2.ExprMean" />
+				<sample name="cluster14_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#8e92ff" name="Cortex cells (31)" id="CortexG6-CortexCells31">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="625,168,633,162,642,163,648,172,647,177,652,180,660,181,654,191,637,184"/>
+				<sample name="cluster31_WT1.ExprMean" />
+				<sample name="cluster31_WT2.ExprMean" />
+				<sample name="cluster31_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#00bc5a" name="Stele cells (20)" id="SteleG0-SteleCells20">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="572,422,579,414,564,397,557,394,559,388,552,382,548,375,544,385,538,390,540,401,544,407"/>
+				<sample name="cluster20_WT1.ExprMean" />
+				<sample name="cluster20_WT2.ExprMean" />
+				<sample name="cluster20_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#619cff" name="Differentiating endodermis/cortex cells (30)" id="CortexG6-DifferentiatingEndodermisCortexCells30">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="626,200,629,195,638,207,646,216,645,229,642,230,636,224"/>
+				<sample name="cluster30_WT1.ExprMean" />
+				<sample name="cluster30_WT2.ExprMean" />
+				<sample name="cluster30_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#00bf74" name="Phloem cells (21)" id="SteleCellsG0-PhloemCells21">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="529,383,513,397,524,416,533,416,540,408,541,402,538,390"/>
+				<sample name="cluster21_WT1.ExprMean" />
+				<sample name="cluster21_WT2.ExprMean" />
+				<sample name="cluster21_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#00ba38" name="Lateral root cap cells (2)" id="RootCapG1-LateralRootCapCells2">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="651,306,661,325,638,352,630,353,613,344,615,341,619,330,614,329,616,320,637,298"/>
+				<sample name="cluster2_WT1.ExprMean" />
+				<sample name="cluster2_WT2.ExprMean" />
+				<sample name="cluster2_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#7cae00" name="Quiescent center cells and young meristem cells (17)" id="RootCapG1-QuiescentCenterCellsAndYoungMeristemCells17">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="597,291,597,283,597,272,603,265,599,262,588,263,577,252,568,261,568,267,583,276,580,281,588,290"/>
+				<sample name="cluster17_WT1.ExprMean" />
+				<sample name="cluster17_WT2.ExprMean" />
+				<sample name="cluster17_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#e88526" name="Root hair epidermal cells (10)" id="EpidermisHG8-RootHairEpidermalCells10">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="449,239,462,254,469,280,464,285,442,281,428,262,434,248"/>
+				<sample name="cluster10_WT1.ExprMean" />
+				<sample name="cluster10_WT2.ExprMean" />
+				<sample name="cluster10_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#93aa00" name="Non-hair epidermal cells (16)" id="EpidermisNG3-NonHairEpidermalCells16">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="668,213,673,210,698,218,701,240,693,250,687,249,681,245,675,234"/>
+				<sample name="cluster16_WT1.ExprMean" />
+				<sample name="cluster16_WT2.ExprMean" />
+				<sample name="cluster16_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#fc61d4" name="Early-stage differentiating root hair epidermal cells (5)" id="EpidermisNG3-EarlyStageDifferentiatingRootHairEpidermalCells5">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="652,238,648,249,650,258,645,265,647,272,644,281,632,273,616,274,602,268,603,262,599,260,600,254,613,247"/>
+				<sample name="cluster5_WT1.ExprMean" />
+				<sample name="cluster5_WT2.ExprMean" />
+				<sample name="cluster5_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#ff699c" name="Differentiating lateral root cap cells (8)" id="RootCapG1-DifferentiatingRootCapCells8">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="634,298,626,286,609,281,596,290,596,298,589,304,597,312,603,314,602,320,608,320,613,316,623,316,628,307,634,304"/>
+				<sample name="cluster8_WT1.ExprMean" />
+				<sample name="cluster8_WT2.ExprMean" />
+				<sample name="cluster8_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#db72fb" name="Stele cells (34)" id="SteleG0-SteleCells34">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="534,342,541,333,547,337,543,347,535,353"/>
+				<sample name="cluster34_WT1.ExprMean" />
+				<sample name="cluster34_WT2.ExprMean" />
+				<sample name="cluster34_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#00bdd5" name="Root hair epidermal cells (26)" id="EpidermisHG8-RootHairEpidermalCells26">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="427,263,444,280,441,286,419,291,415,270"/>
+				<sample name="cluster26_WT1.ExprMean" />
+				<sample name="cluster26_WT2.ExprMean" />
+				<sample name="cluster26_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#de8c00" name="Cortex cells (11)" id="CortexG6-CortexCells11">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="618,126,634,126,652,149,641,154,642,165,624,166,614,154,612,133"/>
+				<sample name="cluster11_WT1.ExprMean" />
+				<sample name="cluster11_WT2.ExprMean" />
+				<sample name="cluster11_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#f8766d" name="Differentiating endodermis/cortex cells (0)" id="EndocortexG2-DifferentiatingEndodermisCortexCells0">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="562,133,545,148,544,177,554,189,571,198,582,188,582,183,591,184,598,181,579,141"/>
+				<sample name="cluster0_WT1.ExprMean" />
+				<sample name="cluster0_WT2.ExprMean" />
+				<sample name="cluster0_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#00b4f0" name="Columella root cap cells (28)" id="RootCapG1-ColumellaRootCapCells28">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="588,330,600,319,610,320,613,326,614,346"/>
+				<sample name="cluster28_WT1.ExprMean" />
+				<sample name="cluster28_WT2.ExprMean" />
+				<sample name="cluster28_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#fd6f86" name="Stele cells (9)" id="SteleG5-SteleCells9">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="508,329,492,332,488,345,486,346,483,354,509,369,525,370,529,349,520,336"/>
+				<sample name="cluster9_WT1.ExprMean" />
+				<sample name="cluster9_WT2.ExprMean" />
+				<sample name="cluster9_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#00b9e3" name="Xylem cells (27)" id="SteleG5-XylemCells27">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="499,277,499,284,511,294,518,290,522,296,533,292,526,281"/>
+				<sample name="cluster27_WT1.ExprMean" />
+				<sample name="cluster27_WT2.ExprMean" />
+				<sample name="cluster27_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#c69900" name="Early-stage differentiating endodermis/cortex cells" id="EndocortexG2-EarlyStageDifferentiatingEndodermisCortexCells13">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="586,184,582,191,575,196,575,210,586,223,596,220,607,211,609,204,601,182,594,186"/>
+				<sample name="cluster13_WT1.ExprMean" />
+				<sample name="cluster13_WT2.ExprMean" />
+				<sample name="cluster13_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#00c19f" name="Xylem cells (23)" id="SteleG5-XylemCells23">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="517,294,508,297,505,314,517,324,527,319,528,314,529,302,525,297"/>
+				<sample name="cluster23_WT1.ExprMean" />
+				<sample name="cluster23_WT2.ExprMean" />
+				<sample name="cluster23_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#ea6af1" name="Early-stage differentiating endodermis/cortex cells (35)" id="EndocortexG2-EarlyStageDifferentiatingEndodermisCortexCells35">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="612,197,618,196,618,206,612,211,608,205"/>
+				<sample name="cluster35_WT1.ExprMean" />
+				<sample name="cluster35_WT2.ExprMean" />
+				<sample name="cluster35_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#a6a400" name="Early-stage differentiating root hair epidermal cells (15)" id="EpidermisHG4-EarlyStageDifferentiatingRootHairEpidermalCells15">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="533,272,552,275,568,263,570,257,567,247,554,243,542,247,539,260,533,264"/>
+				<sample name="cluster15_WT1.ExprMean" />
+				<sample name="cluster15_WT2.ExprMean" />
+				<sample name="cluster15_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#2bb600" name="Cortex cells (19)" id="CortexG6-CortexCells19">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="647,153,664,147,675,176,655,182"/>
+				<sample name="cluster19_WT1.ExprMean" />
+				<sample name="cluster19_WT2.ExprMean" />
+				<sample name="cluster19_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#00c0b3" name="Dividing meristem cells (24)" id="RootCapG1-DividingMeristemCells24">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="585,299,584,295,576,296,562,305,538,302,530,315,558,322,584,314,596,311,587,303"/>
+				<sample name="cluster24_WT1.ExprMean" />
+				<sample name="cluster24_WT2.ExprMean" />
+				<sample name="cluster24_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#00adfa" name="Differentiating endodermis/cortex cells (29)" id="EndocortexG2-DifferentiatingEndodermisCortexCells29">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="544,181,553,187,557,200,566,212,549,207,534,194,538,181"/>
+				<sample name="cluster29_WT1.ExprMean" />
+				<sample name="cluster29_WT2.ExprMean" />
+				<sample name="cluster29_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#ae87ff" name="Dividing meristem cells (32)" id="EndocortexG2-DividingMeristemCells32">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="565,219,563,229,568,238,582,232,577,221"/>
+				<sample name="cluster32_WT1.ExprMean" />
+				<sample name="cluster32_WT2.ExprMean" />
+				<sample name="cluster32_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#c77cff" name="Protoxylem cells (33)" id="SteleG5-ProtoxylemCells33">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="487,276,486,290,492,288,500,284,499,281"/>
+				<sample name="cluster33_WT1.ExprMean" />
+				<sample name="cluster33_WT2.ExprMean" />
+				<sample name="cluster33_WT3.ExprMean" />
+			</tissue>
+			<tissue colorKey="#00c08b" name="Endodermis cells (22)" id="EndodermisG7-EndodermisCells22">
+				<link url="http://bar.utoronto.ca/"/>
+				<area coords="504,135,527,149,521,173,506,169,499,148"/>
+				<sample name="cluster22_WT1.ExprMean" />
+				<sample name="cluster22_WT2.ExprMean" />
+				<sample name="cluster22_WT3.ExprMean" />
+			</tissue>
+		</group>
+	</view>
+</specimen>

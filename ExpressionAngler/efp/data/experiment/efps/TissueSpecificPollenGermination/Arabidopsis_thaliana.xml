@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<view name="all" class="" db="atgenexp_plus" img="TissueSpecific-PollinGermination.svg">
+	<info>
+		<li>Dry pollen grains were harvested by vacuum </li>
+		<li>Pollen was germinated using an in vitro system, and samples were taken at 30 minutes or 4 hours</li>
+		<li>Pollen tubes were also harvested after germination using a semi-in vivo pistil explant system</li>
+		<li>Samples were taken in quadruplicate or triplicate, the average signal is shown</li>
+		<li>RNA was isolated and hybridized to the ATH1 chip</li>
+		<li>Data normalized by GCOS/MAS5, TGT 100</li>
+		<li>Qin et al. (2009) PLoS Genetics 5: e1000621.</li>
+	</info>
+	<group name="CTRL_7">
+		<tissue id="Pollen_tubes_harvested_after_growth_through_pistil_explants" name="Pollen tubes harvested after growth through pistil explants">
+			<link url="http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1000621" /> 			 
+			<sample name="GSM433646" /> 
+			<sample name="GSM433647" /> 
+			<sample name="GSM433648" /> 
+		</tissue>
+		<tissue id="Pollen_germinated_in_vitro_for_4_hours" name="Pollen, germinated in vitro for 4 hours">
+			<link url="http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1000621" /> 			 
+			<sample name="GSM433642" /> 
+			<sample name="GSM433643" /> 
+			<sample name="GSM433644" /> 
+			<sample name="GSM433645" /> 
+		</tissue>
+		<tissue id="Pollen_germinated_in_vitro_for_30 minutes" name="Pollen, germinated in vitro for 30 minutes">
+			<link url="http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1000621" /> 			 
+			<sample name="GSM433638" /> 
+			<sample name="GSM433639" /> 
+			<sample name="GSM433640" /> 
+			<sample name="GSM433641" /> 
+		</tissue> 
+		<tissue id="Dry_pollen" name="Dry pollen">
+			<link url="http://www.plosgenetics.org/article/info%3Adoi%2F10.1371%2Fjournal.pgen.1000621" /> 			 
+			<sample name="GSM433634" /> 
+			<sample name="GSM433635" /> 
+			<sample name="GSM433636" /> 
+			<sample name="GSM433637" /> 
+		</tissue>
+	</group>
+</view>
+</specimen>
+

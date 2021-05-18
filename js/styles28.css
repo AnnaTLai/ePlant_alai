@@ -1,0 +1,202 @@
+@CHARSET "ISO-8859-1";
+
+/* hack to enable jsmol popup menu */
+#myJmol_popupMenu_top_1{
+	pointer-events: auto;
+}
+
+/* hack to enable jsmol console */
+#myJmol_console{
+	pointer-events: auto;
+}
+
+h4.features {
+	margin-bottom: 0px;
+}
+
+/* For the residues from alignment and the | (pipe) 
+ * Don't use this in other parts, the class name is used by javascript
+ * to remove the alignment when necessary
+*/
+span.alignment{
+	display: inline-block;
+	padding-left: 3px;
+	cursor: default;
+	pointer-events: auto;
+	width: 22px;
+	height: 30px;
+	text-align: center;
+	vertical-align: bottom;
+	color: black;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+span.sequence{
+	display: inline-block;
+	padding-left: 3px;
+	cursor: pointer;
+	pointer-events: auto;
+	width: 22px;
+	text-align: center;
+	vertical-align: bottom;
+}
+
+span.deselected {
+	color: black;
+	font-weight: normal;
+	font-size: 20px;
+}
+
+span.selected {
+	color: #99cc00;
+	font-weight: bold;
+	font-size: 28px;
+}
+
+span.loading {
+}
+
+span.loading:before {
+	content: "";
+    display: inline-block;
+    background: url("../img/loading.gif") no-repeat;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin: 0 8px 0 2px;
+    vertical-align: middle;
+}
+
+span.radioMenu {
+	float: left;
+	clear: left;
+}
+
+/* apply to this class and its children */
+span.radioMenu *{
+	cursor: pointer;
+}
+
+input[type="radio"] {
+	/*margin-left: 0px;*/
+	margin-right:8px;
+}
+
+label{
+	vertical-align: top;
+}
+
+.main {
+	overflow: hidden;
+	padding: 10px;
+	float: left;
+}
+
+div.devOpts{
+	position: fixed;
+    top: 10px;
+    right: 5px;
+    pointer-events: auto;
+    padding: 5px;
+}
+
+.buttondevOpts {
+    background-image: url(glyphicons-534-lab.png);
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 24px;           /* make this the size of your image */
+    width: 24px;
+    vertical-align: middle; /* align the text vertically centered */
+    outline: 0; /* don't apply border when focused */
+}
+
+/* Used with jquery to add/remove border when show/hide div  */
+div.devOptsBorder{
+    border: 1px solid #99cc00;
+}
+
+.jmolcontent {
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* Preserve aspect ratio */
+	min-width: 100%;
+	min-height: 100%;
+	height: 100%;
+	width: 100%;
+	pointer-events: auto;
+}
+
+/* user can't select text */
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* user can select text */
+.yesselect {
+    -webkit-touch-callout: all;
+    -webkit-user-select: all;
+    -khtml-user-select: all;
+    -moz-user-select: all;
+    -ms-user-select: all;
+    user-select: all;
+}
+
+/*from //bar.utoronto.ca/eplant/*/
+.greenbutton {
+	background-color: #99cc00;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-border-radius: 5px;
+	border: none;
+	padding: 10px 0;
+	width: 47%;
+	margin: 1%;
+	color: #FFF;
+	display: inline-block;
+	margin-top: 4px;
+	cursor: pointer;
+	height: 34px;
+}
+
+/* for fade effect at sequence div */
+.fadeOnCornersSequence{
+	width: 200px;
+    height: 75px;
+}
+
+/* for fade effect at left of sequence div */
+.fadeOnCornersSequenceLeft {
+    /* http://www.colorzilla.com/gradient-editor/ */
+    background: -moz-linear-gradient(left,  rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(40%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(255,255,255,1) 40%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+
+/* for fade effect at right of sequence div */
+.fadeOnCornersSequenceRight {	
+    /* http://www.colorzilla.com/gradient-editor/ */
+    background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 60%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,0)), color-stop(60%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 60%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+	/* border: 2px solid blue; */
+}

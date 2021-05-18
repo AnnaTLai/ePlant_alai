@@ -1,0 +1,55 @@
+
+<form id="advancedOptions">
+	<!-- Select an r-value cutoff panel -->
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<p>
+				<input type="radio" id="similarGenesRRadio" name="limitResults" value="r-value" style="float:left;margin-top:2px;"></input>
+				<span class="instructions-heading">Select an r-value cutoff range:</span>
+				<input type="text" id="amount" readonly style="border:0;margin-left:10px;color:#f6931f;font-size:20px;font-weight:bold;width: 80px;"></input>
+			</p>
+			<p>
+
+				<div style="width: 66.66%;margin: 0 auto;margin-top: 13px;">
+					<div id="r-value-slider-range"></div>
+				</div>
+			</p>
+			<br>
+			<div class="instructions">Use the slider to define a lower and upper r-value. The highest the r-value can be is 1, and that means that two vectors are a perfect match. Zero is no match, and -1 is a perfect anti-correlation, i.e. the expression response is exactly opposite to that of your gene of interest. The default lower r-value cutoff is 0.75, and the default upper r-value cutoff is 1.00. A tighter r-value range will result in smaller output files.</div>
+		</div>
+	</div>
+	
+	<!-- limit selection to top 25, 50, 100 or bottom 25, 50, 100 results -->
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<p>
+				<input type="radio" id="similarGenesNumRadio" name="limitResults" value="topHits" checked="checked" style="float:left;margin-top:0px;"></input>
+				<span class="instructions-heading">Or limit the results to:</span>
+				
+				<p>
+					<div class="text-center" style="margin-top:30px;">
+						<div>
+							<div class="btn-group" data-toggle="buttons">
+								<label class="btn btn-default active">
+								<input type="radio" name="matchGroup" id="top5" value="5" checked="checked"></input> Top 5 </label>
+								<label class="btn btn-default">
+								<input type="radio" name="matchGroup" id="top10" value="10"></input> Top 10 </label>
+								<label class="btn btn-default">
+								<input type="radio" name="matchGroup" id="top25" value="25"></input> Top 25</label>
+							</div>
+							<div class="btn-group" data-toggle="buttons" & style="margin-left:15px;">
+								<label class="btn btn-default">
+								<input type="radio" name="matchGroup" id="bottom5" value="-5"></input> Bottom 5 </label>
+								<label class="btn btn-default">
+								<input type="radio" name="matchGroup" id="bottom10" value="-10"></input> Bottom 10 </label>
+								<label class="btn btn-default">
+								<input type="radio" name="matchGroup" id="bottom25" value="-25"></input> Bottom 25 </label>
+							</div>
+						</div>
+					</div>
+				</p>
+			</p>
+			<div class="instructions" style="margin-top:10px;">Choose the number of best (or worst) correlated genes you'd like to see.</div>
+		</div>
+	</div>
+</form>

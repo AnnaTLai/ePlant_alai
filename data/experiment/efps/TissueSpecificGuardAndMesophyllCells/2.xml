@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE specimen SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_config.dtd">
+<specimen name="Arabidopsis">
+<view name="all" class="" db="atgenexp_plus" img="TissueSpecific-GuardAndMesophyllCells-2015-01-12.svg">
+	<info>
+		<p>Plant material from the leaves of 5 week old Arabidopsis thaliana plants of Columbia-0 ecotype was analyzed.</p>
+		<p>Mesophyll and guard cell protoplasts were used.</p>
+		<p>Plants grown in growth room under 16/8 hour light/dark conditions at 22°C</p>
+		<p>Measurements were taken in duplicates - the average of which is shown. Actinomycin and cordycepin were added to one of the reps. The individual reps are displayed in the table below.</p>
+		<p>RNA was isolated and hybridized to the ATH1 GeneChip. The data were normalized by GCOS normalization, TGT 100.</p>
+		<p>Results from Yang et al. (2008) Plant Methods 4:6</p> 						
+	</info>
+	<group name="CTRL_7">
+		<tissue id="Mesophyll_cells_with_100_uM_ABA" name="Mesophyll cells, with 100 uM ABA" colorKey="#008800">
+			<link url="http://biology.ucsd.edu/labs/schroeder/guardcellchips.html" /> 			 
+			<sample name="JS88" /> 
+			<sample name="JS36" /> 
+		</tissue>
+		<tissue id="Mesophyll_cells_no_ABA" name="Mesophyll cells, no ABA" colorKey="#006600">
+			<link url="http://biology.ucsd.edu/labs/schroeder/guardcellchips.html" /> 			 
+			<sample name="JS87" /> 
+			<sample name="JS35" /> 
+		</tissue>
+		<tissue id="Guard_cells_no_ABA" name="Guard cells, no ABA" colorKey="#005500">
+			<link url="http://biology.ucsd.edu/labs/schroeder/guardcellchips.html" /> 			 
+			<sample name="JS85" /> 
+			<sample name="JS33" /> 
+		</tissue>
+		<tissue id="Guard_cells_with_100_uM_ABA" name="Guard cells, with 100 uM ABA" colorKey="#007700"> 
+			<link url="http://biology.ucsd.edu/labs/schroeder/guardcellchips.html" /> 			 			 	
+			<sample name="JS86" /> 
+			<sample name="JS34" /> 
+		</tissue>
+		<tissue id="Guard_cells_no_ABA_no_cordycepin_nor_actinomycin" name="Guard cells, no ABA, no cordycepin nor actinomycin" colorKey="#335533">
+			<link url="http://biology.ucsd.edu/labs/schroeder/guardcellchips.html" /> 
+			<sample name="JS85" /> 
+		</tissue>
+		<tissue id="Mesophyll_cells_no_ABA_no_cordycepin_nor_actinomycin" name="Mesophyll cells, no ABA, no cordycepin nor actinomycin">
+			<link url="http://biology.ucsd.edu/labs/schroeder/guardcellchips.html" /> 
+			<sample name="JS87" /> 
+		</tissue>
+		<tissue id="Mesophyll_cells_no_ABA_cordycepin_and_actinomycin_added_during_protoplasting" name="Mesophyll cells, no ABA, cordycepin and actinomycin added during protoplasting" colorKey="#226622">
+			<link url="http://biology.ucsd.edu/labs/schroeder/guardcellchips.html" /> 			 
+			<sample name="JS35" /> 
+		</tissue>
+		<tissue id="Mesophyll_cells_with_100uM_ABA_no_cordycepin_nor_actinomycin" name="Mesophyll cells, with 100uM ABA, no cordycepin nor actinomycin" colorKey="#228822">
+			<link url="http://biology.ucsd.edu/labs/schroeder/guardcellchips.html" /> 			 
+			<sample name="JS88" /> 
+		</tissue>
+		<tissue id="Mesophyll_cells_with_100uM_ABA_cordycepin_and_actinomycin_added_during_protoplasting" name="Mesophyll cells with 100uM ABA, cordycepin and actinomycin added during protoplasting" colorKey="#448844" >
+			<link url="http://biology.ucsd.edu/labs/schroeder/guardcellchips.html" /> 	
+			<sample name="JS36" /> 
+		</tissue>
+		<tissue id="Guard_cells_no_ABA_cordycepin_and_actinomycin_added_during_protoplasting" name="Guard cells, no ABA, cordycepin and actinomycin added during protoplasting" colorKey="#665566">
+			<link url="http://biology.ucsd.edu/labs/schroeder/guardcellchips.html" /> 
+			<sample name="JS33" /> 
+		</tissue>
+		<tissue id="Guard_cells_with_100uM_ABA_cordycepin_and_actinomycin_added_during_protoplasting" name="Guard cells, with 100uM ABA, cordycepin and actinomycin added during protoplasting" colorKey="#667766">
+			<link url="http://biology.ucsd.edu/labs/schroeder/guardcellchips.html" /> 
+			<sample name="JS34" /> 
+		</tissue>
+		<tissue id="Guard_cells_with_100uM_ABA_no_cordycepin_nor_actinomycin" name="Guard cells, with 100uM ABA, no cordycepin nor actinomycin" colorKey="#337733">
+			<link url="http://biology.ucsd.edu/labs/schroeder/guardcellchips.html" /> 
+			<sample name="JS86" /> 
+		</tissue>
+	</group>
+</view>
+</specimen>		

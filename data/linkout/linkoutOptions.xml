@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE info SYSTEM "//bar.utoronto.ca/efp/cgi-bin/data/efp_info.dtd">
+<info>
+	<service name="Click to go to ThaleMine for further information about GENE" type="blank">
+		<connect
+		url=''></connect>
+		<icon filename="tair.gif"></icon>
+		<image filename="img/screenshot/linkout/thalemine.png"></image>
+		<link url="https://www.araport.org/search/thalemine/GENE" />
+		<result_regex pattern='' />
+		<external webservice = 'true' />
+	</service>
+	<service name="Click to go to TAIR for further information about GENE" type="blank">
+		<connect
+		url=''></connect>
+		<icon filename="tair.gif"></icon>
+		<image filename="img/screenshot/linkout/tair.png"></image>
+		<link url="http://www.arabidopsis.org/servlets/TairObject?type=locus&amp;name=GENE" />
+		<result_regex pattern='' />
+		<external webservice = 'true' />
+	</service>
+	<service name="Click to activate GeneMANIA to predict other genes/gene products associated with GENE" type="blank">
+		<connect
+		url='http://genemania.org'></connect>
+		<icon filename="genemania.png"></icon>
+		<image filename="img/screenshot/linkout/genemania.png"></image>
+		<link url="http://genemania.org/link?o=3702&amp;g=GENE"></link>
+		<result_regex pattern='' />
+		<external webservice = 'true' />
+	</service>
+		<service name="Click to open Gene Slider to view regions of GENE that are conserved across multiple species and may contain transcription factor binding sites." type="blank">
+		<connect url='//bar.utoronto.ca/webservices/agiToAnnot.php?request={"agi":"GENE"}'></connect>
+		<icon filename="geneSlider.gif" />
+		<image filename="img/screenshot/linkout/geneSlider.png"></image>
+		<link url="//bar.utoronto.ca/geneslider/?datasource=CNSData&amp;agi=GENE&amp;before=200&amp;after=200&amp;zoom_from=39&amp;zoom_to=238&amp;weightedBitscore=true&amp;alnIndicator=true" />
+		<noresult_regex pattern='^\"\"$' ></noresult_regex>
+	</service>
+	<service name="Expressologs" type="JSON">
+		<connect
+		url='//bar.utoronto.ca/webservices/get_expressologs.php?request=[{"gene":"GENE"}]'></connect>
+		<icon filename="expressolog.png"></icon>
+		<image filename="img/screenshot/linkout/expressolog.png"></image>
+		<link url="//bar.utoronto.ca/expressolog_treeviewer/cgi-bin/expressolog_treeviewer.cgi?primaryGene=GENE&amp;species=Arabidopsis&amp;dataset=Developmental&amp;checkedspecies=[arabidopsis,poplar,medicago,soybean,rice,barley]" /><noresult_regex pattern='^\{.*:\[\]\}$' />
+	</service>
+	<service name="Interactors" type="JSON">
+		<connect
+		url='
+		//bar.utoronto.ca/webservices/aiv/get_interactions.php?request=[{"agi":"GENE"}]'></connect>
+		<icon filename="interactions.png"></icon>
+		<image filename="img/screenshot/linkout/interactions.png"></image>
+		<link url="//bar.utoronto.ca/interactions/cgi-bin/arabidopsis_interactions_viewer.cgi?input=GENE&amp;qbar=yes" /><noresult_regex pattern='^\{.*:\[\]\}$' />
+	</service>
+	<service name="Subcellular localisation" type="JSON">
+		<connect
+		url='http://suba.plantenergy.uwa.edu.au/services/byAGI.php?agi=GENE.1'></connect>
+		<icon filename="subcellular_localisation.png"></icon>
+		<image filename="img/screenshot/linkout/cell_efp.png"></image>
+		<link url="//bar.utoronto.ca/cell_efp/cgi-bin/cell_efp.cgi?primaryGene=GENE" ></link>
+		<noresult_regex pattern='.*"observed":\[\],"predicted":\[\]\}$' />
+	</service>
+	<service name="Click to go to SeedNet for further information about" type="blank">
+		<connect
+			url='http://netvis.ico2s.org/db/seednet/_design/graph/_view/search?keys=["GENE",""]&amp;group=true'></connect>
+		<icon filename="SeedNet_logo.png"></icon>
+		<image filename="img/screenshot/linkout/SeedNet.png"></image>
+		<link url="http://netvis.ico2s.org/dev/seednet/#/node/GENE" />
+		<result_regex pattern='.*key.*' />
+		<external webservice = 'true' />
+	</service>
+	<!-- Old SeedNet no longer in production 
+	<service name="Click to go to SeedNet for further information about GENE" type="blank">
+		<connect
+		url='http://bree.cs.nott.ac.uk/arabidopsis/check.php?gene=GENE'></connect>
+		<icon filename="SeedNet_logo.png"></icon>
+		<image filename=""></image>
+		<link url="http://bree.cs.nott.ac.uk/arabidopsis/neighbor/index2.php?gene=GENE" />
+		<result_regex pattern='1' />
+		<external webservice = 'true' />
+	</service>
+	-->
+	<service name="Expression" type="PHP">
+		<connect url="//bar.utoronto.ca/webservices/agiToSignal.php?primaryGene=GENE&amp;dataSource=atgenexp_plus&amp;sample=ATGE_2_A" />
+		<icon filename="expression.gif" ></icon>
+		<image filename="img/screenshot/linkout/expression.png"></image>
+		<link url="//bar.utoronto.ca/affydb/cgi-bin/affy_db_exprss_browser_out.cgi?pub=&amp;datasets=atgenexp_plus&amp;output=ratio_avg&amp;agi_input=GENE" ></link>
+		<noresult_regex pattern=':\"None\"\}$' />
+	</service>
+	<service name="Annotations" type="">
+		<connect url='//bar.utoronto.ca/webservices/agiToAnnot.php?request={"agi":"GENE"}'></connect>
+		<icon filename="annotations.gif" />
+		<image filename="img/screenshot/linkout/annotations.png"></image>
+		<link url="//bar.utoronto.ca/ntools/cgi-bin/ntools_agi_converter.cgi?recent_lookup=2009-07-29&amp;input=GENE" />
+		<noresult_regex pattern='^\"\"$' ></noresult_regex>
+	</service>
+
+</info>

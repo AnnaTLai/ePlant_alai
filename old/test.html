@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2015 by anonymous (http://jsbin.com/gupakomiki/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<link href="style.css" rel="stylesheet" />
+<meta charset=utf-8 />
+<title>Cytoscape.js initialisation</title>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+		<script type="text/javascript" src="lib/cytoscape/cytoscape.min.js"></script>
+<script src="code.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style id="jsbin-css">
+body { 
+  font: 14px helvetica neue, helvetica, arial, sans-serif;
+}
+
+#cy {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+</style>
+</head>
+<body>
+<div id="cy"></div>
+<script id="jsbin-javascript">
+$(function(){ // on dom ready
+
+var cy = cytoscape({
+  
+  container: document.getElementById('cy'),
+  
+  elements: {
+    nodes: [
+      { data: { id: 'n', label: 'Tap me' } }
+    ]
+  },
+  
+  layout: {
+    name: 'grid',
+    padding: 100
+  },
+  
+  ready: function(){
+    window.cy = this;
+  },
+  
+  style: 'node { content: data(label); }'
+});
+
+// you can use qtip's regular options
+// see http://qtip2.com/
+cy.on('click','node',function(){alert('aaa')});
+
+  
+}); // on dom ready
+</script>
+</body>
+</html>

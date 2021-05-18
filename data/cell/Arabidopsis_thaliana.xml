@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<image id="plant cell" name="plant cell" img="Cell-2015-01-19">
+		<subcellular id="cytoskeleton" name="cytoskeleton" sample="CYTOSKELETON"/>
+		<subcellular id="cytosol" name="cytosol" sample="CYTOSOL"/>
+		<subcellular id="endoplasmic_reticulum" name="endoplasmic reticulum" sample="ENDOPLASMIC RETICULUM"/>
+		<subcellular id="extracellular" name="extracellular" sample="EXTRACELLULAR" />
+		<subcellular id="golgi" name="golgi" sample="GOLGI" />
+		<subcellular id="mitochondrion" name="mitochondrion" sample="MITOCHONDRION" />
+		<subcellular id="nucleus" name="nucleus" sample="NUCLEUS"/>
+		<subcellular id="peroxisome" name="peroxisome" sample="PEROXISOME"/>
+		<subcellular id="plasma_membrane" name="plasma membrane" sample="PLASMA MEMBRANE"/>
+		<subcellular id="plastid" name="plastid" sample="PLASTID"/>
+		<subcellular id="vacuole" name="vacuole" sample="VACUOLE"/>
+	</image>
+</document>
