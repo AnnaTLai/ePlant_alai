@@ -1,5 +1,5 @@
 // Note the function wrap to prevent clashed with global variables. Also, IIFE.
-// TODO: Please come up with an algorithm to fix the navigation link!
+// TODO: For Anna - Please come up with an algorithm to fix the navigation link!
 
 (function () {
 	// Constructor for our view
