@@ -1,4 +1,6 @@
 // Note the function wrap to prevent clashed with global variables. Also, IIFE.
+// TODO: Please come up with an algorithm to fix the navigation link!
+
 (function () {
 	// Constructor for our view
 	/** Note: We're assigning NavigatorView as a method of Eplant.Views, which is a property of Eplant.
