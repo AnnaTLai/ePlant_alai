@@ -173,6 +173,17 @@ if (!d3) { throw "d3 wasn't included!"};
   }
 
  // phylogram build function
+	/***
+	 * @param selector
+	 * @param nodes
+	 * @param q
+	 * @param eFPLinks
+	 * @param gens is the gens on the tree, the format is Object { "GLYMA.10G268500": "SOYBEAN", AK367229: "BARLEY", GRMZM2G089365_T01: "MAIZE", PGSC0003DMP400053207: "POTATO", VIT_01S0011G04350: "GRAPE", SOLYC05G008600: "TOMATO", "POTRI.008G125900.1": "POPLAR", "POTRI.010G117900.3": "POPLAR", "POTRI.008G125900.2": "POPLAR", "GLYMA.12G153000": "SOYBEAN", … }
+	 * @param scc
+	 * @param seq
+	 * @param options
+	 * @returns {{vis: *, tree: *}}
+	 */
  d3.phylogram.build = function(selector, nodes, q, eFPLinks, gens, scc, seq, options) {
     options = options || {}
     var w = options.width || d3.select(selector).style('width') || d3.select(selector).attr('width'),
@@ -197,6 +208,10 @@ if (!d3) { throw "d3 wasn't included!"};
     var sccValues = scc;
     var seqValues = seq;
     var query = q;
+
+    // For testing
+	 console. log(gens);
+	 console. log(q);
 
 
     //hidden until made visible by being active
@@ -282,7 +297,7 @@ if (!d3) { throw "d3 wasn't included!"};
 // 		        d3.select(this).style("cursor", "default")
 // 		      }
 // 		    });
-     var first = true;
+//     var first = true;
 
 //      d3.select("#button").text("clear all");
 //      d3.select("#button")
@@ -355,10 +370,37 @@ if (!d3) { throw "d3 wasn't included!"};
 
         .text(function(d) { return d.name}); //+ ' ('+ d.length +')'
 
+		// a dictionary to recognise different species -- Anna
+		const eplant_name_dict = {
+			"ARABIDOPSIS": "Arabidopsis%20thaliana",
+			"SOYBEAN": "Glycine%20max",
+			"POP":"Populus%20trichocarpa",
+			"MED":"Medicago%20truncatula",
+			"POTATO": "Solanum%20tuberosum",
+			"TOMATO":"Solanum%20lycopersicum",
+			"RICE":"Oryza%20sativa",
+			"MAIZE":"Zea%20mays",
+			"BARLEY":"Hordeum%20vulgare"
+		};
 
-      // vars for concatenation
+		const eplant_dict = {
+			"ARABIDOPSIS": "eplant",
+			"SOYBEAN": "eplant_soybean",
+			"POP":"eplant_poplar",
+			"MED":"eplant_medicago",
+			"POTATO": "eplant_potato",
+			"TOMATO":"eplant_tomato",
+			"RICE":"eplant_rice",
+			"MAIZE":"eplant_maize",
+			"BARLEY":"eplant_barley"
+		};
+
+		var current_eplant = "ARABIDOPSIS";
+
+	       // vars for concatenation
+		//TODO: make it detectable to genomes[d.name]
       var titleData = ["World", "Plant", "Cell", "Molecule", "Interactions"];
-      var generalURL = "http://bar.utoronto.ca/eplant/?ActiveSpecies=Arabidopsis%20thaliana&Genes=";
+      var generalURL = "http://bar.utoronto.ca/" + eplant_dict[current_eplant] + "/?ActiveSpecies=" + eplant_name_dict[current_eplant] + "&Genes=";
       var cogeURL = "https://genomevolution.org/CoGe/GEvo.pl?accn1=";
       var grameneURL = "http://ensembl.gramene.org/Arabidopsis_thaliana/Gene/Summary?g=";
 
@@ -371,6 +413,12 @@ if (!d3) { throw "d3 wasn't included!"};
 	      .attr('font-size', '14px')
 	      .style("font-weight", "bold")
 	      .attr('fill', function(d) {
+
+	      	//for testing
+			//   console.log("find name");
+			//   console.log(d.name);
+			//   console.log(genomes[d.name]);
+
 	    	  if (genomes[d.name] == "GRAPE") {
 	    		  return "gray";
 	    	  }
@@ -589,9 +637,6 @@ if (!d3) { throw "d3 wasn't included!"};
 //        .attr("height", 10);
 
 
-
-
-
       var worldTip = d3.tip()
 	  	.attr('class', 'd3-tip')
 	  	.style("font-size", "13px")
@@ -608,6 +653,8 @@ if (!d3) { throw "d3 wasn't included!"};
 
       var worldEFP = icons.append("a")
     	.attr("xlink:href", function(d) {
+				current_eplant = genomes[d.name];
+				generalURL = "http://bar.utoronto.ca/" + eplant_dict[current_eplant] + "/?ActiveSpecies=" + eplant_name_dict[current_eplant] + "&Genes=";
     			return generalURL + d.name + "&ActiveGene=" + d.name + "&ActiveView=" + "WorldView";
     		})
         .attr("target", "_blank")
@@ -641,12 +688,14 @@ if (!d3) { throw "d3 wasn't included!"};
 
       var plantEFP = icons.append("a")
     		.attr("xlink:href", function(d) {
-    			if (d.name.substr(0,2) != "AT") {
-    				return eFPLinks[d.name];
-    			}
-    			else {
+    			// if (d.name.substr(0,2) != "AT") {
+    			// 	return eFPLinks[d.name];
+    			// }
+    			// else {
+					current_eplant = genomes[d.name]
+					generalURL = "http://bar.utoronto.ca/" + eplant_dict[current_eplant] + "/?ActiveSpecies=" + eplant_name_dict[current_eplant] + "&Genes=";
     				return generalURL + d.name + "&ActiveGene=" + d.name + "&ActiveView=" + "PlantView";
-    			}
+    			// }
 
         	})
           .attr("target", "_blank")
@@ -676,6 +725,8 @@ if (!d3) { throw "d3 wasn't included!"};
 
       var cellEFP = icons.append("a")
   		.attr("xlink:href", function(d) {
+				current_eplant = genomes[d.name];
+				generalURL = "http://bar.utoronto.ca/" + eplant_dict[current_eplant] + "/?ActiveSpecies=" + eplant_name_dict[current_eplant] + "&Genes=";
     			return generalURL + d.name + "&ActiveGene=" + d.name + "&ActiveView=" + "CellView";
     		})
         .attr("target", "_blank")
@@ -709,6 +760,8 @@ if (!d3) { throw "d3 wasn't included!"};
 
       var moleculeviewer = icons.append("a")
   		.attr("xlink:href", function(d) {
+				current_eplant = genomes[d.name];
+				generalURL = "http://bar.utoronto.ca/" + eplant_dict[current_eplant] + "/?ActiveSpecies=" + eplant_name_dict[current_eplant] + "&Genes=";
     			return generalURL + d.name + "&ActiveGene=" + d.name + "&ActiveView=" + "MoleculeView";
     		})
         .attr("target", "_blank")
@@ -743,6 +796,8 @@ if (!d3) { throw "d3 wasn't included!"};
 
       var interactionviewer = icons.append("a")
   		.attr("xlink:href", function(d) {
+				current_eplant = genomes[d.name];
+				generalURL = "http://bar.utoronto.ca/" + eplant_dict[current_eplant] + "/?ActiveSpecies=" + eplant_name_dict[current_eplant] + "&Genes=";
     			return generalURL + d.name + "&ActiveGene=" + d.name + "&ActiveView=" + "InteractionView";
     		})
         .attr("target", "_blank")
