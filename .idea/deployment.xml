@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="alai@bar.utoronto.ca" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="alai@bar.utoronto.ca">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/public_html/eplant" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

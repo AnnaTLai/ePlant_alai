@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="acf8e28b-20ec-4a69-bb8e-e3e4ee99bf87" name="alai@bar.utoronto.ca" url="https://bar.utoronto.ca/~alai/eplant/">
+        <fileTransfer rootFolder="/home/alai" accessType="SFTP" host="bar.utoronto.ca" port="54321" sshConfigId="d8c52e8c-c309-4257-811d-cb3dff64c595" sshConfig="alai@bar.utoronto.ca:54321 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" maxConnections="30000" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

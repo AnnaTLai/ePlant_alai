@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="bar.utoronto.ca" id="d8c52e8c-c309-4257-811d-cb3dff64c595" port="54321" nameFormat="DESCRIPTIVE" username="alai" />
+    </configs>
+  </component>
+</project>

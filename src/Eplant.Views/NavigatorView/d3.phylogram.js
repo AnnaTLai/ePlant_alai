@@ -71,6 +71,9 @@
     d3.phylogram.rightAngleDiagonal for radial layouts.
 */
 
+//TODO: delete this if this is not needed at all
+//import {eplant_name_dict,eplant_dict} from './eplant_properties';
+
 if (!d3) { throw "d3 wasn't included!"};
 (function() {
   d3.phylogram = {}
@@ -173,6 +176,17 @@ if (!d3) { throw "d3 wasn't included!"};
   }
 
  // phylogram build function
+	/***
+	 * @param selector
+	 * @param nodes
+	 * @param q
+	 * @param eFPLinks
+	 * @param gens is the gens on the tree, the format is Object { "GLYMA.10G268500": "SOYBEAN", AK367229: "BARLEY", GRMZM2G089365_T01: "MAIZE", PGSC0003DMP400053207: "POTATO", VIT_01S0011G04350: "GRAPE", SOLYC05G008600: "TOMATO", "POTRI.008G125900.1": "POPLAR", "POTRI.010G117900.3": "POPLAR", "POTRI.008G125900.2": "POPLAR", "GLYMA.12G153000": "SOYBEAN", … }
+	 * @param scc
+	 * @param seq
+	 * @param options
+	 * @returns {{vis: *, tree: *}}
+	 */
  d3.phylogram.build = function(selector, nodes, q, eFPLinks, gens, scc, seq, options) {
     options = options || {}
     var w = options.width || d3.select(selector).style('width') || d3.select(selector).attr('width'),
@@ -197,6 +211,10 @@ if (!d3) { throw "d3 wasn't included!"};
     var sccValues = scc;
     var seqValues = seq;
     var query = q;
+
+    // For testing
+	 console. log(gens);
+	 console. log(q);
 
 
     //hidden until made visible by being active
@@ -282,7 +300,7 @@ if (!d3) { throw "d3 wasn't included!"};
 // 		        d3.select(this).style("cursor", "default")
 // 		      }
 // 		    });
-     var first = true;
+//     var first = true;
 
 //      d3.select("#button").text("clear all");
 //      d3.select("#button")
@@ -355,10 +373,57 @@ if (!d3) { throw "d3 wasn't included!"};
 
         .text(function(d) { return d.name}); //+ ' ('+ d.length +')'
 
+		//a dictionary to recognise different species -- Anna
+		const eplant_available = ["ARABIDOPSIS", "ATHL", "SOYBEAN", "POP", "POPLAR", "MED", "POTATO", "TOMATO", "RICE", "MAIZE", "BARLEY"]
 
-      // vars for concatenation
+		const eplant_name_dict = {
+			"ARABIDOPSIS": "Arabidopsis%20thaliana",
+			"ATHL": "Arabidopsis%20thaliana",
+			"SOYBEAN": "Glycine%20max",
+			"POP":"Populus%20trichocarpa",
+			"POPLAR":"Populus%20trichocarpa",
+			"MED":"Medicago%20truncatula",
+			"POTATO": "Solanum%20tuberosum",
+			"TOMATO":"Solanum%20lycopersicum",
+			"RICE":"Oryza%20sativa",
+			"MAIZE":"Zea%20mays",
+			"BARLEY":"Hordeum%20vulgare"
+		};
+
+		const eplant_dict = {
+			"ARABIDOPSIS": "eplant",
+			"ATHL": "eplant",
+			"SOYBEAN": "eplant_soybean",
+			"POP":"eplant_poplar",
+			"POPLAR": "eplant_poplar",
+			"MED":"eplant_medicago",
+			"POTATO": "eplant_potato",
+			"TOMATO":"eplant_tomato",
+			"RICE":"eplant_rice",
+			"MAIZE":"eplant_maize",
+			"BARLEY":"eplant_barley"
+		};
+
+		const eplant_views_dict = {
+			"ARABIDOPSIS": ["World", "Plant", "Cell", "Molecule", "Interactions", "Pathway", "Chromosome", "Heat Map"],
+			"ATHL": ["World", "Plant", "Cell", "Molecule", "Interactions", "Pathway", "Chromosome", "Heat Map"],
+			"SOYBEAN": [ "Plant", "Molecule","Chromosome"],
+			"POP":["World", "Plant", "Molecule", "Chromosome"],
+			"POPLAR":["World", "Plant", "Molecule", "Chromosome"],
+			"MED":[ "Plant", "Molecule", "Chromosome"],
+			"POTATO": ["Plant","Chromosome"],
+			"TOMATO":["Plant", "Cell", "Molecule", "Chromosome"],
+			"RICE":["Plant", "Molecule", "Interactions","Chromosome"],
+			"MAIZE":[ "Plant", "Interactions","Chromosome"],
+			"BARLEY":["Chromosome"]
+		};
+
+		var current_eplant = "ARABIDOPSIS";
+
+	       // vars for concatenation
+		//eplant_prop_dict replaced this var
       var titleData = ["World", "Plant", "Cell", "Molecule", "Interactions"];
-      var generalURL = "http://bar.utoronto.ca/eplant/?ActiveSpecies=Arabidopsis%20thaliana&Genes=";
+      var generalURL = "http://bar.utoronto.ca/" + eplant_dict[current_eplant] + "/?ActiveSpecies=" + eplant_name_dict[current_eplant] + "&Genes=";
       var cogeURL = "https://genomevolution.org/CoGe/GEvo.pl?accn1=";
       var grameneURL = "http://ensembl.gramene.org/Arabidopsis_thaliana/Gene/Summary?g=";
 
@@ -371,6 +436,12 @@ if (!d3) { throw "d3 wasn't included!"};
 	      .attr('font-size', '14px')
 	      .style("font-weight", "bold")
 	      .attr('fill', function(d) {
+
+	      	//for testing
+			//   console.log("find name");
+			//   console.log(d.name);
+			//   console.log(genomes[d.name]);
+
 	    	  if (genomes[d.name] == "GRAPE") {
 	    		  return "gray";
 	    	  }
@@ -589,9 +660,6 @@ if (!d3) { throw "d3 wasn't included!"};
 //        .attr("height", 10);
 
 
-
-
-
       var worldTip = d3.tip()
 	  	.attr('class', 'd3-tip')
 	  	.style("font-size", "13px")
@@ -600,14 +668,37 @@ if (!d3) { throw "d3 wasn't included!"};
       .style("color", "white")
 	  	.offset([-10, 0])
 	  	.html(function(d) {
-	  		if (d.name.substr(0,2) != "AT") {return "&nbsp;&nbsp;Coming soon!&nbsp;&nbsp;";}
-		    else {return "&nbsp;&nbsp;" + titleData[0] + "&nbsp;&nbsp;";};
+	  		console.log("The name of the d.name in world is " + d.name);
+			console.log("The Species of the d.name is " + genomes[d.name]);
+			console.log("The query is " + query);
+
+			current_eplant = genomes[d.name];
+			// can't find the view, but the name is in the array
+	  		if ( eplant_available.find(e_name => e_name === genomes[d.name]) === undefined && query === d.name) {
+	  			return "&nbsp;&nbsp;World&nbsp;&nbsp;";
+	  		} else if (eplant_available.find(e_name => e_name === genomes[d.name]) === undefined && query !== d.name){
+	  			//The current gene
+				return "&nbsp;&nbsp;Coming soon!&nbsp;&nbsp;";
+			} else if (eplant_available.find(e_name => e_name === genomes[d.name]) !== undefined && eplant_views_dict[current_eplant].find(view_name => view_name ==="World") === undefined){
+				//cannot find the name of the eplant in our array
+				return "&nbsp;&nbsp;World&nbsp;&nbsp;";
+			} else {
+	  			return "&nbsp;&nbsp;Coming soon!&nbsp;&nbsp;";
+	  		};
 	  	});
 
       icons.call(worldTip);
 
       var worldEFP = icons.append("a")
     	.attr("xlink:href", function(d) {
+				current_eplant = genomes[d.name];
+    			if (d.name === query && d.name.substr(0,2) == "AT"){
+    				current_eplant = "ARABIDOPSIS";
+				} else if (d.name === query && d.name.substr(0,5) == "GLYMA"){
+					current_eplant = "SOYBEAN";
+				}
+
+				generalURL = "http://bar.utoronto.ca/" + eplant_dict[current_eplant] + "/?ActiveSpecies=" + eplant_name_dict[current_eplant] + "&Genes=";
     			return generalURL + d.name + "&ActiveGene=" + d.name + "&ActiveView=" + "WorldView";
     		})
         .attr("target", "_blank")
@@ -619,8 +710,18 @@ if (!d3) { throw "d3 wasn't included!"};
       	.attr("height", 20)
       	.attr("width", 20)
       	.style("opacity", function (d) {
-      		// for non-arabidopsis, gray out all icons but plant
-      		if (d.name.substr(0,2) != "AT") {return "0.2";}
+
+			if ( eplant_available.find(e_name => e_name === genomes[d.name]) === undefined && query === d.name) {
+				return "1.0";
+			} else if (eplant_available.find(e_name => e_name === genomes[d.name]) === undefined && query !== d.name){
+				//The current gene
+				return "0.2";
+			} else if (eplant_available.find(e_name => e_name === genomes[d.name]) !== undefined && eplant_views_dict[current_eplant].find(view_name => view_name ==="World") === undefined){
+				//cannot find the name of the eplant in our array
+				return "1.0";
+			} else {
+				return "0.2";
+			};
 
       	})
       	.on('mouseover', worldTip.show)
@@ -641,12 +742,16 @@ if (!d3) { throw "d3 wasn't included!"};
 
       var plantEFP = icons.append("a")
     		.attr("xlink:href", function(d) {
-    			if (d.name.substr(0,2) != "AT") {
-    				return eFPLinks[d.name];
-    			}
-    			else {
-    				return generalURL + d.name + "&ActiveGene=" + d.name + "&ActiveView=" + "PlantView";
-    			}
+
+				current_eplant = genomes[d.name];
+				if (d.name === query && d.name.substr(0,2) == "AT"){
+					current_eplant = "ARABIDOPSIS";
+				} else if (d.name === query && d.name.substr(0,5) == "GLYMA"){
+					current_eplant = "SOYBEAN";
+				}
+
+				generalURL = "http://bar.utoronto.ca/" + eplant_dict[current_eplant] + "/?ActiveSpecies=" + eplant_name_dict[current_eplant] + "&Genes=";
+				return generalURL + d.name + "&ActiveGene=" + d.name + "&ActiveView=" + "PlantView";
 
         	})
           .attr("target", "_blank")
@@ -667,15 +772,28 @@ if (!d3) { throw "d3 wasn't included!"};
       .style("color", "white")
 	  	.offset([-10, 0])
 	  	.html(function (d) {
-    		// for non-arabidopsis, say that it's coming soon
-    		if (d.name.substr(0,2) != "AT") {return "&nbsp;&nbsp;Coming soon!&nbsp;&nbsp;";}
-    		else {return "&nbsp;&nbsp;" + titleData[2] + "&nbsp;&nbsp;";}
+			current_eplant = genomes[d.name];
+			// can't find the view, but the name is in the array
+			if ( eplant_available.find(e_name => e_name === genomes[d.name]) === undefined && query === d.name) {
+				return "&nbsp;&nbsp;Cell&nbsp;&nbsp;";
+			} else if (eplant_available.find(e_name => e_name === genomes[d.name]) === undefined && query !== d.name){
+				//The current gene
+				return "&nbsp;&nbsp;Coming soon!&nbsp;&nbsp;";
+			} else if (eplant_available.find(e_name => e_name === genomes[d.name]) !== undefined && eplant_views_dict[current_eplant].find(view_name => view_name ==="Cell") === undefined){
+				//cannot find the name of the eplant in our array
+				return "&nbsp;&nbsp;Cell&nbsp;&nbsp;";
+			} else {
+				return "&nbsp;&nbsp;Coming soon!&nbsp;&nbsp;";
+			};
+
 	  	});
 
       icons.call(cellTip);
 
       var cellEFP = icons.append("a")
   		.attr("xlink:href", function(d) {
+				current_eplant = genomes[d.name];
+				generalURL = "http://bar.utoronto.ca/" + eplant_dict[current_eplant] + "/?ActiveSpecies=" + eplant_name_dict[current_eplant] + "&Genes=";
     			return generalURL + d.name + "&ActiveGene=" + d.name + "&ActiveView=" + "CellView";
     		})
         .attr("target", "_blank")
@@ -686,8 +804,19 @@ if (!d3) { throw "d3 wasn't included!"};
     	.attr("height", 20)
     	.attr("width", 20)
     	.style("opacity", function (d) {
-      		// for non-arabidopsis, gray out all icons but plant
-      		if (d.name.substr(0,2) != "AT") {return "0.2";}
+			current_eplant = genomes[d.name];
+			// can't find the view, but the name is in the array
+			if ( eplant_available.find(e_name => e_name === genomes[d.name]) === undefined && query === d.name) {
+				return "1.0";
+			} else if (eplant_available.find(e_name => e_name === genomes[d.name]) === undefined && query !== d.name){
+				//The current gene
+				return "0.2";
+			} else if (eplant_available.find(e_name => e_name === genomes[d.name]) !== undefined && eplant_views_dict[current_eplant].find(view_name => view_name ==="Cell") === undefined){
+				//cannot find the name of the eplant in our array
+				return "1.0";
+			} else {
+				return "0.2";
+			};
       	})
       	.on('mouseover', cellTip.show)
         .on('mouseout', cellTip.hide);
@@ -700,15 +829,37 @@ if (!d3) { throw "d3 wasn't included!"};
       .style("color", "white")
 	  	.offset([-10, 0])
 	  	.html(function (d) {
-	  		// for non-arabidopsis, say that it's coming soon
-	  		if (d.name.substr(0,2) != "AT") {return "&nbsp;&nbsp;Coming soon!&nbsp;&nbsp;";}
-	  		else {return "&nbsp;&nbsp;" + titleData[3] + "&nbsp;&nbsp;";}
+			current_eplant = genomes[d.name];
+			// can't find the view, but the name is in the array
+			if ( eplant_available.find(e_name => e_name === genomes[d.name]) === undefined && query === d.name) {
+				return "&nbsp;&nbsp;Molecule&nbsp;&nbsp;";
+			} else if (eplant_available.find(e_name => e_name === genomes[d.name]) === undefined && query !== d.name){
+				//The current gene
+				return "&nbsp;&nbsp;Coming soon!&nbsp;&nbsp;";
+			} else if (eplant_available.find(e_name => e_name === genomes[d.name]) !== undefined && eplant_views_dict[current_eplant].find(view_name => view_name ==="Molecule") === undefined){
+				//cannot find the name of the eplant in our array
+				return "&nbsp;&nbsp;Molecule&nbsp;&nbsp;";
+			} else {
+				return "&nbsp;&nbsp;Coming soon!&nbsp;&nbsp;";
+			};
+
+
+	  		// // for non-arabidopsis, say that it's coming soon
+	  		// if (d.name.substr(0,2) != "AT") {return "&nbsp;&nbsp;Coming soon!&nbsp;&nbsp;";}
+	  		// else {return "&nbsp;&nbsp;" + titleData[3] + "&nbsp;&nbsp;";}
 	  	});
 
       icons.call(molTip);
 
       var moleculeviewer = icons.append("a")
   		.attr("xlink:href", function(d) {
+			current_eplant = genomes[d.name];
+			if (d.name === query && d.name.substr(0,2) == "AT"){
+				current_eplant = "ARABIDOPSIS";
+			} else if (d.name === query && d.name.substr(0,5) == "GLYMA"){
+				current_eplant = "SOYBEAN";
+			}
+				generalURL = "http://bar.utoronto.ca/" + eplant_dict[current_eplant] + "/?ActiveSpecies=" + eplant_name_dict[current_eplant] + "&Genes=";
     			return generalURL + d.name + "&ActiveGene=" + d.name + "&ActiveView=" + "MoleculeView";
     		})
         .attr("target", "_blank")
@@ -719,8 +870,21 @@ if (!d3) { throw "d3 wasn't included!"};
     	.attr("height", 20)
     	.attr("width", 20)
     	.style("opacity", function (d) {
-      		// for non-arabidopsis, gray out all icons but plant
-      		if (d.name.substr(0,2) != "AT") {return "0.2";}
+
+			if ( eplant_available.find(e_name => e_name === genomes[d.name]) === undefined && query === d.name) {
+				return "1.0";
+			} else if (eplant_available.find(e_name => e_name === genomes[d.name]) === undefined && query !== d.name){
+				//The current gene
+				return "0.2";
+			} else if (eplant_available.find(e_name => e_name === genomes[d.name]) !== undefined && eplant_views_dict[current_eplant].find(view_name => view_name === "Molecule") === undefined){
+				//cannot find the name of the eplant in our array
+				return "1.0";
+			} else {
+				return "0.2";
+			};
+
+      		// // for non-arabidopsis, gray out all icons but plant
+      		// if (d.name.substr(0,2) != "AT") {return "0.2";}
       	})
     	.on('mouseover', molTip.show)
         .on('mouseout', molTip.hide);
@@ -743,6 +907,13 @@ if (!d3) { throw "d3 wasn't included!"};
 
       var interactionviewer = icons.append("a")
   		.attr("xlink:href", function(d) {
+			current_eplant = genomes[d.name];
+			if (d.name === query && d.name.substr(0,2) == "AT"){
+				current_eplant = "ARABIDOPSIS";
+			} else if (d.name === query && d.name.substr(0,5) == "GLYMA"){
+				current_eplant = "SOYBEAN";
+			}
+				generalURL = "http://bar.utoronto.ca/" + eplant_dict[current_eplant] + "/?ActiveSpecies=" + eplant_name_dict[current_eplant] + "&Genes=";
     			return generalURL + d.name + "&ActiveGene=" + d.name + "&ActiveView=" + "InteractionView";
     		})
         .attr("target", "_blank")
@@ -781,10 +952,25 @@ if (!d3) { throw "d3 wasn't included!"};
       	})
 	  	.text("CoGE");
 
+    //TODO: Fix . vs _
     var gramene = icons.append("a")
 		.attr("xlink:href", function(d) {
-				if (d.name != query)
-    			{
+				if (d.name !== query)
+    			{	current_eplant = genomes[d.name];
+					eplant_gramname_dict = {
+						"ARABIDOPSIS": "Arabidopsis_thaliana",
+						"ATHL": "Arabidopsis_thaliana",
+						"SOYBEAN":"Glycine_max",
+						"POP":"populus",
+						"POPLAR": "populus",
+						"MED":"medicago",
+						"POTATO": "solanum_tuberosum",
+						"TOMATO":"solanum_lycopersicum",
+						"RICE":"oryza_sativa",
+						"MAIZE":"zea_mays",
+						"BARLEY":"hordeum _ulgare"
+					};
+					grameneURL = "http://ensembl.gramene.org/"+ eplant_gramname_dict[current_eplant] + "/Gene/Summary?g=";
     				return grameneURL + d.name;
     			}
     		})
