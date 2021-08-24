@@ -1,0 +1,91 @@
+{
+  "eplant_dict": {
+    "ARABIDOPSIS": "eplant",
+    "ATHL": "eplant",
+    "SOYBEAN": "eplant_soybean",
+    "POP": "eplant_poplar",
+    "MED": "eplant_medicago",
+    "POTATO": "eplant_potato",
+    "TOMATO": "eplant_tomato",
+    "RICE": "eplant_rice",
+    "MAIZE": "eplant_maize",
+    "BARLEY": "eplant_barley"
+  },
+  "eplant_name_dict": {
+    "ARABIDOPSIS": "Arabidopsis%20thaliana",
+    "ATHL": "Arabidopsis%20thaliana",
+    "SOYBEAN": "Glycine%20max",
+    "POP": "Populus%20trichocarpa",
+    "MED": "Medicago%20truncatula",
+    "POTATO": "Solanum%20tuberosum",
+    "TOMATO": "Solanum%20lycopersicum",
+    "RICE": "Oryza%20sativa",
+    "MAIZE": "Zea%20mays",
+    "BARLEY": "Hordeum%20vulgare"
+  },
+  "eplant_gramname_dict": {
+    "ARABIDOPSIS": "Arabidopsis_thaliana",
+    "ATHL": "Arabidopsis_thaliana",
+    "SOYBEAN": "Glycine_max",
+    "POP": "populus",
+    "POPLAR": "populus",
+    "MED": "medicago",
+    "POTATO": "solanum_tuberosum",
+    "TOMATO": "solanum_lycopersicum",
+    "RICE": "oryza_sativa",
+    "MAIZE": "zea_mays",
+    "BARLEY": "hordeum _ulgare"
+  },
+  "eplant_views_dict": {
+    "ARABIDOPSIS": [
+      "World",
+      "Plant",
+      "Cell",
+      "Molecule",
+      "Interactions",
+      "Pathway",
+      "Chromosome",
+      "Heat Map"
+    ],
+    "SOYBEAN": [
+      "Plant",
+      "Molecule",
+      "Chromosome"
+    ],
+    "POP": [
+      "World",
+      "Plant",
+      "Molecule",
+      "Chromosome"
+    ],
+    "MED": [
+      "Plant",
+      "Molecule",
+      "Chromosome"
+    ],
+    "POTATO": [
+      "Plant",
+      "Chromosome"
+    ],
+    "TOMATO": [
+      "Plant",
+      "Cell",
+      "Molecule",
+      "Chromosome"
+    ],
+    "RICE": [
+      "Plant",
+      "Molecule",
+      "Interactions",
+      "Chromosome"
+    ],
+    "MAIZE": [
+      "Plant",
+      "Interactions",
+      "Chromosome"
+    ],
+    "BARLEY": [
+      "Chromosome"
+    ]
+  }
+}

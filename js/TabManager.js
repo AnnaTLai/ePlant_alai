@@ -111,6 +111,8 @@
 			TabManager.tabs.tabs("refresh").tabs({ active:index});
 			
 		});
+
+		// to add a tab
 		$('#add_tab').click(function() {
 			TabManager.loadData(TabManager.tabId, "Welcome Screen");
 			TabManager.tabId++;
