@@ -1,6 +1,5 @@
 # ePlant_alai
-BCB330 Summer research project at Professor N. Provart's Lab.
+BCB330 Summer project.
 
-URL to alai version of eplant: https://bar.utoronto.ca/~alai/eplant
-
-## New features [pending]
+ePlant for Arabidopsis thaliana.
+Please refer to: https://bar.utoronto.ca/~alai/eplant
